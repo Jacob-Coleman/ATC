@@ -22,18 +22,18 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.apache.ivyde.eclipse.cpcontainer.IVYDE_CONTAINER/?project=Test3&amp;ivyXmlPath=ivy.xml&amp;confs=widgetset-compile&amp;ivySettingsPath=%24%7Bworkspace_loc%3ATest3%2Fivysettings.xml%7D&amp;loadSettingsOnDemand=false&amp;ivyUserDir=&amp;propertyFiles="/>
 	<classpathentry kind="con" path="org.apache.ivyde.eclipse.cpcontainer.IVYDE_CONTAINER/?project=Test3&amp;ivyXmlPath=ivy.xml&amp;confs=nodeploy&amp;ivySettingsPath=%24%7Bworkspace_loc%3ATest3%2Fivysettings.xml%7D&amp;loadSettingsOnDemand=false&amp;ivyUserDir=&amp;propertyFiles="/>
-	<classpathentry kind="lib" path="TauPLIb/JSAP-2.1.jar"/>
-	<classpathentry kind="lib" path="TauPLIb/jython-standalone-2.5.2.jar"/>
-	<classpathentry kind="lib" path="TauPLIb/log4j-1.2.17.jar"/>
-	<classpathentry kind="lib" path="TauPLIb/mysql-connector-java-5.1.24.jar"/>
-	<classpathentry kind="lib" path="TauPLIb/rxtx-2.1.7.jar"/>
-	<classpathentry kind="lib" path="TauPLIb/seedCodec-1.0.9.jar"/>
-	<classpathentry kind="lib" path="TauPLIb/seisFile-1.6.0.jar"/>
-	<classpathentry kind="lib" path="TauPLIb/slf4j-api-1.7.5.jar"/>
-	<classpathentry kind="lib" path="TauPLIb/slf4j-log4j12-1.7.5.jar"/>
-	<classpathentry kind="lib" path="TauPLIb/stax-api-1.0-2.jar"/>
-	<classpathentry kind="lib" path="TauPLIb/stax2-api-3.1.0.jar"/>
-	<classpathentry kind="lib" path="TauPLIb/TauP-2.1.2.jar"/>
-	<classpathentry kind="lib" path="TauPLIb/woodstox-core-lgpl-4.1.0.jar"/>
+	<classpathentry kind="lib" path="TauPlib/JSAP-2.1.jar"/>
+	<classpathentry kind="lib" path="TauPlib/jython-standalone-2.5.2.jar"/>
+	<classpathentry kind="lib" path="TauPlib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="TauPlib/mysql-connector-java-5.1.24.jar"/>
+	<classpathentry kind="lib" path="TauPlib/rxtx-2.1.7.jar"/>
+	<classpathentry kind="lib" path="TauPlib/seedCodec-1.0.9.jar"/>
+	<classpathentry kind="lib" path="TauPlib/seisFile-1.6.0.jar"/>
+	<classpathentry kind="lib" path="TauPlib/slf4j-api-1.7.5.jar"/>
+	<classpathentry kind="lib" path="TauPlib/slf4j-log4j12-1.7.5.jar"/>
+	<classpathentry kind="lib" path="TauPlib/stax-api-1.0-2.jar"/>
+	<classpathentry kind="lib" path="TauPlib/stax2-api-3.1.0.jar"/>
+	<classpathentry kind="lib" path="TauPlib/TauP-2.1.2.jar"/>
+	<classpathentry kind="lib" path="TauPlib/woodstox-core-lgpl-4.1.0.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
