@@ -26,7 +26,8 @@ public class Test3UI extends UI {
 	@Override
 	protected void init(VaadinRequest request) {
 		TimeCalcComposition cp1 = new TimeCalcComposition();
-		setContent(cp1);
+		TabComponent tc1 = new TabComponent();
+		setContent(tc1);
 		
 
 	}
