@@ -13,6 +13,8 @@ import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
 
 import edu.sc.seis.TauP.PhaseDialog;
+import edu.utc.atc.components.TabComponent;
+import edu.utc.atc.views.TabView;
 
 @SuppressWarnings("serial")
 @Theme("test3")
@@ -26,8 +28,8 @@ public class Test3UI extends UI {
 	@Override
 	protected void init(VaadinRequest request) {
 		TimeCalcComposition cp1 = new TimeCalcComposition();
-		TabComponent tc1 = new TabComponent();
-		setContent(tc1);
+		TabView tv1 = new TabView();
+		setContent(tv1);
 		
 
 	}
