@@ -18,16 +18,15 @@ import edu.utc.atc.views.TabView;
 
 @SuppressWarnings("serial")
 @Theme("test3")
-public class Test3UI extends UI {
+public class ATCServlet extends UI {
 
 	@WebServlet(value = "/*", asyncSupported = true)
-	@VaadinServletConfiguration(productionMode = false, ui = Test3UI.class)
+	@VaadinServletConfiguration(productionMode = false, ui = ATCServlet.class)
 	public static class Servlet extends VaadinServlet {
 	}
 
 	@Override
 	protected void init(VaadinRequest request) {
-		TimeCalcComposition cp1 = new TimeCalcComposition();
 		TabView tv1 = new TabView();
 		setContent(tv1);
 		

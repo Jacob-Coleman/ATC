@@ -8,7 +8,7 @@ import edu.sc.seis.TauP.*;
 public class ATCTime {
 	
 	private TauP_Time atcTime;
-	ATCTime (int distance, double depth, String model) throws TauModelException, IOException
+	public ATCTime (int distance, double depth, String model) throws TauModelException, IOException
 	{
 		
 		atcTime = new TauP_Time(model);
