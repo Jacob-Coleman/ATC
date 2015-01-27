@@ -38,6 +38,6 @@
 	<classpathentry kind="lib" path="vaadin/vaadin-server-7.3.8.jar"/>
 	<classpathentry kind="lib" path="vaadin/vaadin-shared-7.3.8.jar"/>
 	<classpathentry kind="lib" path="vaadin/vaadin-themes-7.3.8.jar"/>
-	<classpathentry kind="lib" path="BoobLib/boon-0.30.jar"/>
+	<classpathentry kind="lib" path="BoonLib/boon-0.30.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
