@@ -27,16 +27,12 @@ public class TimeCalcView extends TimeCalcComponent {
 		horizontalSplitPanel_1.setMinSplitPosition(150, UNITS_PIXELS);
 		
 		//Initalizes the information in the Tabel
-		resultsTable.addContainerProperty("Phase", Double.class, "none");
-		resultsTable.addContainerProperty("Time", Double.class, "none");
+		resultsTable.addContainerProperty("Name", String.class, "none");
 		resultsTable.addContainerProperty("Distance", Double.class, "none");
 		resultsTable.addContainerProperty("Ray Param", Double.class, "none");
-		resultsTable.addContainerProperty("Ray Param Index", Double.class, "none");
-		resultsTable.addContainerProperty("Name", String.class, "none");
-		resultsTable.addContainerProperty("Purist Name", String.class, "none");
-		resultsTable.addContainerProperty("Source Depth", Double.class, "none");
-		resultsTable.addContainerProperty("Take Off Angle", Double.class, "none");
-		resultsTable.addContainerProperty("Incident Angle", Double.class, "none");
+		resultsTable.addContainerProperty("Time", Double.class, "none");
+		
+		
 		
 		//Sets the possible models in the model box
 		modelBox.addItem("iasp91");
@@ -63,14 +59,15 @@ public class TimeCalcView extends TimeCalcComponent {
 	private void processForm() {
 		try {
     		System.out.println(modelBox.getValue().toString());
-			@SuppressWarnings("unused")
-			ATCTime atct = new ATCTime(Integer.parseInt(distanceField.getValue()),
+	
+			ATCTime atct = new ATCTime(Double.parseDouble(distanceField.getValue()),
 									   Double.parseDouble(depthField.getValue()), 
 									   modelBox.getValue().toString());
 			
 			
 			BeanContainer<String, Arrival> arrivalTimes = new BeanContainer<String, Arrival>(Arrival.class);
-			//BeanContainer<String, ArrivalForm>
+			
+			//Iterates though the time table and adds each arrial time to the table
 			for(int i = 0; i < atct.getTable().size(); i ++)
 			{
 				arrivalTimes.setBeanIdProperty("name");
@@ -86,11 +83,22 @@ public class TimeCalcView extends TimeCalcComponent {
 												 atct.getTable().get(i).getIncidentAngle()));
 			}
 			
+			//read adds the updated results table
 			horizontalSplitPanel_1.removeComponent(resultsTable);
 			resultsTable = new Table("results", arrivalTimes);
 			resultsTable.setImmediate(false);
 			resultsTable.setWidth("100.0%");
 			resultsTable.setHeight("100.0%");
+			
+			//selects the values from the arrial to be displyed in the table
+			resultsTable.setVisibleColumns(new Object[]{"name","dist","rayParamDeg", "time"});
+			
+			//formats the tables name per the item in the colum being added
+			resultsTable.setColumnHeader("name", "Name");
+			resultsTable.setColumnHeader("dist", "Dist (km)");
+			resultsTable.setColumnHeader("rayParamDeg", "Ray Param");
+			resultsTable.setColumnHeader("time", "Time");
+			
 			horizontalSplitPanel_1.addComponent(resultsTable);
 			System.out.println("Table Size is now " + resultsTable.size());
 		} catch (NumberFormatException e) {
