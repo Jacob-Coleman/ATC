@@ -1,9 +1,23 @@
 package edu.utc.atc.views;
+/**
+ * @version 1.0 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * @author Jacob D. Coleman
+ */
+
 
 import java.io.IOException;
 
 import com.vaadin.data.util.BeanContainer;
+import com.vaadin.server.Page;
 import com.vaadin.ui.Button;
+import com.vaadin.ui.Notification;
 import com.vaadin.ui.Table;
 import com.vaadin.ui.Button.ClickEvent;
 
@@ -14,9 +28,7 @@ import edu.utc.atc.components.TimeCalcComponent;
 
 public class TimeCalcView extends TimeCalcComponent {
 
-	/**
-	 * 
-	 */
+	
 	private static final long serialVersionUID = 7323385200117791247L;
 
 
@@ -26,7 +38,7 @@ public class TimeCalcView extends TimeCalcComponent {
 		horizontalSplitPanel_1.setMaxSplitPosition(200, UNITS_PIXELS);
 		horizontalSplitPanel_1.setMinSplitPosition(150, UNITS_PIXELS);
 		
-		//Initalizes the information in the Tabel
+		//Initializes the information in the Table
 		resultsTable.addContainerProperty("Name", String.class, "none");
 		resultsTable.addContainerProperty("Distance", Double.class, "none");
 		resultsTable.addContainerProperty("Ray Param", Double.class, "none");
@@ -40,7 +52,7 @@ public class TimeCalcView extends TimeCalcComponent {
 		modelBox.addItem("ak135");
 		modelBox.addItem("qdt");
 		
-		//Creats the action to be performed when the submit button is clicked 
+		//Creates the action to be performed when the submit button is clicked 
 		submitButton.addClickListener(new Button.ClickListener() {
 		    /**
 			 * 
@@ -48,7 +60,25 @@ public class TimeCalcView extends TimeCalcComponent {
 			private static final long serialVersionUID = -5638665006501170673L;
 
 			public void buttonClick(ClickEvent event) {
-				processForm();
+				
+				
+				//Checks for valid arch distance
+				if(Double.parseDouble(distanceField.getValue()) > 180)
+				{
+					Notification distanceError = new Notification("Distance over 180",Notification.TYPE_WARNING_MESSAGE);
+					distanceError.show(Page.getCurrent());
+					
+				}
+				
+				//Checks for depth and notifies user if one is not present 
+				else if(depthField.getValue().equals(""))
+				{
+					Notification distanceError = new Notification("Please enter a depth",Notification.TYPE_WARNING_MESSAGE);
+					distanceError.show(Page.getCurrent());
+				}
+				else{
+					processForm();
+				}
 		    }			
 		});
 		
@@ -59,7 +89,7 @@ public class TimeCalcView extends TimeCalcComponent {
 	private void processForm() {
 		try {
     		System.out.println(modelBox.getValue().toString());
-	
+    		
 			ATCTime atct = new ATCTime(Double.parseDouble(distanceField.getValue()),
 									   Double.parseDouble(depthField.getValue()), 
 									   modelBox.getValue().toString());
@@ -67,7 +97,7 @@ public class TimeCalcView extends TimeCalcComponent {
 			
 			BeanContainer<String, Arrival> arrivalTimes = new BeanContainer<String, Arrival>(Arrival.class);
 			
-			//Iterates though the time table and adds each arrial time to the table
+			//Iterates though the time table and adds each arrival time to the table
 			for(int i = 0; i < atct.getTable().size(); i ++)
 			{
 				arrivalTimes.setBeanIdProperty("name");
@@ -90,12 +120,12 @@ public class TimeCalcView extends TimeCalcComponent {
 			resultsTable.setWidth("100.0%");
 			resultsTable.setHeight("100.0%");
 			
-			//selects the values from the arrial to be displyed in the table
-			resultsTable.setVisibleColumns(new Object[]{"name","dist","rayParamDeg", "time"});
+			//selects the values from the arrival to be displayed in the table
+			resultsTable.setVisibleColumns(new Object[]{"name","rayParamDeg", "time"});
 			
-			//formats the tables name per the item in the colum being added
+			//formats the tables name per the item in the column being added
 			resultsTable.setColumnHeader("name", "Name");
-			resultsTable.setColumnHeader("dist", "Dist (km)");
+			//resultsTable.setColumnHeader("dist", "Dist (km)");
 			resultsTable.setColumnHeader("rayParamDeg", "Ray Param");
 			resultsTable.setColumnHeader("time", "Time");
 			
