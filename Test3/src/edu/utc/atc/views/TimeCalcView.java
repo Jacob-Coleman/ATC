@@ -40,7 +40,6 @@ public class TimeCalcView extends TimeCalcComponent {
 		
 		//Initializes the information in the Table
 		resultsTable.addContainerProperty("Name", String.class, "none");
-		resultsTable.addContainerProperty("Distance", Double.class, "none");
 		resultsTable.addContainerProperty("Ray Param", Double.class, "none");
 		resultsTable.addContainerProperty("Time", Double.class, "none");
 		
