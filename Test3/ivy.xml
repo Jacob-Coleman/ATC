@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!DOCTYPE ivy-module [
-	<!ENTITY vaadin.version "7.3.9">
+	<!ENTITY vaadin.version "7.3.10">
 ]>
 <ivy-module version="2.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -27,7 +27,7 @@
 		<dependency org="com.vaadin" name="vaadin-push" rev="&vaadin.version;" />	
 
 		<!-- Servlet 3.0 API -->
-		<dependency org="javax.servlet" name="javax.servlet-api" rev="3.1" conf="nodeploy->default" />
+		<dependency org="javax.servlet" name="javax.servlet-api" rev="3.0.1" conf="nodeploy->default" />
 
 		<!-- TestBench 4 -->
 		<dependency org="com.vaadin" name="vaadin-testbench-api" rev="latest.release" conf="nodeploy -> default" />

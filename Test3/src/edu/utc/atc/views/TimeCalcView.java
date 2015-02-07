@@ -60,22 +60,75 @@ public class TimeCalcView extends TimeCalcComponent {
 
 			public void buttonClick(ClickEvent event) {
 				
+				boolean isValidDistance = true;
+				boolean isValidDepth = true;
+				boolean isValidModel = true;
 				
 				//Checks for valid arch distance
-				if(Double.parseDouble(distanceField.getValue()) > 180)
-				{
-					Notification distanceError = new Notification("Distance over 180",Notification.TYPE_WARNING_MESSAGE);
-					distanceError.show(Page.getCurrent());
+				try {
+					//Checks if distance is below 180 
+					if(Double.parseDouble(distanceField.getValue()) > 180)
+					{
+						Notification distanceError = new Notification("Distance over 180",Notification.TYPE_WARNING_MESSAGE);
+						distanceError.show(Page.getCurrent());
+						isValidDistance = false;
+						
+					}
+					//Checks if the distance field is empty
+					else if(distanceField.getValue().isEmpty())
+					{
+						Notification distanceError = new Notification("Please Enter a distance",Notification.TYPE_WARNING_MESSAGE);
+						distanceError.show(Page.getCurrent());
+						isValidDistance = false;
+					}
 					
+					//Catches exception from parse error and tells user not valid 
+				} catch(NumberFormatException e){
+					Notification distanceError = new Notification("Not a valid number in dstance",Notification.TYPE_WARNING_MESSAGE);
+					distanceError.show(Page.getCurrent());
+					isValidDistance = false;
 				}
 				
+				
+				
+				
 				//Checks for depth and notifies user if one is not present 
-				else if(depthField.getValue().equals(""))
-				{
-					Notification distanceError = new Notification("Please enter a depth",Notification.TYPE_WARNING_MESSAGE);
+				try{
+					if(isValidDistance == true && Double.parseDouble(depthField.getValue()) > 6400)
+					{ 
+						Notification distanceError = new Notification("Not a valid Depth",Notification.TYPE_WARNING_MESSAGE);
+						distanceError.show(Page.getCurrent());
+						isValidDepth = false;
+						
+					}
+					else if( isValidDistance == true && depthField.getValue().isEmpty())
+					{
+						Notification distanceError = new Notification("Please Enter a depth",Notification.TYPE_WARNING_MESSAGE);
+						distanceError.show(Page.getCurrent());
+						isValidDepth = false;
+					}
+					
+				} catch(NumberFormatException e){
+					Notification distanceError = new Notification("Not a valid number in depth",Notification.TYPE_WARNING_MESSAGE);
 					distanceError.show(Page.getCurrent());
+					isValidDepth = false;
 				}
-				else{
+				
+				
+				
+				
+				
+				
+				//Checks if a model box is selected 
+				if(isValidDepth == true && modelBox.getValue() == null)
+				{
+					Notification distanceError = new Notification("Please select a model",Notification.TYPE_WARNING_MESSAGE);
+					distanceError.show(Page.getCurrent());
+					isValidModel = false;
+				}
+				
+				//if all information is properly filled then process will occur
+				if (isValidDistance == true && isValidDepth == true && isValidModel == true ){
 					processForm();
 				}
 		    }			
@@ -144,7 +197,7 @@ public class TimeCalcView extends TimeCalcComponent {
 
 	}
 	
-	
+
 	
 	
 	

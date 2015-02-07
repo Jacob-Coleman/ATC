@@ -1,10 +1,13 @@
 package edu.utc.atc.views;
 
-import edu.utc.atc.TimeCalcCompositeOLD;
 import edu.utc.atc.components.TabComponent;
-import edu.utc.atc.components.TimeCalcComponent;
 
 public class TabView extends TabComponent{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -8927740681632038714L;
 
 	public TabView ()
 	{
