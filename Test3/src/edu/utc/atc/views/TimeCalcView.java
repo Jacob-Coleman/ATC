@@ -120,7 +120,7 @@ public class TimeCalcView extends TimeCalcComponent {
 				
 				
 				//Checks if a model box is selected 
-				if(isValidDepth == true && modelBox.getValue() == null)
+				if(isValidDepth == true && isValidDistance == true && modelBox.getValue() == null)
 				{
 					Notification distanceError = new Notification("Please select a model",Notification.TYPE_WARNING_MESSAGE);
 					distanceError.show(Page.getCurrent());
