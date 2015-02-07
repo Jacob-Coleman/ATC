@@ -42,7 +42,7 @@ public class TimeCalcView extends TimeCalcComponent {
 		resultsTable.addContainerProperty("Name", String.class, "none");
 		resultsTable.addContainerProperty("Ray Param", Double.class, "none");
 		resultsTable.addContainerProperty("Time", Double.class, "none");
-		
+		 
 		
 		
 		//Sets the possible models in the model box

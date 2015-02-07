@@ -19,8 +19,8 @@ public class ATCTime {
 		atcTime = new TauP_Time(model);
 		
 		atcTime.init();
-		atcTime.parsePhaseList("P,Pdiff,S,Sdiff,PKP,SKS");
-		//atcTime.parsePhaseList("p,s,P,S,Pn,Sn,PcP,ScS,Pdiff,Sdiff,PKP,SKS,PKiKP,SKiKS,PKIKP,SKIKS");
+		//atcTime.parsePhaseList("P,Pdiff,S,Sdiff,PKP,SKS");
+		atcTime.parsePhaseList("p,s,P,S,Pn,Sn,PcP,ScS,Pdiff,Sdiff,PKP,SKS,PKiKP,SKiKS,PKIKP,SKIKS");
 		atcTime.depthCorrect(depth);
 		
 		//For some reason the model has to be reset after being instantiated or it reverts to iasp91

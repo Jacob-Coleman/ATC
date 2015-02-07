@@ -11,7 +11,10 @@ public class TabView extends TabComponent{
 
 	public TabView ()
 	{
+		//Adds View to the first tab on the tab sheet
+		tabSheet_Tab1.addComponent(new QueryView());
 		//Adds View to the second tab on the tab sheet
 		tabSheet_Tab2.addComponent(new TimeCalcView());
+		
 	}
 }
