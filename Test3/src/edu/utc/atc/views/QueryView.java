@@ -42,10 +42,12 @@ public class QueryView extends QueryComponent {
 				NumberBoxCheckComponent nbc; 
 					
 				isValidLat =  new NumberBoxCheckComponent(latField.getValue(), -180, 180, "not within Paramaters", "Plese enter a Latitude", "Not a Latitude").getIsValid();
-	
+				
+				if(isValidLat == true)
 				isValidLong =  new NumberBoxCheckComponent(longField.getValue(), -180, 180, "not within Paramaters", "Plese enter a Longitude", "Not a Longitude").getIsValid();
 				
-				isValidMax =  new NumberBoxCheckComponent(maxMagField.getValue(), 0, 8.99999999999999999999999, "not within Paramaters", "Plese enter a Latitude", "Not a Magnitude").getIsValid();
+				if(isValidLong == true)
+				isValidMax =  new NumberBoxCheckComponent(maxMagField.getValue(), 0, 8.99999999999999999999999, "not within Paramaters", "Plese enter a Magnitude", "Not a Magnitude").getIsValid();
 				
 				
 				if(isValidLong == true && isValidLat == true && isValidMax == true)
