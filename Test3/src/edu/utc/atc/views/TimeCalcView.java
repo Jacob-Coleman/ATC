@@ -94,7 +94,7 @@ public class TimeCalcView extends TimeCalcComponent {
 				
 				//Checks for depth and notifies user if one is not present 
 				try{
-					if(isValidDistance == true && Double.parseDouble(depthField.getValue()) > 6400)
+					if(isValidDistance == true && Double.parseDouble(depthField.getValue()) > 6400 )
 					{ 
 						Notification distanceError = new Notification("Not a valid Depth",Notification.TYPE_WARNING_MESSAGE);
 						distanceError.show(Page.getCurrent());
