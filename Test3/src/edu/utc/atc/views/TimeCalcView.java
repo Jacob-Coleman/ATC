@@ -24,6 +24,7 @@ import com.vaadin.ui.Button.ClickEvent;
 import edu.sc.seis.TauP.Arrival;
 import edu.sc.seis.TauP.TauModelException;
 import edu.utc.atc.ATCTime;
+import edu.utc.atc.components.InputValidatorComponent;
 import edu.utc.atc.components.TimeCalcComponent;
 
 public class TimeCalcView extends TimeCalcComponent {
@@ -60,10 +61,17 @@ public class TimeCalcView extends TimeCalcComponent {
 
 			public void buttonClick(ClickEvent event) {
 				
-				boolean isValidDistance = true;
-				boolean isValidDepth = true;
-				boolean isValidModel = true;
+				boolean isValidDistance = false;
+				boolean isValidDepth = false;
+				boolean isValidModel = false;
 				
+				isValidDistance =  new InputValidatorComponent(distanceField.getValue(), -180, 180, "Below valid distance","Above valid distance", "Plese enter a distance", "Not a number").getIsValid();
+				if(isValidDistance == true)
+				isValidDepth =  new InputValidatorComponent(depthField.getValue(), 0, 6378, "Below valid depth","Above valid depth", "Plese enter a depth", "Not a number").getIsValid();
+				
+				
+				/**
+				 * 
 				//Checks for valid arch distance
 				try {
 					//Checks if distance is below 180 
@@ -114,7 +122,7 @@ public class TimeCalcView extends TimeCalcComponent {
 					isValidDepth = false;
 				}
 				
-				
+				**/
 				
 				
 				

@@ -3,11 +3,11 @@ package edu.utc.atc.components;
 import com.vaadin.server.Page;
 import com.vaadin.ui.Notification;
 
-public class NumberBoxCheckComponent {
+public class InputValidatorComponent {
 	
 	Boolean isValid = true;
 	
-	public NumberBoxCheckComponent(String inputText, double minValue, double maxValue,String notWithinParamaters, String noValueError, String notValidNumberErrorMessage){
+	public InputValidatorComponent(String inputText, double minValue, double maxValue,String belowMinValueError, String aboveMaxValueError, String noValueError, String notValidNumberErrorMessage){
 		
 		
 		
@@ -21,14 +21,14 @@ public class NumberBoxCheckComponent {
 			
 			else if(Double.parseDouble(inputText) < minValue)
 			{ 
-				Notification error = new Notification(notWithinParamaters,Notification.TYPE_WARNING_MESSAGE);
+				Notification error = new Notification(belowMinValueError,Notification.TYPE_WARNING_MESSAGE);
 				error.show(Page.getCurrent());
 				isValid = false;
 				
 			}
 			else if (Double.parseDouble(inputText) > maxValue )
 			{ 
-				Notification error = new Notification(notWithinParamaters,Notification.TYPE_WARNING_MESSAGE);
+				Notification error = new Notification(aboveMaxValueError,Notification.TYPE_WARNING_MESSAGE);
 				error.show(Page.getCurrent());
 				isValid = false;
 			}
