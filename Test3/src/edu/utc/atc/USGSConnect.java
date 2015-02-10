@@ -31,8 +31,10 @@ public class USGSConnect  {
 		        char[] chars = new char[1024];
 		        while ((read = reader.read(chars)) != -1)
 		            buffer.append(chars, 0, read); 
-
-		        System.out.println( buffer.toString());
+		        
+		 
+		        QueryReader qr = new QueryReader(buffer.toString());
+		        qr.seperateEarthquake();
 		    } finally {
 		        if (reader != null)
 		            reader.close();
