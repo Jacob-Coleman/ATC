@@ -7,6 +7,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
+import com.sun.javafx.scene.paint.GradientUtils.Point;
+
 public class QueryReader 
 {
 	private String query;
@@ -28,7 +30,11 @@ public class QueryReader
 			JSONObject g = (JSONObject) properties.get("geometry");
 		
 			System.out.println(f.names());
-			System.out.println(g.getString("coordinates"));
+			JSONArray p = (JSONArray) g.get("coordinates");
+			Double longitude = p.getDouble(0);
+			Double latitude = p.getDouble(1);
+			Double depth = p.getDouble(2);
+			System.out.println("Longitude"+" "+longitude+" "+"latitude"+" "+latitude+" "+"depth"+" "+depth);
 //			JSONObject meta = (JSONObject) ob.get("meta");
 //			System.out.println(meta.names());
 	
