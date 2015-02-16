@@ -15,6 +15,7 @@ public class Earthquake {
 		longitude = lon;
 		depth = d;
 		magnitude = m;
+		url = u;
 		
 	}
 	
