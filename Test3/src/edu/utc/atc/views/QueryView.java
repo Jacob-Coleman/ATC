@@ -165,9 +165,16 @@ public class QueryView extends QueryComponent {
 											currentEarthquakes.getQuakes().get(i).getUrl()));
 		}
 		
+		//Removes current table from view
 		horizontalSplitPanel_1.removeComponent(quakeTable);
+		
+		//creates a new table with current values
 		quakeTable = new Table("results", earthquakes);
+		
+		//sets the values and order of values to show in the table
 		quakeTable.setVisibleColumns(new Object[] {"title", "latitude","longitude","magnitude","depth","url"});
+		
+		//Sets the names of the values to diaply in the table columns
 		quakeTable.setColumnHeader("title", "Title");
 		quakeTable.setColumnHeader("latitude", "Latitude");
 		quakeTable.setColumnHeader("longitude", "Longitude");
