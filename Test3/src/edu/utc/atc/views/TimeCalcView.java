@@ -35,6 +35,9 @@ public class TimeCalcView extends TimeCalcComponent {
 
 	public TimeCalcView()
 	{
+		
+		distanceField.setValue(Double.toString(TabView.distance));
+		
 		//Sets the width of the slit panels in the TimeCalcComponent
 		horizontalSplitPanel_1.setMaxSplitPosition(200, UNITS_PIXELS);
 		horizontalSplitPanel_1.setMinSplitPosition(150, UNITS_PIXELS);

@@ -3,7 +3,11 @@ package edu.utc.atc.views;
 import edu.utc.atc.components.TabComponent;
 
 public class TabView extends TabComponent{
-
+	public static double longitude;
+	public static double latitude;
+	public static double distance;
+	
+	
 	/**
 	 * 
 	 */
