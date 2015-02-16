@@ -70,63 +70,6 @@ public class TimeCalcView extends TimeCalcComponent {
 				isValidDepth =  new InputValidatorComponent(depthField.getValue(), 0, 6378, "Below valid depth","Above valid depth", "Plese enter a depth", "Not a number").getIsValid();
 				
 				
-				/**
-				 * 
-				//Checks for valid arch distance
-				try {
-					//Checks if distance is below 180 
-					if(Double.parseDouble(distanceField.getValue()) > 180)
-					{
-						Notification distanceError = new Notification("Distance over 180",Notification.TYPE_WARNING_MESSAGE);
-						distanceError.show(Page.getCurrent());
-						isValidDistance = false;
-						
-					}
-					//Checks if the distance field is empty
-					else if(distanceField.getValue().isEmpty())
-					{
-						Notification distanceError = new Notification("Please Enter a distance",Notification.TYPE_WARNING_MESSAGE);
-						distanceError.show(Page.getCurrent());
-						isValidDistance = false;
-					}
-					
-					//Catches exception from parse error and tells user not valid 
-				} catch(NumberFormatException e){
-					Notification distanceError = new Notification("Not a valid number in dstance",Notification.TYPE_WARNING_MESSAGE);
-					distanceError.show(Page.getCurrent());
-					isValidDistance = false;
-				}
-				
-				
-				
-				
-				//Checks for depth and notifies user if one is not present 
-				try{
-					if(isValidDistance == true && Double.parseDouble(depthField.getValue()) > 6400 )
-					{ 
-						Notification distanceError = new Notification("Not a valid Depth",Notification.TYPE_WARNING_MESSAGE);
-						distanceError.show(Page.getCurrent());
-						isValidDepth = false;
-						
-					}
-					else if( isValidDistance == true && depthField.getValue().isEmpty())
-					{
-						Notification distanceError = new Notification("Please Enter a depth",Notification.TYPE_WARNING_MESSAGE);
-						distanceError.show(Page.getCurrent());
-						isValidDepth = false;
-					}
-					
-				} catch(NumberFormatException e){
-					Notification distanceError = new Notification("Not a valid number in depth",Notification.TYPE_WARNING_MESSAGE);
-					distanceError.show(Page.getCurrent());
-					isValidDepth = false;
-				}
-				
-				**/
-				
-				
-				
-				
 				//Checks if a model box is selected 
 				if(isValidDepth == true && isValidDistance == true && modelBox.getValue() == null)
 				{
