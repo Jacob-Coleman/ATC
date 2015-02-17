@@ -220,7 +220,10 @@ public class QueryView extends QueryComponent {
 					Property<Double> longitudeProperty  = quakeTable.getContainerProperty(quakeTable.getValue(), "longitude");
 					TabView.longitude = longitudeProperty.getValue();
 					
-					//calculateDistance(latitudeProperty.getValue(),longitudeProperty.getValue());
+					Property<Double> depthProperty  = quakeTable.getContainerProperty(quakeTable.getValue(), "depth");
+					TabView.depth = depthProperty.getValue();
+					
+					calculateDistance(latitudeProperty.getValue(),longitudeProperty.getValue());
 					
 					
 				}
@@ -234,31 +237,36 @@ public class QueryView extends QueryComponent {
 		
 		
 	}
+
 	
-	
-	//Doesnt work properly
-	public void calculateDistance(double quakeLat, double quakeLon){
-		 final int R = 6371; // Radius of the earth
+	private double calculateDistance(double quakeLat, double quakeLon){
+		double dist = rad2deg(Math.acos( Math.cos(deg2rad(90-myLat))
+								* Math.cos(deg2rad(90-quakeLat))
+								+ Math.sin(deg2rad(90 - myLat))
+								* Math.sin(deg2rad(90-quakeLat))
+								* Math.cos(deg2rad(myLon-quakeLon)))
 
-		    Double latDistance = deg2rad(quakeLat - myLat);
-		    Double lonDistance = deg2rad(quakeLon - myLon);
-		    Double a = Math.sin(latDistance / 2) * Math.sin(latDistance / 2)
-		            + Math.cos(deg2rad(myLat)) * Math.cos(deg2rad(quakeLat))
-		            * Math.sin(lonDistance / 2) * Math.sin(lonDistance / 2);
-		    Double c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-		   // double distance = R * c * 1000; // convert to meters
-
-		    //double height = 0 - 0;
-		    //distance = Math.pow(distance, 2) + Math.pow(height, 2);
-		    TabView.distance = Math.sqrt(c);
-		}
-
+				);
 		
-		
-	
-	private double deg2rad(double deg) {
-	    return (deg * Math.PI / 180.0);
+		TabView.distance = dist;
+	    System.out.println("Distance " + dist);
+
+		return dist;
 	}
 
+		/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+		/*::  This function converts decimal degrees to radians             :*/
+		/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+		private double deg2rad(double deg) {
+		  return (deg * Math.PI / 180.0);
+		}
+		 
+		/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+		/*::  This function converts radians to decimal degrees             :*/
+		/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+		private double rad2deg(double rad) {
+		  return (rad * 180 / Math.PI);
+
+		}
 	
 }

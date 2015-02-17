@@ -6,7 +6,10 @@ import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinServlet;
+import com.vaadin.ui.TabSheet;
 import com.vaadin.ui.UI;
+import com.vaadin.ui.TabSheet.SelectedTabChangeEvent;
+
 import edu.utc.atc.views.TabView;
 
 @SuppressWarnings("serial")
@@ -21,6 +24,7 @@ public class ATCServlet extends UI {
 	@Override
 	protected void init(VaadinRequest request) {
 		TabView tv1 = new TabView();
+		
 		setContent(tv1);
 		
 

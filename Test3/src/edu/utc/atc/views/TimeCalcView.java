@@ -28,15 +28,13 @@ import edu.utc.atc.components.InputValidatorComponent;
 import edu.utc.atc.components.TimeCalcComponent;
 
 public class TimeCalcView extends TimeCalcComponent {
-
+	
 	
 	private static final long serialVersionUID = 7323385200117791247L;
 
 
 	public TimeCalcView()
 	{
-		
-		distanceField.setValue(Double.toString(TabView.distance));
 		
 		//Sets the width of the slit panels in the TimeCalcComponent
 		horizontalSplitPanel_1.setMaxSplitPosition(200, UNITS_PIXELS);
@@ -66,7 +64,9 @@ public class TimeCalcView extends TimeCalcComponent {
 				
 				boolean isValidDistance = false;
 				boolean isValidDepth = false;
-				boolean isValidModel = false;
+				boolean isValidModel = true;
+				
+				
 				
 				isValidDistance =  new InputValidatorComponent(distanceField.getValue(), -180, 180, "Below valid distance","Above valid distance", "Plese enter a distance", "Not a number").getIsValid();
 				if(isValidDistance == true)
@@ -76,14 +76,18 @@ public class TimeCalcView extends TimeCalcComponent {
 				//Checks if a model box is selected 
 				if(isValidDepth == true && isValidDistance == true && modelBox.getValue() == null)
 				{
+					
 					Notification distanceError = new Notification("Please select a model",Notification.TYPE_WARNING_MESSAGE);
 					distanceError.show(Page.getCurrent());
 					isValidModel = false;
 				}
 				
+				
+				
 				//if all information is properly filled then process will occur
 				if (isValidDistance == true && isValidDepth == true && isValidModel == true ){
 					processForm();
+					System.out.println("OUT HERE ");
 				}
 		    }			
 		});
@@ -152,7 +156,14 @@ public class TimeCalcView extends TimeCalcComponent {
 	}
 	
 
+	public void setDistance(double d){
+		distanceField.setValue(Double.toString(d));
+
+	}
 	
+	public void setDepth(double d){
+		depthField.setValue(Double.toString(d));
+	}
 	
 	
 }
