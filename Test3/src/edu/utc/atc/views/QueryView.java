@@ -86,7 +86,7 @@ public class QueryView extends QueryComponent {
 																								"Not a number in radius box").getIsValid();
 
 				if(isValidRadius == true)
-				isValidMax =  new InputValidatorComponent(maxMagField.getValue(), 0, 10, "Below valid longitude",
+				isValidMax =  new InputValidatorComponent(minMagField.getValue(), 0, 10, "Below valid longitude",
 																						 "Above valid magnitude",
 																						 "Plese enter a magnitude", 
 																						 "Not a number magnitude box").getIsValid();
@@ -106,7 +106,7 @@ public class QueryView extends QueryComponent {
 					paramaterList.add("latitude=" + latField.getValue());
 					paramaterList.add("longitude=" + longField.getValue());
 					paramaterList.add("maxradius=" + radiusField.getValue());
-					paramaterList.add("minmagnitude=" + maxMagField.getValue());
+					paramaterList.add("minmagnitude=" + minMagField.getValue());
 					
 				
 					
