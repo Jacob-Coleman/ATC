@@ -249,6 +249,8 @@ public class QueryView extends QueryComponent {
 				);
 		
 		TabView.distance = dist;
+		
+		
 	    System.out.println("Distance " + dist);
 
 		return dist;

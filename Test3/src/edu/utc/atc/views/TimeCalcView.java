@@ -52,6 +52,8 @@ public class TimeCalcView extends TimeCalcComponent {
 		modelBox.addItem("prem");
 		modelBox.addItem("ak135");
 		modelBox.addItem("qdt");
+		modelBox.setTextInputAllowed(false);
+		modelBox.setNullSelectionAllowed(false);
 		
 		//Creates the action to be performed when the submit button is clicked 
 		submitButton.addClickListener(new Button.ClickListener() {
@@ -67,8 +69,10 @@ public class TimeCalcView extends TimeCalcComponent {
 				boolean isValidModel = true;
 				
 				
-				
+				//Checks for valid distance and gives error codes if they exists 
 				isValidDistance =  new InputValidatorComponent(distanceField.getValue(), -180, 180, "Below valid distance","Above valid distance", "Plese enter a distance", "Not a number").getIsValid();
+				
+				//Checks for valid distance and gives error codes if they exists
 				if(isValidDistance == true)
 				isValidDepth =  new InputValidatorComponent(depthField.getValue(), 0, 6378, "Below valid depth","Above valid depth", "Plese enter a depth", "Not a number").getIsValid();
 				
@@ -163,6 +167,12 @@ public class TimeCalcView extends TimeCalcComponent {
 	
 	public void setDepth(double d){
 		depthField.setValue(Double.toString(d));
+	}
+	public void setLatitude(double l){
+		lonField.setValue(Double.toString(l));
+	}
+	public void setLongitude(double l){
+		latField.setValue(Double.toString(l));
 	}
 	
 	

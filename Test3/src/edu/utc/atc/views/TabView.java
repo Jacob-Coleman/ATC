@@ -8,12 +8,13 @@ import com.vaadin.ui.TabSheet.SelectedTabChangeEvent;
 import edu.utc.atc.components.TabComponent;
 
 public class TabView extends TabComponent{
-	public static double longitude;
 	public static double latitude;
+	public static double longitude;
 	public static double distance;
 	public static double depth;
 	private QueryView qv;
 	private TimeCalcView tcv;
+	private GoogleMapView gm;
 	
 	
 	/**
@@ -30,6 +31,8 @@ public class TabView extends TabComponent{
 			   //Sets properties in TimeCalcView component and updates each time the ATC view is clicked in the tab
 	           tcv.setDistance(distance);
 	           tcv.setDepth(depth);
+	           tcv.setLatitude(latitude);
+	           tcv.setLongitude(longitude);
 
 			}
 	        });
@@ -40,6 +43,8 @@ public class TabView extends TabComponent{
 		//Adds View to the second tab on the tab sheet
 		tcv = new TimeCalcView();
 		tabSheet_Tab2.addComponent(tcv);
+		gm = new GoogleMapView();
+		tabSheet_Tab3.addComponent(gm);
 		
 	}
 }
