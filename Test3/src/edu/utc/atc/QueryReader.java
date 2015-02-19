@@ -25,6 +25,7 @@ public class QueryReader
 	String url;
 	double mag;
 	String title;
+	long time;
 	
 	private List<Earthquake> quakes = new  LinkedList();
 	
@@ -57,10 +58,12 @@ public class QueryReader
 					url = propertiesObject.getString("url");
 					mag = propertiesObject.getDouble("mag");
 					title = propertiesObject.getString("title");
+					time = propertiesObject.getLong("time");
+					
 					
 					System.out.println("Title " + title + " Longitude"+" "+longitude+" "+" latitude"+" "+latitude+" "+" depth"+" "+depth +" mag"+ mag + " url"+" "+url );
 					
-					quakes.add(new Earthquake(title,latitude,longitude,depth,mag,url));
+					quakes.add(new Earthquake(title,time,latitude,longitude,depth,mag,url));
 					
 				}
 				

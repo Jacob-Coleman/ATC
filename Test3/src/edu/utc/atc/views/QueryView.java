@@ -172,6 +172,7 @@ public class QueryView extends QueryComponent {
 		{
 			earthquakes.setBeanIdProperty("title");
 			earthquakes.addBean(new Earthquake(currentEarthquakes.getQuakes().get(i).getTitle(),
+											currentEarthquakes.getQuakes().get(i).getTime(),
 											currentEarthquakes.getQuakes().get(i).getLatitude(),
 											currentEarthquakes.getQuakes().get(i).getLongitude(),
 											currentEarthquakes.getQuakes().get(i).getDepth(),
@@ -186,10 +187,11 @@ public class QueryView extends QueryComponent {
 		quakeTable = new Table("results", earthquakes);
 		
 		//sets the values and order of values to show in the table
-		quakeTable.setVisibleColumns(new Object[] {"title", "latitude","longitude","magnitude","depth","url"});
+		quakeTable.setVisibleColumns(new Object[] {"title","time", "latitude","longitude","magnitude","depth","url"});
 		
 		//Sets the names of the values to diaply in the table columns
 		quakeTable.setColumnHeader("title", "Title");
+		quakeTable.setColumnHeader("time", "Time");
 		quakeTable.setColumnHeader("latitude", "Latitude");
 		quakeTable.setColumnHeader("longitude", "Longitude");
 		quakeTable.setColumnHeader("magnitude", "Magnitude");
