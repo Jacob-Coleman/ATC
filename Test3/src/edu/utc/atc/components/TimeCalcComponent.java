@@ -81,7 +81,7 @@ public class TimeCalcComponent extends CustomComponent {
 		// horizontalSplitPanel_1
 		horizontalSplitPanel_1 = buildHorizontalSplitPanel_1();
 		mainLayout.addComponent(horizontalSplitPanel_1,
-				"top:0.0px;right:40.0px;bottom:0.0px;left:0.0px;");
+				"top:0.0px;right:0.0px;bottom:0.0px;left:0.0px;");
 		
 		return mainLayout;
 	}
@@ -120,7 +120,7 @@ public class TimeCalcComponent extends CustomComponent {
 		
 		// latField
 		latField = new TextField();
-		latField.setCaption("Station coordinates from query");
+		latField.setCaption("Selected earthquake coordinates");
 		latField.setImmediate(false);
 		latField.setWidth("100.0%");
 		latField.setHeight("-1px");

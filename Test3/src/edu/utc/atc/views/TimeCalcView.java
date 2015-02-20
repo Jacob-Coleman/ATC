@@ -37,8 +37,8 @@ public class TimeCalcView extends TimeCalcComponent {
 	{
 		
 		//Sets the width of the slit panels in the TimeCalcComponent
-		horizontalSplitPanel_1.setMaxSplitPosition(200, UNITS_PIXELS);
-		horizontalSplitPanel_1.setMinSplitPosition(150, UNITS_PIXELS);
+		horizontalSplitPanel_1.setMaxSplitPosition(210, UNITS_PIXELS);
+		horizontalSplitPanel_1.setMinSplitPosition(250, UNITS_PIXELS);
 		
 		//Initializes the information in the Table
 		resultsTable.addContainerProperty("Name", String.class, "none");
