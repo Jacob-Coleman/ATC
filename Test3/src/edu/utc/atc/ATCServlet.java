@@ -6,9 +6,7 @@ import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.server.VaadinServlet;
-import com.vaadin.ui.TabSheet;
 import com.vaadin.ui.UI;
-import com.vaadin.ui.TabSheet.SelectedTabChangeEvent;
 
 import edu.utc.atc.views.TabView;
 
@@ -17,7 +15,7 @@ import edu.utc.atc.views.TabView;
 public class ATCServlet extends UI {
 
 	@WebServlet(value = "/*", asyncSupported = true)
-	@VaadinServletConfiguration(productionMode = false, ui = ATCServlet.class, widgetset = "edu.utc.atc.widgetset.Test3Widgetset")
+	@VaadinServletConfiguration(productionMode = false, ui = ATCServlet.class)
 	public static class Servlet extends VaadinServlet {
 	}
 
