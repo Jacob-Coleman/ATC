@@ -1,7 +1,0 @@
-Manifest-Version: 1.0
-Vaadin-Package-Version: 1
-Vaadin-Addon: googlemaps-1.0.0.jar
-Vaadin-License-Title: Apache License 2.0
-Implementation-Vendor: ${project.organization.name}
-Implementation-Title: GoogleMaps Add-on
-Implementation-Version: 1.0.0
