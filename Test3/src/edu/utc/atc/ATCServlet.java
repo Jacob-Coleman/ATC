@@ -17,7 +17,7 @@ import edu.utc.atc.views.TabView;
 public class ATCServlet extends UI {
 
 	@WebServlet(value = "/*", asyncSupported = true)
-	@VaadinServletConfiguration(productionMode = false, ui = ATCServlet.class)
+	@VaadinServletConfiguration(productionMode = false, ui = ATCServlet.class, widgetset = "edu.utc.atc.widgetset.Test3Widgetset")
 	public static class Servlet extends VaadinServlet {
 	}
 
