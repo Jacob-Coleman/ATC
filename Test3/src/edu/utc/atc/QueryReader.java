@@ -1,6 +1,7 @@
 package edu.utc.atc;
 
 
+import java.sql.Date;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -60,10 +61,12 @@ public class QueryReader
 					title = propertiesObject.getString("title");
 					time = propertiesObject.getLong("time");
 					
+					Date quakeTime = new Date(time);
+					
 					
 					System.out.println("Title " + title + " Longitude"+" "+longitude+" "+" latitude"+" "+latitude+" "+" depth"+" "+depth +" mag"+ mag + " url"+" "+url );
 					
-					quakes.add(new Earthquake(title,time,latitude,longitude,depth,mag,url));
+					quakes.add(new Earthquake(title,quakeTime,latitude,longitude,depth,mag,url));
 					
 				}
 				

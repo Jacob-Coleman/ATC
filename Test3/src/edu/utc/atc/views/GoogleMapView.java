@@ -8,6 +8,7 @@ import edu.utc.atc.components.GoogleMapComponent;
 
 public class GoogleMapView extends GoogleMapComponent {
 	
+
 	public GoogleMapView(){
 		
 		

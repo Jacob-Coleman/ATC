@@ -1,5 +1,9 @@
 package edu.utc.atc;
 
+import java.sql.Date;
+
+import javafx.scene.chart.PieChart.Data;
+
 
 public class Earthquake {
 	double longitude;
@@ -8,7 +12,9 @@ public class Earthquake {
 	String url;
 	double magnitude;
 	String title;
-	public Earthquake(String t, double lat, double lon, double d, double m, String u)
+	Date time;
+	
+	public Earthquake(String t, Date ti, double lat, double lon, double d, double m, String u)
 	{
 		title = t;
 		latitude = lat;
@@ -16,9 +22,12 @@ public class Earthquake {
 		depth = d;
 		magnitude = m;
 		url = u;
+		time = ti;
 		
 	}
-	
+	public Date getTime(){
+		return time;
+	}
 	public String getTitle(){
 		return title;
 	}
