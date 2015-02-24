@@ -1,6 +1,7 @@
 package edu.utc.atc;
 
-import java.sql.Date;
+import java.util.Date;
+import java.text.DecimalFormat;
 
 import javafx.scene.chart.PieChart.Data;
 
@@ -10,11 +11,11 @@ public class Earthquake {
 	double latitude;
 	double depth;
 	String url;
-	double magnitude;
+	String magnitude;
 	String title;
 	Date time;
 	
-	public Earthquake(String t, Date ti, double lat, double lon, double d, double m, String u)
+	public Earthquake(String t, Date ti, double lat, double lon, double d, String m, String u)
 	{
 		title = t;
 		latitude = lat;
@@ -40,8 +41,10 @@ public class Earthquake {
 	public double getDepth(){
 		return depth;
 	}
-	public double getMagnitude(){
+	public String getMagnitude(){
+		
 		return magnitude;
+		
 	}
 	public String getUrl(){
 		return url;
