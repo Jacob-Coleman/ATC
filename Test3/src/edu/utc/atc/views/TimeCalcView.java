@@ -162,7 +162,6 @@ public class TimeCalcView extends TimeCalcComponent {
 
 	public void setDistance(double d){
 		distanceField.setValue(Double.toString(d));
-
 	}
 	
 	public void setDepth(double d){

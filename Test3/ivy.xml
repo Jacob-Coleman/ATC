@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!DOCTYPE ivy-module [
-	<!ENTITY vaadin.version "7.3.10">
+	<!ENTITY vaadin.version "7.4.0">
 ]>
 <ivy-module version="2.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -45,13 +45,26 @@
 		<dependency org="com.vaadin" name="vaadin-client-compiler"
 			rev="&vaadin.version;" conf="widgetset-compile->default" />
 			
+			<!-- JSON parser  -->
+	<dependency org="org.json" name="json" rev="20141113"/>
+		
 		<!-- GoogleMaps Vaadin Addon -->
+
 		<dependency org="com.vaadin.tapio" name="googlemaps" rev="1.0.0" />
-			
 		
+		<!-- Google GWT User Plugin -->
+		
+		<dependency org="com.google.gwt" name="gwt-user" rev="2.7.0"/>
+		
+		<!-- Google GWT Server Plugin -->
+		
+		<dependency org="com.google.gwt" name="gwt-servlet" rev="2.7.0"/>
+		
+		<!-- Google GWT Dev Plugin -->
+		
+		<dependency org="com.google.gwt" name="gwt-dev" rev="2.7.0"/>
 
 		
-
 				
 	</dependencies>
 	

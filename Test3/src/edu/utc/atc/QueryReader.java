@@ -1,9 +1,16 @@
 package edu.utc.atc;
 
 
-import java.sql.Date;
+import java.util.Date;
+import java.util.Calendar;
 import java.util.LinkedList;
 import java.util.List;
+
+
+
+
+
+import java.util.TimeZone;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -28,7 +35,7 @@ public class QueryReader
 	String title;
 	long time;
 	
-	private List<Earthquake> quakes = new  LinkedList();
+	private List<Earthquake> quakes = new  LinkedList<Earthquake>();
 	
 	public QueryReader(String q)
 	{
@@ -61,12 +68,18 @@ public class QueryReader
 					title = propertiesObject.getString("title");
 					time = propertiesObject.getLong("time");
 					
-					Date quakeTime = new Date(time);
+					//sets date in server time zone
+					Date qTime = new Date(time);
 					
+					//adjust date from server time zone to UTC time zone
+					Date quakeTime = correctForTimeZone(qTime);
 					
 					System.out.println("Title " + title + " Longitude"+" "+longitude+" "+" latitude"+" "+latitude+" "+" depth"+" "+depth +" mag"+ mag + " url"+" "+url );
 					
-					quakes.add(new Earthquake(title,quakeTime,latitude,longitude,depth,mag,url));
+					// formats mag so that it returns a magnitudes in 6.0 instead of just 6	
+					String magString = Double.toString(mag);
+					
+					quakes.add(new Earthquake(title,quakeTime,latitude,longitude,depth,magString,url));
 					
 				}
 				
@@ -81,15 +94,25 @@ public class QueryReader
 		}
 	
 	
-	public void earthquakeCreator()
-	{
-		
-	}
 	
 	public List<Earthquake> getQuakes(){
 		return quakes;
 	}
+	public Date correctForTimeZone(Date d){
+		
+		
+		Calendar cal = Calendar.getInstance();
+		cal.setTime(d);
+		TimeZone serverTimeZone = cal.getTimeZone();
+		
+		cal.setTimeZone(serverTimeZone);
+		cal.add(Calendar.MILLISECOND, serverTimeZone.getRawOffset() * - 1);
+		
 	
+		
+		return cal.getTime();
+		
+	}
 	
 	
 	
