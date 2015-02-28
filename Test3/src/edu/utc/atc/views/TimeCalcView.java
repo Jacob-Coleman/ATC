@@ -167,11 +167,11 @@ public class TimeCalcView extends TimeCalcComponent {
 	public void setDepth(double d){
 		depthField.setValue(Double.toString(d));
 	}
-	public void setLatitude(double l){
-		lonField.setValue(Double.toString(l));
+	public void setLatitude(double lat){
+		latField.setValue(Double.toString(lat));
 	}
-	public void setLongitude(double l){
-		latField.setValue(Double.toString(l));
+	public void setLongitude(double lon){
+		lonField.setValue(Double.toString(lon));
 	}
 	
 	

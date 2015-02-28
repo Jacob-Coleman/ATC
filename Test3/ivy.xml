@@ -46,12 +46,11 @@
 			rev="&vaadin.version;" conf="widgetset-compile->default" />
 			
 			<!-- JSON parser  -->
-	<dependency org="org.json" name="json" rev="20141113"/>
+	    <dependency org="org.json" name="json" rev="20141113"/>
 		
 		<!-- GoogleMaps Vaadin Addon -->
 
 		<dependency org="com.vaadin.tapio" name="googlemaps" rev="1.0.0" />
-		
 		<!-- Google GWT User Plugin -->
 		
 		<dependency org="com.google.gwt" name="gwt-user" rev="2.7.0"/>
@@ -63,6 +62,7 @@
 		<!-- Google GWT Dev Plugin -->
 		
 		<dependency org="com.google.gwt" name="gwt-dev" rev="2.7.0"/>
+		
 
 		
 				
