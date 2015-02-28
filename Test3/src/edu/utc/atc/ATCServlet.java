@@ -13,6 +13,11 @@ import edu.utc.atc.views.TabView;
 @SuppressWarnings("serial")
 @Theme("test3")
 public class ATCServlet extends UI {
+	 double latitude;
+	 double longitude;
+	 double distance;
+	 double depth;
+	
 
 	@WebServlet(value = "/*", asyncSupported = true)
 	@VaadinServletConfiguration(productionMode = false, ui = ATCServlet.class) //, widgetset = "edu.utc.atc.widgetset.Test3Widgetset")
@@ -21,11 +26,39 @@ public class ATCServlet extends UI {
 
 	@Override
 	protected void init(VaadinRequest request) {
+		
+		
 		TabView tv1 = new TabView();
 		
 		setContent(tv1);
 		
 
 	}
+	public void setLatitude(double lat ){
+		latitude = lat ;
+	}
+	public double getLatitude() {
+		return latitude;
+	}
+	public void setLongitude(double lon) {
+		longitude = lon;
+	}
+	public double getLongitude() {
+		return longitude;
+	}
+	public void setDepth (double dep){
+		depth = dep;
+		
+	}
+	public double getDepth (){
+		return depth;
+	}
+	public void setDistance(double dist) {
+		distance = dist;
+	}
+	public double getDistance(){
+		return distance;
+	}
+	
 
 }
