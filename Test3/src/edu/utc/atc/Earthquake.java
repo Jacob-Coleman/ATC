@@ -3,6 +3,9 @@ package edu.utc.atc;
 import java.util.Date;
 import java.text.DecimalFormat;
 
+import com.vaadin.ui.Button;
+import com.vaadin.ui.Component;
+
 import javafx.scene.chart.PieChart.Data;
 
 
@@ -10,12 +13,12 @@ public class Earthquake {
 	double longitude;
 	double latitude;
 	double depth;
-	String url;
+	Component url;
 	String magnitude;
 	String title;
 	Date time;
 	
-	public Earthquake(String t, Date ti, double lat, double lon, double d, String m, String u)
+	public Earthquake(String t, Date ti, double lat, double lon, double d, String m, Component u)
 	{
 		title = t;
 		latitude = lat;
@@ -46,7 +49,7 @@ public class Earthquake {
 		return magnitude;
 		
 	}
-	public String getUrl(){
+	public Component getUrl(){
 		return url;
 	}
 	

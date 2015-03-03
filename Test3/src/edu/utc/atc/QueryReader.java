@@ -17,6 +17,14 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
+import com.vaadin.server.ExternalResource;
+import com.vaadin.server.Page;
+import com.vaadin.ui.Button;
+import com.vaadin.ui.Button.ClickEvent;
+import com.vaadin.ui.Component;
+import com.vaadin.ui.Link;
+import com.vaadin.ui.Notification;
+
 
 public class QueryReader 
 {
@@ -79,7 +87,9 @@ public class QueryReader
 					// formats mag so that it returns a magnitudes in 6.0 instead of just 6	
 					String magString = Double.toString(mag);
 					
-					quakes.add(new Earthquake(title,quakeTime,latitude,longitude,depth,magString,url));
+					
+					
+					quakes.add(new Earthquake(title,quakeTime,latitude,longitude,depth,magString,creatUrlComponent(url)));
 					
 				}
 				
@@ -112,6 +122,31 @@ public class QueryReader
 		
 		return cal.getTime();
 		
+	}
+	
+	public Button createUrlButton(String url){
+		Button urlButton = new Button("show details");
+	    urlButton.addClickListener(new Button.ClickListener() {
+	        /**
+			 * 
+			 */
+			private static final long serialVersionUID = 7072880710236476097L;
+
+			public void buttonClick(ClickEvent event) {
+	            // Get the item identifier from the user-defined data.
+	        	Page.getCurrent().open(url, null, true);
+	        } 
+	    });
+	    urlButton.addStyleName("link");
+		return urlButton;
+	}
+	
+	public Component creatUrlComponent(String url){
+		Link quakeLink  = new Link("Details",new ExternalResource(url));
+		quakeLink.setTargetName("_blank");
+		quakeLink.setTargetBorder(Link.TARGET_BORDER_NONE);
+		
+		return quakeLink ;
 	}
 	
 	

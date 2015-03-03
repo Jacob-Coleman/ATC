@@ -20,7 +20,7 @@ public class ATCServlet extends UI {
 	
 
 	@WebServlet(value = "/*", asyncSupported = true)
-	@VaadinServletConfiguration(productionMode = false, ui = ATCServlet.class) //, widgetset = "edu.utc.atc.widgetset.Test3Widgetset")
+	@VaadinServletConfiguration(productionMode = false, ui = ATCServlet.class)
 	public static class Servlet extends VaadinServlet {
 	}
 

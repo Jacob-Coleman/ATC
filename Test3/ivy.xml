@@ -25,7 +25,11 @@
 		<dependency org="com.vaadin" name="vaadin-themes" rev="&vaadin.version;" />
 
 		<!-- Push support -->
-		<dependency org="com.vaadin" name="vaadin-push" rev="&vaadin.version;" />	
+		<dependency org="com.vaadin" name="vaadin-push" rev="&vaadin.version;" />
+		
+		<!-- Vaadin Client for Widget -->
+		<dependency org="com.vaadin" name="vaadin-client" rev="&vaadin.version;"/>
+			
 
 		<!-- Servlet 3.0 API -->
 		<dependency org="javax.servlet" name="javax.servlet-api" rev="3.0.1" conf="nodeploy->default" />
@@ -52,16 +56,12 @@
 
 		<dependency org="com.vaadin.tapio" name="googlemaps" rev="1.0.0" />
 		<!-- Google GWT User Plugin -->
-		
-		<dependency org="com.google.gwt" name="gwt-user" rev="2.7.0"/>
-		
-		<!-- Google GWT Server Plugin -->
-		
-		<dependency org="com.google.gwt" name="gwt-servlet" rev="2.7.0"/>
-		
-		<!-- Google GWT Dev Plugin -->
-		
-		<dependency org="com.google.gwt" name="gwt-dev" rev="2.7.0"/>
+
+	    <!-- Compiler for custom widget sets. Should not be deployed -->
+        <dependency org="com.vaadin" name="vaadin-client-compiler"
+            rev="&vaadin.version;" conf="widgetset-compile->default" />
+        <dependency org="com.google.guava" name="guava" rev="18.0" />
+ 
 		
 
 		

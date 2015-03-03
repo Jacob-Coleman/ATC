@@ -23,6 +23,11 @@ public class TabView extends TabComponent{
 	public TabView ()
 	{
 		this.tabSheet_MainTab.addSelectedTabChangeListener(new TabSheet.SelectedTabChangeListener() {
+			/**
+			 * 
+			 */
+			private static final long serialVersionUID = 4440033646804739740L;
+
 			public void selectedTabChange(SelectedTabChangeEvent event) {
 
 			   //Sets properties in TimeCalcView component and updates each time the ATC view is clicked in the tab
@@ -41,8 +46,8 @@ public class TabView extends TabComponent{
 		//Adds View to the second tab on the tab sheet
 		tcv = new TimeCalcView();
 		tabSheet_Tab2.addComponent(tcv);
-		//gm = new GoogleMapView();
-		//tabSheet_Tab3.addComponent(gm);
+		gm = new GoogleMapView();
+		tabSheet_Tab3.addComponent(gm);
 		
 		
 		
