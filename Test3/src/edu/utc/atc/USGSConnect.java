@@ -1,5 +1,8 @@
 package edu.utc.atc;
-
+/**
+ * Connects to the USGS and receives back the GeoJson in a buffered reader
+ * 
+ */
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

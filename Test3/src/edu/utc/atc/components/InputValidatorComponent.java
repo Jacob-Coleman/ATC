@@ -1,5 +1,8 @@
 package edu.utc.atc.components;
-
+/**
+ * Used to validate data input into the text fields.
+ * Also returns relevant messages to the user so that corrections to data can be made. 
+ */
 import com.vaadin.server.Page;
 import com.vaadin.ui.Notification;
 

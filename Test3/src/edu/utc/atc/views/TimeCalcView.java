@@ -2,10 +2,19 @@ package edu.utc.atc.views;
 /**
  * @version 1.0 
  * 
+ * Implementation details on how the TimeCalculation occurs. 
+ * Uses the TimeCalcCompoent for its layout.
  * 
+ * The data can be passed from the QueryView
+ * or the data can be entered manually in this view
  * 
+ * The input fields are checked for legal parameters
+ * Once all fields have legal parameters
  * 
+ * Passes collected values to ATC_Time that processes the data to return 
+ * the travel times of the different wave types
  * 
+ * ATC_Time returns a list of arrival times which are displayed in the results table
  * 
  * 
  * @author Jacob D. Coleman
@@ -44,8 +53,6 @@ public class TimeCalcView extends TimeCalcComponent {
 		resultsTable.addContainerProperty("Name", String.class, "none");
 		resultsTable.addContainerProperty("Ray Param", Double.class, "none");
 		resultsTable.addContainerProperty("Time", Double.class, "none");
-		 
-		
 		
 		//Sets the possible models in the model box
 		modelBox.addItem("iasp91");
@@ -91,7 +98,6 @@ public class TimeCalcView extends TimeCalcComponent {
 				//if all information is properly filled then process will occur
 				if (isValidDistance == true && isValidDepth == true && isValidModel == true ){
 					processForm();
-					System.out.println("OUT HERE ");
 				}
 		    }			
 		});

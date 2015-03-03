@@ -1,5 +1,8 @@
 package edu.utc.atc.views;
-
+/**
+ * Maintains the views and setting passing the global 
+ * variables to the views when a tab is clicked
+ */
 import com.vaadin.ui.TabSheet;
 import com.vaadin.ui.TabSheet.SelectedTabChangeEvent;
 import com.vaadin.ui.UI;

@@ -1,12 +1,10 @@
 package edu.utc.atc;
-
+/**
+ * Eathquake class for data to fill the query results table
+ * 
+ */
 import java.util.Date;
-import java.text.DecimalFormat;
-
-import com.vaadin.ui.Button;
 import com.vaadin.ui.Component;
-
-import javafx.scene.chart.PieChart.Data;
 
 
 public class Earthquake {
@@ -45,9 +43,7 @@ public class Earthquake {
 		return depth;
 	}
 	public String getMagnitude(){
-		
 		return magnitude;
-		
 	}
 	public Component getUrl(){
 		return url;

@@ -13,6 +13,7 @@ import edu.utc.atc.views.TabView;
 @SuppressWarnings("serial")
 @Theme("test3")
 public class ATCServlet extends UI {
+	 //Global session variables
 	 double latitude;
 	 double longitude;
 	 double distance;
@@ -27,13 +28,14 @@ public class ATCServlet extends UI {
 	@Override
 	protected void init(VaadinRequest request) {
 		
-		
+		//creaetes the main window tab
 		TabView tv1 = new TabView();
-		
 		setContent(tv1);
 		
 
 	}
+	
+	 //Global session variables setters and getters
 	public void setLatitude(double lat ){
 		latitude = lat ;
 	}

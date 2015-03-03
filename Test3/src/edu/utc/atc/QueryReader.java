@@ -1,5 +1,8 @@
 package edu.utc.atc;
-
+/**
+ * Extracts the information from from the buffered reader passed by USGSConnect
+ * Parses the data and builds the table of earthquakes 
+ */
 
 import java.util.Date;
 import java.util.Calendar;
@@ -18,12 +21,9 @@ import org.json.JSONObject;
 import org.json.JSONTokener;
 
 import com.vaadin.server.ExternalResource;
-import com.vaadin.server.Page;
-import com.vaadin.ui.Button;
-import com.vaadin.ui.Button.ClickEvent;
+
 import com.vaadin.ui.Component;
 import com.vaadin.ui.Link;
-import com.vaadin.ui.Notification;
 
 
 public class QueryReader 
@@ -57,10 +57,10 @@ public class QueryReader
 		JSONObject ob = (JSONObject) tokener.nextValue();
 		try {
 			
+			//Separates earthquake JSON container into pieces to pull individual earthquake detials 
 				JSONArray features = (JSONArray) ob.get("features");
 				for(int i = 0; features.length() > i; i++)
 				{
-					
 					
 					properties = features.optJSONObject(i);
 					propertiesObject = (JSONObject) properties.get("properties");
@@ -76,20 +76,21 @@ public class QueryReader
 					title = propertiesObject.getString("title");
 					time = propertiesObject.getLong("time");
 					
+					System.out.println("Title " + title + " Longitude"+" "+longitude+" "+" latitude"+" "+latitude+" "+" depth"+" "+depth +" mag"+ mag + " url"+" "+url );
+
+					
 					//sets date in server time zone
 					Date qTime = new Date(time);
-					
 					//adjust date from server time zone to UTC time zone
 					Date quakeTime = correctForTimeZone(qTime);
-					
-					System.out.println("Title " + title + " Longitude"+" "+longitude+" "+" latitude"+" "+latitude+" "+" depth"+" "+depth +" mag"+ mag + " url"+" "+url );
-					
 					// formats mag so that it returns a magnitudes in 6.0 instead of just 6	
 					String magString = Double.toString(mag);
+					//creates the Link for the earthquake
+					Component urlLink = creatUrlComponent(url);
 					
 					
 					
-					quakes.add(new Earthquake(title,quakeTime,latitude,longitude,depth,magString,creatUrlComponent(url)));
+					quakes.add(new Earthquake(title,quakeTime,latitude,longitude,depth,magString,urlLink));
 					
 				}
 				
@@ -124,22 +125,6 @@ public class QueryReader
 		
 	}
 	
-	public Button createUrlButton(String url){
-		Button urlButton = new Button("show details");
-	    urlButton.addClickListener(new Button.ClickListener() {
-	        /**
-			 * 
-			 */
-			private static final long serialVersionUID = 7072880710236476097L;
-
-			public void buttonClick(ClickEvent event) {
-	            // Get the item identifier from the user-defined data.
-	        	Page.getCurrent().open(url, null, true);
-	        } 
-	    });
-	    urlButton.addStyleName("link");
-		return urlButton;
-	}
 	
 	public Component creatUrlComponent(String url){
 		Link quakeLink  = new Link("Details",new ExternalResource(url));
