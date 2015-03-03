@@ -1,0 +1,44 @@
+README
+
+Requirements
+Java 8
+Tomcat 8
+
+Installation Instructions
+Ubuntu example
+
+	// install tomcat 8
+	sudo apt-get install tomcat8
+	sudo apt-get install tomcat8-docs
+	sudo apt-get install tomcat8-admin
+	
+	install java 8
+	sudo apt-get install openjdk-8-jre
+	sudo apt-get install openjdk-8-jdk
+	
+	
+	//edit[nano, vi] tomcat-users.xml and add a user with manager-gui privilages
+	sudo nano /var/lib/tomcat8/conf/tomcat-users.xml
+	
+	//restart tomcat 8
+	sudo  /etc/init.d/tomcat8 restart
+	
+	//forward tomcat 8080 port to 80 standard http port
+	sudo iptables -A INPUT -i eth0 -p tcp --dport 80 -j ACCEPT
+	sudo iptables -A INPUT -i eth0 -p tcp --dport 8080 -j ACCEPT
+	sudo iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080 
+
+	//Make the changes persistant 
+	sudo apt-get install iptables-persistent
+	
+	//URL redirect such as http://www.example.com/yourwebapp
+	sudo nano /var/lib/tomcat8/webapps/ROOT/index.html
+	
+	//Add text to index 
+		<script type="text/javascript">
+ 			window.location.assign("/yourwebapp")
+		</script>
+	
+	
+	
+	

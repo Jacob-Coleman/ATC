@@ -144,7 +144,6 @@ public class QueryReader
 	public Component creatUrlComponent(String url){
 		Link quakeLink  = new Link("Details",new ExternalResource(url));
 		quakeLink.setTargetName("_blank");
-		quakeLink.setTargetBorder(Link.TARGET_BORDER_NONE);
 		
 		return quakeLink ;
 	}
