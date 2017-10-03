@@ -15,7 +15,7 @@ import org.json.JSONException;
 
 
 public class USGSConnect  {
-	String urlBase = "https://comcat.cr.usgs.gov/fdsnws/event/1/query?format=geojson";
+	String urlBase = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson";
 	private QueryReader qr;
 	public USGSConnect(String paramaters) throws IOException, JSONException {
 		
