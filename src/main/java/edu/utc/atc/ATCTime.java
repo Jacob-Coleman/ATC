@@ -1,13 +1,13 @@
 package edu.utc.atc;
 /**
- * @version 1.0 
+ * 
  * 
  * @author Jacob D. Coleman
  * Used TauP_Time to calculate arrival times of waves and return a list of arrival times
+ * Passes all branches.
  * 
  */
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 import edu.sc.seis.TauP.*;

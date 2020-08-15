@@ -17,27 +17,27 @@ public class InputValidatorComponent {
 		try{
 			if(inputText.isEmpty())
 			{
-				Notification error = new Notification(noValueError,Notification.TYPE_WARNING_MESSAGE);
+				Notification error = new Notification(noValueError,Notification.Type.WARNING_MESSAGE);
 				error.show(Page.getCurrent());
 				isValid = false;
 			}
 			
 			else if(Double.parseDouble(inputText) < minValue)
 			{ 
-				Notification error = new Notification(belowMinValueError,Notification.TYPE_WARNING_MESSAGE);
+				Notification error = new Notification(belowMinValueError,Notification.Type.WARNING_MESSAGE);
 				error.show(Page.getCurrent());
 				isValid = false;
 				
 			}
 			else if (Double.parseDouble(inputText) > maxValue )
 			{ 
-				Notification error = new Notification(aboveMaxValueError,Notification.TYPE_WARNING_MESSAGE);
+				Notification error = new Notification(aboveMaxValueError,Notification.Type.WARNING_MESSAGE);
 				error.show(Page.getCurrent());
 				isValid = false;
 			}
 			
 		} catch(NumberFormatException e){
-			Notification error = new Notification(notValidNumberErrorMessage,Notification.TYPE_WARNING_MESSAGE);
+			Notification error = new Notification(notValidNumberErrorMessage,Notification.Type.WARNING_MESSAGE);
 			error.show(Page.getCurrent());
 			isValid = false;
 		}

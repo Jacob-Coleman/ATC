@@ -43,7 +43,7 @@ public class TabComponent extends CustomComponent {
 	private AbsoluteLayout buildMainLayout() {
 		// common part: create layout
 		mainLayout = new AbsoluteLayout();
-		mainLayout.setImmediate(false);
+		//mainLayout.setImmediate(false);
 		mainLayout.setWidth("100%");
 		mainLayout.setHeight("100%");
 		
@@ -63,23 +63,24 @@ public class TabComponent extends CustomComponent {
 	private TabSheet buildTabSheet_MainTab() {
 		// common part: create layout
 		tabSheet_MainTab = new TabSheet();
-		tabSheet_MainTab.setImmediate(true);
+		//tabSheet_MainTab.setImmediate(true);
 		tabSheet_MainTab.setWidth("100.0%");
 		tabSheet_MainTab.setHeight("100.0%");
 		
 		// tabSheet_Tab1
 		tabSheet_Tab1 = new TabSheet();
-		tabSheet_Tab1.setImmediate(false);
+		//tabSheet_Tab1.setImmediate(false);
 		tabSheet_Tab1.setWidth("100.0%");
 		tabSheet_Tab1.setHeight("100.0%");
 		tabSheet_MainTab.addTab(tabSheet_Tab1, "USGS Query", null);
 		
 		// tabSheet_Tab2
 		tabSheet_Tab2 = new TabSheet();
-		tabSheet_Tab2.setImmediate(false);
+		//tabSheet_Tab2.setImmediate(false);
 		tabSheet_Tab2.setWidth("100.0%");
 		tabSheet_Tab2.setHeight("100.0%");
 		tabSheet_MainTab.addTab(tabSheet_Tab2, "Arrival Time Calculator", null);
+
 		
 		return tabSheet_MainTab;
 	}

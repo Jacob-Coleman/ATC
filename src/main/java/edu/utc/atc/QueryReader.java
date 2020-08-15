@@ -1,18 +1,15 @@
 package edu.utc.atc;
 /**
- * Extracts the information from from the buffered reader passed by USGSConnect
- * Parses the data and builds the table of earthquakes 
+ * Reads information passed by the buffered reader created by USGSConnect
+ * It then parses the data and builds the table of earthquakes to return to the QueryView
+ * A GeoJson for an earthquake comes in as a nested json so the first JSON Object opens up the earthquakes 
+ * to read the array of earthquakes received. 
  */
 
 import java.util.Date;
 import java.util.Calendar;
 import java.util.LinkedList;
 import java.util.List;
-
-
-
-
-
 import java.util.TimeZone;
 
 import org.json.JSONArray;
@@ -87,17 +84,14 @@ public class QueryReader
 					String magString = Double.toString(mag);
 					//creates the Link for the earthquake
 					Component urlLink = creatUrlComponent(url);
+
 					
 					
 					
-					quakes.add(new Earthquake(title,quakeTime,latitude,longitude,depth,magString,urlLink));
+					quakes.add(new Earthquake(title,quakeTime,latitude,longitude,depth,magString,urlLink,url));
 					
 				}
 				
-	
-				
-				//			JSONObject meta = (JSONObject) ob.get("meta");
-				//			System.out.println(meta.names());
 			} catch (JSONException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -109,6 +103,8 @@ public class QueryReader
 	public List<Earthquake> getQuakes(){
 		return quakes;
 	}
+	
+	//Reads the servers time zone and changes the returns to UTC time.
 	public Date correctForTimeZone(Date d){
 		
 		
@@ -117,15 +113,16 @@ public class QueryReader
 		TimeZone serverTimeZone = cal.getTimeZone();
 		
 		cal.setTimeZone(serverTimeZone);
-		cal.add(Calendar.MILLISECOND, serverTimeZone.getRawOffset() * - 1);
 		
-	
+		//serverTimeZone.getDSTSavings() accounts for DST offset so that date calculations return normally
+		cal.add(Calendar.MILLISECOND, (serverTimeZone.getRawOffset() + serverTimeZone.getDSTSavings()) * - 1);
+		System.out.println(serverTimeZone.getDSTSavings());
 		
 		return cal.getTime();
 		
 	}
 	
-	
+	//creates a link for the details of the earthquake on the USGS website. 
 	public Component creatUrlComponent(String url){
 		Link quakeLink  = new Link("Details",new ExternalResource(url));
 		quakeLink.setTargetName("_blank");

@@ -1,9 +1,12 @@
 package edu.utc.atc;
 /**
- * Eathquake class for data to fill the query results table
+ * Earthquake class for data to fill the query results table
+ * the class file for a specific earthquake a line in the QueryView table
+ *
  * 
  */
 import java.util.Date;
+
 import com.vaadin.ui.Component;
 
 
@@ -11,20 +14,22 @@ public class Earthquake {
 	double longitude;
 	double latitude;
 	double depth;
-	Component url;
+	Component urlLink;
 	String magnitude;
 	String title;
 	Date time;
+	String urlString;
 	
-	public Earthquake(String t, Date ti, double lat, double lon, double d, String m, Component u)
+	public Earthquake(String t, Date ti, double lat, double lon, double d, String m, Component u, String us)
 	{
 		title = t;
 		latitude = lat;
 		longitude = lon;
 		depth = d;
 		magnitude = m;
-		url = u;
+		urlLink = u;
 		time = ti;
+		urlString = us;
 		
 	}
 	public Date getTime(){
@@ -45,8 +50,11 @@ public class Earthquake {
 	public String getMagnitude(){
 		return magnitude;
 	}
-	public Component getUrl(){
-		return url;
+	public Component getUrlLink(){
+		return urlLink;
+	}
+	public String getUrlString(){
+		return urlString;
 	}
 	
 	

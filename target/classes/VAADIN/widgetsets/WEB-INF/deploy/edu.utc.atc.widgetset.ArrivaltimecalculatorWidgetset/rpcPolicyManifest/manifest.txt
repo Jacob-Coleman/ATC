@@ -1,2 +1,0 @@
-# Module edu.utc.atc.widgetset.ArrivaltimecalculatorWidgetset
-# RPC service class, partial path of RPC policy file

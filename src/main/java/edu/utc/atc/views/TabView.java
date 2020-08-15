@@ -3,6 +3,8 @@ package edu.utc.atc.views;
  * Maintains the views and setting passing the global 
  * variables to the views when a tab is clicked
  */
+import java.util.Date;
+
 import com.vaadin.ui.TabSheet;
 import com.vaadin.ui.TabSheet.SelectedTabChangeEvent;
 import com.vaadin.ui.UI;
@@ -14,7 +16,8 @@ public class TabView extends TabComponent{
 
 	private QueryView qv;
 	private TimeCalcView tcv;
-	private GoogleMapView gm;
+	private Date currentDate;
+
 	
 	
 	
@@ -33,12 +36,24 @@ public class TabView extends TabComponent{
 
 			public void selectedTabChange(SelectedTabChangeEvent event) {
 
-			   //Sets properties in TimeCalcView component and updates each time the ATC view is clicked in the tab
-	           tcv.setDistance(((ATCServlet)UI.getCurrent()).getDistance());
-	           tcv.setDepth(((ATCServlet)UI.getCurrent()).getDepth());
-	           tcv.setLatitude(((ATCServlet)UI.getCurrent()).getLatitude());
-	           tcv.setLongitude(((ATCServlet)UI.getCurrent()).getLongitude());
-	         
+			   //This is for the first run so that the variables get set on the tab
+				processVariables();
+				
+				
+				//This performs checking so that when a user processes arrival times and then selects a different earthquakes
+				//the arrival times and chart are cleared so the users does not confuse what data is being presented to them
+	           if(currentDate != null && currentDate.equals(((ATCServlet)UI.getCurrent()).getDate()) == false)
+	           {
+	        	   
+	        	   tabSheet_Tab2.removeComponent(tcv);
+	        	   tcv = new TimeCalcView();
+	       		   tabSheet_Tab2.addComponent(tcv);
+	       		   
+	       		   processVariables();
+	       		   
+	        	   
+	           }
+	           currentDate = ((ATCServlet)UI.getCurrent()).getDate();
 				
 			}
 	        });
@@ -53,5 +68,15 @@ public class TabView extends TabComponent{
 		
 		
 		
+	}
+	
+	private void processVariables()
+	{
+		  //Sets properties in TimeCalcView component and updates each time the ATC view is clicked in the tab
+		 tcv.setDistance(((ATCServlet)UI.getCurrent()).getDistance());
+         tcv.setDepth(((ATCServlet)UI.getCurrent()).getDepth());
+         tcv.setLatitude(((ATCServlet)UI.getCurrent()).getLatitude());
+         tcv.setLongitude(((ATCServlet)UI.getCurrent()).getLongitude());
+         tcv.setDateField(((ATCServlet)UI.getCurrent()).getDate());
 	}
 }
