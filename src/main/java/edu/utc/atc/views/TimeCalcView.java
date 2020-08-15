@@ -29,14 +29,14 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Locale;
 
-import com.vaadin.v7.data.util.BeanContainer;
-import com.vaadin.v7.data.util.converter.StringToDateConverter;
 import com.vaadin.server.Page;
-import com.vaadin.v7.shared.ui.datefield.Resolution;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Notification;
-import com.vaadin.v7.ui.Table;
 import com.vaadin.ui.UI;
+import com.vaadin.v7.data.util.BeanContainer;
+import com.vaadin.v7.data.util.converter.StringToDateConverter;
+import com.vaadin.v7.shared.ui.datefield.Resolution;
+import com.vaadin.v7.ui.Table;
 import com.vaadin.ui.Button.ClickEvent;
 
 import edu.sc.seis.TauP.Arrival;
@@ -48,6 +48,7 @@ import edu.utc.atc.components.ChartComponent;
 import edu.utc.atc.components.InputValidatorComponent;
 import edu.utc.atc.components.TimeCalcComponent;
 
+@SuppressWarnings("deprecation")
 public class TimeCalcView extends TimeCalcComponent {
 	
 	

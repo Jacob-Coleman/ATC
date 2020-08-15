@@ -19,6 +19,7 @@ import com.vaadin.ui.VerticalLayout;
 
 import edu.utc.atc.views.MapView;
 
+@SuppressWarnings("deprecation")
 public class QueryComponent extends CustomComponent {
 
 	/*- VaadinEditorProperties={"grid":"RegularGrid,20","showGrid":true,"snapToGrid":true,"snapToObject":true,"movingGuides":false,"snappingDistance":10} */
