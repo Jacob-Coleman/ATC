@@ -2,7 +2,7 @@ package com.vaadin.client.metadata;
 
 public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.ConnectorBundleLoader {
   public void init() {
-    addAsyncBlockLoader(new AsyncBundleLoader("__eager", new String[] {"com.vaadin.server.AbstractJavaScriptExtension","com.vaadin.ui.renderers.ButtonRenderer","com.vaadin.ui.renderers.ImageRenderer","com.vaadin.ui.renderers.AbstractJavaScriptRenderer","com.vaadin.data.provider.DataCommunicator","com.vaadin.data.provider.HierarchicalDataCommunicator","com.vaadin.ui.Grid.Column","com.vaadin.ui.renderers.ComponentRenderer","com.vaadin.ui.renderers.DateRenderer","com.vaadin.ui.Grid.DetailsManager","com.vaadin.ui.components.grid.EditorImpl","com.vaadin.ui.Grid","com.vaadin.ui.components.grid.GridDragSource","com.vaadin.ui.components.grid.GridDropTarget","com.vaadin.ui.renderers.LocalDateRenderer","com.vaadin.ui.renderers.LocalDateTimeRenderer","com.vaadin.ui.components.grid.MultiSelectionModelImpl","com.vaadin.ui.components.grid.NoSelectionModel","com.vaadin.ui.renderers.NumberRenderer","com.vaadin.ui.renderers.ProgressBarRenderer","com.vaadin.ui.components.grid.SingleSelectionModelImpl","com.vaadin.ui.renderers.TextRenderer","com.vaadin.ui.components.grid.TreeGridDragSource","com.vaadin.ui.components.grid.TreeGridDropTarget","com.vaadin.ui.Tree.TreeRenderer","com.vaadin.ui.renderers.HtmlRenderer","com.vaadin.ui.Tree.TreeMultiSelectionModel","com.vaadin.server.BrowserWindowOpener","com.vaadin.ui.dnd.DragSourceExtension","com.vaadin.ui.dnd.DropTargetExtension","com.vaadin.server.FileDownloader","com.vaadin.ui.dnd.FileDropTarget","com.vaadin.server.Responsive","com.vaadin.ui.JavaScript","com.vaadin.ui.AbstractJavaScriptComponent","com.vaadin.ui.AbsoluteLayout","com.vaadin.ui.Accordion","com.vaadin.ui.Audio","com.vaadin.ui.BrowserFrame","com.vaadin.ui.Button","com.vaadin.ui.CheckBox","com.vaadin.ui.ComboBox","com.vaadin.ui.Composite","com.vaadin.ui.CssLayout","com.vaadin.ui.CustomComponent","com.vaadin.ui.CustomField","com.vaadin.ui.CustomLayout","com.vaadin.ui.AbstractLocalDateField","com.vaadin.ui.AbstractLocalDateTimeField","com.vaadin.ui.InlineDateField","com.vaadin.ui.InlineDateTimeField","com.vaadin.ui.DateField","com.vaadin.ui.DateTimeField","com.vaadin.ui.DragAndDropWrapper","com.vaadin.ui.Embedded","com.vaadin.ui.Flash","com.vaadin.ui.FormLayout","com.vaadin.ui.GridLayout","com.vaadin.ui.Image","com.vaadin.ui.Label","com.vaadin.ui.Link","com.vaadin.ui.ListSelect","com.vaadin.ui.LoginForm","com.vaadin.ui.MenuBar","com.vaadin.ui.NativeButton","com.vaadin.ui.NativeSelect","com.vaadin.ui.Notification","com.vaadin.ui.CheckBoxGroup","com.vaadin.ui.RadioButtonGroup","com.vaadin.ui.HorizontalLayout","com.vaadin.ui.VerticalLayout","com.vaadin.ui.Panel","com.vaadin.ui.PasswordField","com.vaadin.ui.PopupView","com.vaadin.ui.ProgressBar","com.vaadin.ui.Slider","com.vaadin.ui.HorizontalSplitPanel","com.vaadin.ui.VerticalSplitPanel","com.vaadin.ui.TabSheet","com.vaadin.ui.TextArea","com.vaadin.ui.TextField","com.vaadin.ui.TreeGrid","com.vaadin.ui.TwinColSelect","com.vaadin.ui.UI","com.vaadin.ui.Upload","com.vaadin.ui.Video","com.vaadin.ui.Window",}) {
+    addAsyncBlockLoader(new AsyncBundleLoader("__eager", new String[] {"com.vaadin.server.AbstractJavaScriptExtension","com.vaadin.ui.renderers.ButtonRenderer","com.vaadin.ui.renderers.ImageRenderer","com.vaadin.ui.renderers.AbstractJavaScriptRenderer","com.vaadin.data.provider.DataCommunicator","com.vaadin.data.provider.HierarchicalDataCommunicator","com.vaadin.ui.Grid.Column","com.vaadin.ui.renderers.ComponentRenderer","com.vaadin.ui.renderers.DateRenderer","com.vaadin.ui.Grid.DetailsManager","com.vaadin.ui.components.grid.EditorImpl","com.vaadin.ui.Grid","com.vaadin.ui.components.grid.GridDragSource","com.vaadin.ui.components.grid.GridDropTarget","com.vaadin.ui.renderers.LocalDateRenderer","com.vaadin.ui.renderers.LocalDateTimeRenderer","com.vaadin.ui.components.grid.MultiSelectionModelImpl","com.vaadin.ui.components.grid.NoSelectionModel","com.vaadin.ui.renderers.NumberRenderer","com.vaadin.ui.renderers.ProgressBarRenderer","com.vaadin.ui.components.grid.SingleSelectionModelImpl","com.vaadin.ui.renderers.TextRenderer","com.vaadin.ui.components.grid.TreeGridDragSource","com.vaadin.ui.components.grid.TreeGridDropTarget","com.vaadin.ui.Tree.TreeRenderer","com.vaadin.ui.renderers.HtmlRenderer","com.vaadin.ui.Tree.TreeMultiSelectionModel","com.vaadin.server.BrowserWindowOpener","com.vaadin.ui.dnd.DragSourceExtension","com.vaadin.ui.dnd.DropTargetExtension","com.vaadin.server.FileDownloader","com.vaadin.ui.dnd.FileDropTarget","com.vaadin.server.Responsive","com.vaadin.ui.JavaScript","com.vaadin.ui.AbstractJavaScriptComponent","com.vaadin.ui.AbsoluteLayout","com.vaadin.ui.Accordion","com.vaadin.ui.Audio","com.vaadin.ui.BrowserFrame","com.vaadin.ui.Button","com.vaadin.ui.CheckBox","com.vaadin.ui.ComboBox","com.vaadin.ui.Composite","com.vaadin.ui.CssLayout","com.vaadin.ui.CustomComponent","com.vaadin.ui.CustomField","com.vaadin.ui.CustomLayout","com.vaadin.ui.AbstractLocalDateField","com.vaadin.ui.AbstractLocalDateTimeField","com.vaadin.ui.InlineDateField","com.vaadin.ui.InlineDateTimeField","com.vaadin.ui.DateField","com.vaadin.ui.DateTimeField","com.vaadin.ui.DragAndDropWrapper","com.vaadin.ui.Embedded","com.vaadin.ui.Flash","com.vaadin.ui.FormLayout","com.vaadin.ui.GridLayout","com.vaadin.ui.Image","com.vaadin.ui.Label","com.vaadin.ui.Link","com.vaadin.ui.ListSelect","com.vaadin.ui.LoginForm","com.vaadin.ui.MenuBar","com.vaadin.ui.NativeButton","com.vaadin.ui.NativeSelect","com.vaadin.ui.Notification","com.vaadin.ui.CheckBoxGroup","com.vaadin.ui.RadioButtonGroup","com.vaadin.ui.HorizontalLayout","com.vaadin.ui.VerticalLayout","com.vaadin.ui.Panel","com.vaadin.ui.PasswordField","com.vaadin.ui.PopupView","com.vaadin.ui.ProgressBar","com.vaadin.ui.Slider","com.vaadin.ui.HorizontalSplitPanel","com.vaadin.ui.VerticalSplitPanel","com.vaadin.ui.TabSheet","com.vaadin.ui.TextArea","com.vaadin.ui.TextField","com.vaadin.ui.TreeGrid","com.vaadin.ui.TwinColSelect","com.vaadin.ui.UI","com.vaadin.ui.Upload","com.vaadin.ui.Video","com.vaadin.ui.Window","org.vaadin.addon.leaflet.control.LAttribution","org.vaadin.addon.leaflet.LCircle","org.vaadin.addon.leaflet.LCircleMarker","org.vaadin.addon.leaflet.LFeatureGroup","org.vaadin.addon.leaflet.LGridLayer","org.vaadin.addon.leaflet.LImageOverlay","org.vaadin.addon.leaflet.LLayerGroup","org.vaadin.addon.leaflet.control.LLayers","org.vaadin.addon.leaflet.LMap","org.vaadin.addon.leaflet.LMarker","org.vaadin.addon.leaflet.LPolygon","org.vaadin.addon.leaflet.LPolyline","org.vaadin.addon.leaflet.LPopup","org.vaadin.addon.leaflet.LRectangle","org.vaadin.addon.leaflet.control.LScale","org.vaadin.addon.leaflet.LTileLayer","org.vaadin.addon.leaflet.LTooltip","org.vaadin.addon.leaflet.LWmsLayer","org.vaadin.addon.leaflet.control.LZoom",}) {
       protected void load(final com.vaadin.client.metadata.TypeDataStore store) {
         new com.google.gwt.core.client.RunAsyncCallback() {
           public void onSuccess() {
@@ -14,12 +14,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setSuperClass(java.util.AbstractMap.class, java.lang.Object.class);
             store.setSuperClass(com.vaadin.shared.ui.orderedlayout.AbstractOrderedLayoutState.ChildComponentData.class, java.lang.Object.class);
             store.setSuperClass(com.vaadin.shared.ui.splitpanel.AbstractSplitPanelState.SplitterState.class, java.lang.Object.class);
+            store.setSuperClass(org.vaadin.addon.leaflet.shared.Bounds.class, java.lang.Object.class);
             store.setSuperClass(com.vaadin.shared.ui.dnd.criteria.Criterion.class, java.lang.Object.class);
+            store.setSuperClass(org.vaadin.addon.leaflet.shared.DivOverlayState.class, java.lang.Object.class);
             store.setSuperClass(com.vaadin.shared.ui.dnd.FileParameters.class, java.lang.Object.class);
             store.setSuperClass(com.vaadin.shared.ui.gridlayout.GridLayoutState.ChildComponentData.class, java.lang.Object.class);
+            store.setSuperClass(org.vaadin.addon.leaflet.shared.LayerControlInfo.class, java.lang.Object.class);
             store.setSuperClass(com.vaadin.shared.MouseEventDetails.class, java.lang.Object.class);
             store.setSuperClass(com.vaadin.shared.ui.ui.PageState.class, java.lang.Object.class);
             store.setSuperClass(com.vaadin.shared.ui.dnd.criteria.Payload.class, java.lang.Object.class);
+            store.setSuperClass(org.vaadin.addon.leaflet.shared.Point.class, java.lang.Object.class);
             store.setSuperClass(com.vaadin.shared.ui.grid.SectionState.class, java.lang.Object.class);
             store.setSuperClass(com.vaadin.shared.ui.grid.SectionState.CellState.class, java.lang.Object.class);
             store.setSuperClass(com.vaadin.shared.ui.grid.SectionState.RowState.class, java.lang.Object.class);
@@ -39,12 +43,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setSuperClass(com.vaadin.shared.ui.dnd.DragSourceState.class, com.vaadin.shared.communication.SharedState.class);
             store.setSuperClass(com.vaadin.shared.ui.dnd.DropTargetState.class, com.vaadin.shared.communication.SharedState.class);
             store.setSuperClass(com.vaadin.shared.extension.javascriptmanager.JavaScriptManagerState.class, com.vaadin.shared.communication.SharedState.class);
+            store.setSuperClass(org.vaadin.addon.leaflet.shared.LeafletControlState.class, com.vaadin.shared.communication.SharedState.class);
             store.setSuperClass(com.vaadin.shared.ui.notification.NotificationState.class, com.vaadin.shared.communication.SharedState.class);
             store.setSuperClass(com.vaadin.shared.extension.PartInformationState.class, com.vaadin.shared.communication.SharedState.class);
+            store.setSuperClass(org.vaadin.addon.leaflet.shared.PopupState.class, org.vaadin.addon.leaflet.shared.DivOverlayState.class);
             store.setSuperClass(com.vaadin.shared.extension.responsive.ResponsiveState.class, com.vaadin.shared.communication.SharedState.class);
+            store.setSuperClass(org.vaadin.addon.leaflet.shared.TooltipState.class, org.vaadin.addon.leaflet.shared.DivOverlayState.class);
             store.setSuperClass(com.vaadin.shared.ui.AbstractComponentContainerState.class, com.vaadin.shared.AbstractComponentState.class);
             store.setSuperClass(com.vaadin.shared.ui.AbstractEmbeddedState.class, com.vaadin.shared.AbstractComponentState.class);
             store.setSuperClass(com.vaadin.shared.ui.grid.AbstractGridExtensionState.class, com.vaadin.shared.extension.abstractlisting.AbstractListingExtensionState.class);
+            store.setSuperClass(org.vaadin.addon.leaflet.shared.AbstractLeafletComponentState.class, com.vaadin.shared.AbstractComponentState.class);
             store.setSuperClass(com.vaadin.shared.ui.AbstractMediaState.class, com.vaadin.shared.AbstractComponentState.class);
             store.setSuperClass(com.vaadin.shared.ui.AbstractSingleComponentContainerState.class, com.vaadin.shared.AbstractComponentState.class);
             store.setSuperClass(com.vaadin.shared.ui.BrowserWindowOpenerState.class, com.vaadin.shared.extension.PartInformationState.class);
@@ -59,6 +67,10 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setSuperClass(com.vaadin.shared.ui.JavaScriptComponentState.class, com.vaadin.shared.AbstractComponentState.class);
             store.setSuperClass(com.vaadin.shared.JavaScriptExtensionState.class, com.vaadin.shared.ui.grid.renderers.AbstractRendererState.class);
             store.setSuperClass(com.vaadin.shared.ui.label.LabelState.class, com.vaadin.shared.AbstractComponentState.class);
+            store.setSuperClass(org.vaadin.addon.leaflet.shared.LeafletAttributionState.class, org.vaadin.addon.leaflet.shared.LeafletControlState.class);
+            store.setSuperClass(org.vaadin.addon.leaflet.shared.LeafletLayersState.class, org.vaadin.addon.leaflet.shared.LeafletControlState.class);
+            store.setSuperClass(org.vaadin.addon.leaflet.shared.LeafletMapState.class, com.vaadin.shared.AbstractComponentState.class);
+            store.setSuperClass(org.vaadin.addon.leaflet.shared.LeafletScaleState.class, org.vaadin.addon.leaflet.shared.LeafletControlState.class);
             store.setSuperClass(com.vaadin.shared.ui.link.LinkState.class, com.vaadin.shared.AbstractComponentState.class);
             store.setSuperClass(com.vaadin.shared.ui.popupview.PopupViewState.class, com.vaadin.shared.AbstractComponentState.class);
             store.setSuperClass(com.vaadin.shared.ui.grid.renderers.ProgressBarRendererState.class, com.vaadin.shared.ui.grid.renderers.AbstractRendererState.class);
@@ -68,6 +80,8 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setSuperClass(com.vaadin.shared.ui.upload.UploadState.class, com.vaadin.shared.AbstractComponentState.class);
             store.setSuperClass(com.vaadin.shared.AbstractFieldState.class, com.vaadin.shared.ui.TabIndexState.class);
             store.setSuperClass(com.vaadin.shared.ui.AbstractLayoutState.class, com.vaadin.shared.ui.AbstractComponentContainerState.class);
+            store.setSuperClass(org.vaadin.addon.leaflet.shared.AbstractLeafletDivOverlayState.class, org.vaadin.addon.leaflet.shared.AbstractLeafletComponentState.class);
+            store.setSuperClass(org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState.class, org.vaadin.addon.leaflet.shared.AbstractLeafletComponentState.class);
             store.setSuperClass(com.vaadin.shared.ui.grid.AbstractSelectionModelState.class, com.vaadin.shared.ui.grid.AbstractGridExtensionState.class);
             store.setSuperClass(com.vaadin.shared.ui.splitpanel.AbstractSplitPanelState.class, com.vaadin.shared.ui.AbstractComponentContainerState.class);
             store.setSuperClass(com.vaadin.shared.ui.audio.AudioState.class, com.vaadin.shared.ui.AbstractMediaState.class);
@@ -82,6 +96,9 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setSuperClass(com.vaadin.shared.ui.flash.FlashState.class, com.vaadin.shared.ui.AbstractEmbeddedState.class);
             store.setSuperClass(com.vaadin.shared.ui.grid.renderers.ImageRendererState.class, com.vaadin.shared.ui.grid.renderers.ClickableRendererState.class);
             store.setSuperClass(com.vaadin.shared.ui.image.ImageState.class, com.vaadin.shared.ui.AbstractEmbeddedState.class);
+            store.setSuperClass(org.vaadin.addon.leaflet.shared.LeafletGridLayerState.class, org.vaadin.addon.leaflet.shared.AbstractLeafletComponentState.class);
+            store.setSuperClass(org.vaadin.addon.leaflet.shared.LeafletLayerGroupState.class, org.vaadin.addon.leaflet.shared.AbstractLeafletComponentState.class);
+            store.setSuperClass(org.vaadin.addon.leaflet.shared.LeafletMarkerState.class, org.vaadin.addon.leaflet.shared.AbstractLeafletComponentState.class);
             store.setSuperClass(com.vaadin.shared.ui.grid.renderers.LocalDateRendererState.class, com.vaadin.shared.ui.grid.renderers.TextRendererState.class);
             store.setSuperClass(com.vaadin.shared.ui.grid.renderers.LocalDateTimeRendererState.class, com.vaadin.shared.ui.grid.renderers.TextRendererState.class);
             store.setSuperClass(com.vaadin.shared.ui.loginform.LoginFormState.class, com.vaadin.shared.ui.AbstractSingleComponentContainerState.class);
@@ -105,6 +122,12 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setSuperClass(com.vaadin.shared.ui.customlayout.CustomLayoutState.class, com.vaadin.shared.ui.AbstractLayoutState.class);
             store.setSuperClass(com.vaadin.shared.ui.gridlayout.GridLayoutState.class, com.vaadin.shared.ui.AbstractLayoutState.class);
             store.setSuperClass(com.vaadin.shared.ui.splitpanel.HorizontalSplitPanelState.class, com.vaadin.shared.ui.splitpanel.AbstractSplitPanelState.class);
+            store.setSuperClass(org.vaadin.addon.leaflet.shared.LeafletCircleState.class, org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState.class);
+            store.setSuperClass(org.vaadin.addon.leaflet.shared.LeafletImageOverlayState.class, org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState.class);
+            store.setSuperClass(org.vaadin.addon.leaflet.shared.LeafletPolylineState.class, org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState.class);
+            store.setSuperClass(org.vaadin.addon.leaflet.shared.LeafletPopupState.class, org.vaadin.addon.leaflet.shared.AbstractLeafletDivOverlayState.class);
+            store.setSuperClass(org.vaadin.addon.leaflet.shared.LeafletTileLayerState.class, org.vaadin.addon.leaflet.shared.LeafletGridLayerState.class);
+            store.setSuperClass(org.vaadin.addon.leaflet.shared.LeafletTooltipState.class, org.vaadin.addon.leaflet.shared.AbstractLeafletDivOverlayState.class);
             store.setSuperClass(com.vaadin.shared.ui.grid.MultiSelectionModelState.class, com.vaadin.shared.ui.grid.AbstractSelectionModelState.class);
             store.setSuperClass(com.vaadin.shared.ui.button.NativeButtonState.class, com.vaadin.shared.ui.button.ButtonState.class);
             store.setSuperClass(com.vaadin.shared.ui.progressindicator.ProgressBarState.class, com.vaadin.shared.AbstractFieldState.class);
@@ -117,6 +140,8 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setSuperClass(com.vaadin.shared.ui.datefield.AbstractTextualDateFieldState.class, com.vaadin.shared.ui.datefield.AbstractDateFieldState.class);
             store.setSuperClass(com.vaadin.shared.ui.orderedlayout.FormLayoutState.class, com.vaadin.shared.ui.orderedlayout.AbstractOrderedLayoutState.class);
             store.setSuperClass(com.vaadin.shared.ui.orderedlayout.HorizontalLayoutState.class, com.vaadin.shared.ui.orderedlayout.AbstractOrderedLayoutState.class);
+            store.setSuperClass(org.vaadin.addon.leaflet.shared.LeafletRectangleState.class, org.vaadin.addon.leaflet.shared.LeafletPolylineState.class);
+            store.setSuperClass(org.vaadin.addon.leaflet.shared.LeafletWmsLayerState.class, org.vaadin.addon.leaflet.shared.LeafletTileLayerState.class);
             store.setSuperClass(com.vaadin.shared.ui.textarea.TextAreaState.class, com.vaadin.shared.ui.textfield.AbstractTextFieldState.class);
             store.setSuperClass(com.vaadin.shared.ui.textfield.TextFieldState.class, com.vaadin.shared.ui.textfield.AbstractTextFieldState.class);
             store.setSuperClass(com.vaadin.shared.ui.tree.TreeMultiSelectionModelState.class, com.vaadin.shared.ui.grid.MultiSelectionModelState.class);
@@ -221,6 +246,33 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setClass("com.vaadin.ui.Upload", com.vaadin.client.ui.upload.UploadConnector.class);
             store.setClass("com.vaadin.ui.Video", com.vaadin.client.ui.video.VideoConnector.class);
             store.setClass("com.vaadin.ui.Window", com.vaadin.client.ui.window.WindowConnector.class);
+            store.setClass("org.vaadin.addon.leaflet.control.LAttribution", org.vaadin.addon.leaflet.client.LeafletAttributionConnector.class);
+            store.setClass("org.vaadin.addon.leaflet.LCircle", org.vaadin.addon.leaflet.client.LeafletCircleConnector.class);
+            store.setClass("org.vaadin.addon.leaflet.LCircleMarker", org.vaadin.addon.leaflet.client.LeafletCircleMarkerConnector.class);
+            store.setClass("org.vaadin.addon.leaflet.LFeatureGroup", org.vaadin.addon.leaflet.client.LeafletFeatureGroupConnector.class);
+            store.setClass("org.vaadin.addon.leaflet.LGridLayer", org.vaadin.addon.leaflet.client.LeafletGridLayerConnector.class);
+            store.setClass("org.vaadin.addon.leaflet.LImageOverlay", org.vaadin.addon.leaflet.client.LeafletImageOverlayConnector.class);
+            store.setClass("org.vaadin.addon.leaflet.LLayerGroup", org.vaadin.addon.leaflet.client.LeafletLayerGroupConnector.class);
+            store.setClass("org.vaadin.addon.leaflet.control.LLayers", org.vaadin.addon.leaflet.client.LeafletLayersConnector.class);
+            store.setClass("org.vaadin.addon.leaflet.LMap", org.vaadin.addon.leaflet.client.LeafletMapConnector.class);
+            store.setClass("org.vaadin.addon.leaflet.LMarker", org.vaadin.addon.leaflet.client.LeafletMarkerConnector.class);
+            store.setClass("org.vaadin.addon.leaflet.LPolygon", org.vaadin.addon.leaflet.client.LeafletPolygonConnector.class);
+            store.setClass("org.vaadin.addon.leaflet.LPolyline", org.vaadin.addon.leaflet.client.LeafletPolylineConnector.class);
+            load0();
+          }
+          private void load0() {
+            store.setClass("org.vaadin.addon.leaflet.LPopup", org.vaadin.addon.leaflet.client.LeafletPopupConnector.class);
+            store.setClass("org.vaadin.addon.leaflet.LRectangle", org.vaadin.addon.leaflet.client.LeafletRectangleConnector.class);
+            store.setClass("org.vaadin.addon.leaflet.control.LScale", org.vaadin.addon.leaflet.client.LeafletScaleConnector.class);
+            store.setClass("org.vaadin.addon.leaflet.LTileLayer", org.vaadin.addon.leaflet.client.LeafletTileLayerConnector.class);
+            store.setClass("org.vaadin.addon.leaflet.LTooltip", org.vaadin.addon.leaflet.client.LeafletTooltipConnector.class);
+            store.setClass("org.vaadin.addon.leaflet.LWmsLayer", org.vaadin.addon.leaflet.client.LeafletWmsLayerConnector.class);
+            store.setClass("org.vaadin.addon.leaflet.control.LZoom", org.vaadin.addon.leaflet.client.LeafletZoomConnector.class);
+            store.setConstructor(com.google.gwt.user.client.ui.Label.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(com.google.gwt.user.client.ui.Label.class);
+              }
+            });
             store.setConstructor(com.vaadin.client.JavaScriptExtension.class, new Invoker() {
               public Object invoke(Object target, Object[] params) {
                 return com.google.gwt.core.client.GWT.create(com.vaadin.client.JavaScriptExtension.class);
@@ -306,9 +358,6 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
                 return com.google.gwt.core.client.GWT.create(com.vaadin.client.connectors.grid.MultiSelectionModelConnector.class);
               }
             });
-            load0();
-          }
-          private void load0() {
             store.setConstructor(com.vaadin.client.connectors.grid.NoSelectionModelConnector.class, new Invoker() {
               public Object invoke(Object target, Object[] params) {
                 return com.google.gwt.core.client.GWT.create(com.vaadin.client.connectors.grid.NoSelectionModelConnector.class);
@@ -769,6 +818,9 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
                 return com.google.gwt.core.client.GWT.create(com.vaadin.client.ui.gridlayout.GridLayoutConnector.class);
               }
             });
+            load1();
+          }
+          private void load1() {
             store.setConstructor(com.vaadin.client.ui.image.ImageConnector.class, new Invoker() {
               public Object invoke(Object target, Object[] params) {
                 return com.google.gwt.core.client.GWT.create(com.vaadin.client.ui.image.ImageConnector.class);
@@ -879,9 +931,6 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
                 return com.google.gwt.core.client.GWT.create(com.vaadin.client.ui.tabsheet.TabsheetConnector.class);
               }
             });
-            load1();
-          }
-          private void load1() {
             store.setConstructor(com.vaadin.client.ui.textarea.TextAreaConnector.class, new Invoker() {
               public Object invoke(Object target, Object[] params) {
                 return com.google.gwt.core.client.GWT.create(com.vaadin.client.ui.textarea.TextAreaConnector.class);
@@ -1327,6 +1376,9 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
                 return com.google.gwt.core.client.GWT.create(com.vaadin.shared.ui.tabsheet.TabsheetState.class);
               }
             });
+            load2();
+          }
+          private void load2() {
             store.setConstructor(com.vaadin.shared.ui.textarea.TextAreaState.class, new Invoker() {
               public Object invoke(Object target, Object[] params) {
                 return com.google.gwt.core.client.GWT.create(com.vaadin.shared.ui.textarea.TextAreaState.class);
@@ -1432,11 +1484,208 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
                 return com.google.gwt.core.client.GWT.create(java.util.HashMap.class);
               }
             });
+            store.setConstructor(org.vaadin.addon.leaflet.client.LeafletAttributionConnector.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.client.LeafletAttributionConnector.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.client.LeafletCircleConnector.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.client.LeafletCircleConnector.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.client.LeafletCircleMarkerConnector.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.client.LeafletCircleMarkerConnector.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.client.LeafletFeatureGroupConnector.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.client.LeafletFeatureGroupConnector.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.client.LeafletGridLayerConnector.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.client.LeafletGridLayerConnector.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.client.LeafletImageOverlayConnector.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.client.LeafletImageOverlayConnector.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.client.LeafletLayerGroupConnector.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.client.LeafletLayerGroupConnector.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.client.LeafletLayersConnector.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.client.LeafletLayersConnector.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.client.LeafletMapConnector.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.client.LeafletMapConnector.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.client.LeafletMarkerConnector.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.client.LeafletMarkerConnector.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.client.LeafletPolygonConnector.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.client.LeafletPolygonConnector.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.client.LeafletPolylineConnector.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.client.LeafletPolylineConnector.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.client.LeafletPopupConnector.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.client.LeafletPopupConnector.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.client.LeafletRectangleConnector.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.client.LeafletRectangleConnector.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.client.LeafletScaleConnector.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.client.LeafletScaleConnector.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.client.LeafletTileLayerConnector.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.client.LeafletTileLayerConnector.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.client.LeafletTooltipConnector.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.client.LeafletTooltipConnector.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.client.LeafletWmsLayerConnector.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.client.LeafletWmsLayerConnector.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.client.LeafletZoomConnector.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.client.LeafletZoomConnector.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.shared.Bounds.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.shared.Bounds.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.shared.LayerControlInfo.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.shared.LayerControlInfo.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.shared.LeafletAttributionState.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.shared.LeafletAttributionState.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.shared.LeafletCircleState.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.shared.LeafletCircleState.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.shared.LeafletControlState.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.shared.LeafletControlState.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.shared.LeafletGridLayerState.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.shared.LeafletGridLayerState.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.shared.LeafletImageOverlayState.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.shared.LeafletImageOverlayState.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.shared.LeafletLayerGroupState.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.shared.LeafletLayerGroupState.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.shared.LeafletLayersState.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.shared.LeafletLayersState.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.shared.LeafletMapState.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.shared.LeafletMapState.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.shared.LeafletMarkerState.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.shared.LeafletMarkerState.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.shared.LeafletPolylineState.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.shared.LeafletPolylineState.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.shared.LeafletPopupState.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.shared.LeafletPopupState.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.shared.LeafletRectangleState.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.shared.LeafletRectangleState.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.shared.LeafletScaleState.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.shared.LeafletScaleState.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.shared.LeafletTileLayerState.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.shared.LeafletTileLayerState.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.shared.LeafletTooltipState.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.shared.LeafletTooltipState.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.shared.LeafletWmsLayerState.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.shared.LeafletWmsLayerState.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.shared.Point.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.shared.Point.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.shared.PopupState.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.shared.PopupState.class);
+              }
+            });
+            store.setConstructor(org.vaadin.addon.leaflet.shared.TooltipState.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return com.google.gwt.core.client.GWT.create(org.vaadin.addon.leaflet.shared.TooltipState.class);
+              }
+            });
             store.setReturnType(com.vaadin.client.JavaScriptExtension.class, "getState", new Type(com.vaadin.shared.JavaScriptExtensionState.class));
             store.setReturnType(com.vaadin.client.connectors.ButtonRendererConnector.class, "getRenderer", new Type(com.vaadin.client.renderers.ButtonRenderer.class));
-            load2();
-          }
-          private void load2() {
             store.setReturnType(com.vaadin.client.connectors.ButtonRendererConnector.class, "getState", new Type(com.vaadin.shared.ui.grid.renderers.ButtonRendererState.class));
             store.setReturnType(com.vaadin.client.connectors.ImageRendererConnector.class, "getRenderer", new Type(com.vaadin.client.renderers.ImageRenderer.class));
             store.setReturnType(com.vaadin.client.connectors.ImageRendererConnector.class, "getState", new Type(com.vaadin.shared.ui.grid.renderers.ImageRendererState.class));
@@ -1518,6 +1767,9 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setReturnType(com.vaadin.client.ui.datefield.PopupDateTimeFieldConnector.class, "getWidget", new Type(com.vaadin.client.ui.VPopupTimeCalendar.class));
             store.setReturnType(com.vaadin.client.ui.datefield.PopupDateTimeFieldConnector.class, "getState", new Type(com.vaadin.shared.ui.datefield.LocalDateTimeFieldState.class));
             store.setReturnType(com.vaadin.client.ui.draganddropwrapper.DragAndDropWrapperConnector.class, "getWidget", new Type(com.vaadin.client.ui.VDragAndDropWrapper.class));
+            load3();
+          }
+          private void load3() {
             store.setReturnType(com.vaadin.client.ui.draganddropwrapper.DragAndDropWrapperConnector.class, "getState", new Type(com.vaadin.shared.AbstractComponentState.class));
             store.setReturnType(com.vaadin.client.ui.embedded.EmbeddedConnector.class, "getWidget", new Type(com.vaadin.client.ui.VEmbedded.class));
             store.setReturnType(com.vaadin.client.ui.embedded.EmbeddedConnector.class, "getState", new Type(com.vaadin.shared.ui.embedded.EmbeddedState.class));
@@ -1584,6 +1836,39 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setReturnType(com.vaadin.client.ui.video.VideoConnector.class, "getState", new Type(com.vaadin.shared.ui.video.VideoState.class));
             store.setReturnType(com.vaadin.client.ui.window.WindowConnector.class, "getWidget", new Type(com.vaadin.client.ui.VWindow.class));
             store.setReturnType(com.vaadin.client.ui.window.WindowConnector.class, "getState", new Type(com.vaadin.shared.ui.window.WindowState.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletAttributionConnector.class, "getState", new Type(org.vaadin.addon.leaflet.shared.LeafletAttributionState.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletCircleConnector.class, "getWidget", new Type(com.google.gwt.user.client.ui.Label.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletCircleConnector.class, "getState", new Type(org.vaadin.addon.leaflet.shared.LeafletCircleState.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletCircleMarkerConnector.class, "getWidget", new Type(com.google.gwt.user.client.ui.Label.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletCircleMarkerConnector.class, "getState", new Type(org.vaadin.addon.leaflet.shared.LeafletCircleState.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletFeatureGroupConnector.class, "getWidget", new Type(com.google.gwt.user.client.ui.Label.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletFeatureGroupConnector.class, "getState", new Type(org.vaadin.addon.leaflet.shared.LeafletLayerGroupState.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletGridLayerConnector.class, "getWidget", new Type(com.google.gwt.user.client.ui.Label.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletGridLayerConnector.class, "getState", new Type(org.vaadin.addon.leaflet.shared.LeafletGridLayerState.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletImageOverlayConnector.class, "getWidget", new Type(com.google.gwt.user.client.ui.Label.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletImageOverlayConnector.class, "getState", new Type(org.vaadin.addon.leaflet.shared.LeafletImageOverlayState.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletLayerGroupConnector.class, "getWidget", new Type(com.google.gwt.user.client.ui.Label.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletLayerGroupConnector.class, "getState", new Type(org.vaadin.addon.leaflet.shared.LeafletLayerGroupState.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletLayersConnector.class, "getState", new Type(org.vaadin.addon.leaflet.shared.LeafletLayersState.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletMapConnector.class, "getState", new Type(org.vaadin.addon.leaflet.shared.LeafletMapState.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletMarkerConnector.class, "getWidget", new Type(com.google.gwt.user.client.ui.Label.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletMarkerConnector.class, "getState", new Type(org.vaadin.addon.leaflet.shared.LeafletMarkerState.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletPolygonConnector.class, "getWidget", new Type(com.google.gwt.user.client.ui.Label.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletPolygonConnector.class, "getState", new Type(org.vaadin.addon.leaflet.shared.LeafletPolylineState.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletPolylineConnector.class, "getWidget", new Type(com.google.gwt.user.client.ui.Label.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletPolylineConnector.class, "getState", new Type(org.vaadin.addon.leaflet.shared.LeafletPolylineState.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletPopupConnector.class, "getWidget", new Type(com.google.gwt.user.client.ui.Label.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletPopupConnector.class, "getState", new Type(org.vaadin.addon.leaflet.shared.LeafletPopupState.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletRectangleConnector.class, "getWidget", new Type(com.google.gwt.user.client.ui.Label.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletRectangleConnector.class, "getState", new Type(org.vaadin.addon.leaflet.shared.LeafletRectangleState.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletScaleConnector.class, "getState", new Type(org.vaadin.addon.leaflet.shared.LeafletScaleState.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletTileLayerConnector.class, "getWidget", new Type(com.google.gwt.user.client.ui.Label.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletTileLayerConnector.class, "getState", new Type(org.vaadin.addon.leaflet.shared.LeafletTileLayerState.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletTooltipConnector.class, "getWidget", new Type(com.google.gwt.user.client.ui.Label.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletTooltipConnector.class, "getState", new Type(org.vaadin.addon.leaflet.shared.LeafletTooltipState.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletWmsLayerConnector.class, "getWidget", new Type(com.google.gwt.user.client.ui.Label.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletWmsLayerConnector.class, "getState", new Type(org.vaadin.addon.leaflet.shared.LeafletWmsLayerState.class));
+            store.setReturnType(org.vaadin.addon.leaflet.client.LeafletZoomConnector.class, "getState", new Type(org.vaadin.addon.leaflet.shared.LeafletControlState.class));
             store.setInvoker(com.vaadin.client.connectors.grid.AbstractSelectionModelConnector.class, "onSelectionAllowedChange",new JsniInvoker() {
               protected native Object jsniInvoke(Object target, com.vaadin.client.JsArrayObject<Object> params) /*-{ 
                 target.@com.vaadin.client.connectors.grid.AbstractSelectionModelConnector::onSelectionAllowedChange(*)();
@@ -1716,9 +2001,6 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
                 return null;
               }-*/;
             });
-            load3();
-          }
-          private void load3() {
             store.setInvoker(com.vaadin.client.connectors.grid.GridConnector.class, "updateRowHeight",new JsniInvoker() {
               protected native Object jsniInvoke(Object target, com.vaadin.client.JsArrayObject<Object> params) /*-{ 
                 target.@com.vaadin.client.connectors.grid.GridConnector::updateRowHeight(*)();
@@ -1875,6 +2157,9 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
                 return null;
               }
             });
+            load4();
+          }
+          private void load4() {
             store.setInvoker(com.vaadin.client.ui.VTextArea.class, "setMaxLength",new Invoker() {
               public Object invoke(Object target, Object[] params) {
                 ((com.vaadin.client.ui.VTextArea) target).setMaxLength((java.lang.Integer) params[0]);
@@ -2301,9 +2586,6 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
                 return null;
               }
             });
-            load4();
-          }
-          private void load4() {
             store.setInvoker(com.vaadin.shared.ui.grid.editor.EditorClientRpc.class, "cancel",new Invoker() {
               public Object invoke(Object target, Object[] params) {
                 ((com.vaadin.shared.ui.grid.editor.EditorClientRpc) target).cancel();
@@ -2415,6 +2697,117 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setInvoker(com.vaadin.shared.ui.upload.UploadClientRpc.class, "submitUpload",new Invoker() {
               public Object invoke(Object target, Object[] params) {
                 ((com.vaadin.shared.ui.upload.UploadClientRpc) target).submitUpload();
+                return null;
+              }
+            });
+            store.setInvoker(org.vaadin.addon.leaflet.shared.ILayerClientRpc.class, "bringToBack",new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                ((org.vaadin.addon.leaflet.shared.ILayerClientRpc) target).bringToBack();
+                return null;
+              }
+            });
+            store.setInvoker(org.vaadin.addon.leaflet.shared.ILayerClientRpc.class, "bringToFront",new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                ((org.vaadin.addon.leaflet.shared.ILayerClientRpc) target).bringToFront();
+                return null;
+              }
+            });
+            store.setInvoker(org.vaadin.addon.leaflet.shared.LeafletMapClientRpc.class, "flyTo",new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                ((org.vaadin.addon.leaflet.shared.LeafletMapClientRpc) target).flyTo((java.lang.Double) params[0], (java.lang.Double) params[1], (java.lang.Double) params[2]);
+                return null;
+              }
+            });
+            store.setInvoker(org.vaadin.addon.leaflet.shared.LeafletMapClientRpc.class, "locate",new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                ((org.vaadin.addon.leaflet.shared.LeafletMapClientRpc) target).locate((java.lang.Boolean) params[0], (java.lang.Boolean) params[1], (java.lang.Boolean) params[2]);
+                return null;
+              }
+            });
+            store.setInvoker(org.vaadin.addon.leaflet.shared.LeafletMapClientRpc.class, "setBoxZoom",new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                ((org.vaadin.addon.leaflet.shared.LeafletMapClientRpc) target).setBoxZoom((java.lang.Boolean) params[0]);
+                return null;
+              }
+            });
+            store.setInvoker(org.vaadin.addon.leaflet.shared.LeafletMapClientRpc.class, "setCenter",new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                ((org.vaadin.addon.leaflet.shared.LeafletMapClientRpc) target).setCenter((java.lang.Double) params[0], (java.lang.Double) params[1], (java.lang.Double) params[2]);
+                return null;
+              }
+            });
+            store.setInvoker(org.vaadin.addon.leaflet.shared.LeafletMapClientRpc.class, "setDoubleClickZoom",new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                ((org.vaadin.addon.leaflet.shared.LeafletMapClientRpc) target).setDoubleClickZoom((java.lang.Boolean) params[0]);
+                return null;
+              }
+            });
+            store.setInvoker(org.vaadin.addon.leaflet.shared.LeafletMapClientRpc.class, "setDragging",new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                ((org.vaadin.addon.leaflet.shared.LeafletMapClientRpc) target).setDragging((java.lang.Boolean) params[0]);
+                return null;
+              }
+            });
+            load5();
+          }
+          private void load5() {
+            store.setInvoker(org.vaadin.addon.leaflet.shared.LeafletMapClientRpc.class, "setKeyboard",new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                ((org.vaadin.addon.leaflet.shared.LeafletMapClientRpc) target).setKeyboard((java.lang.Boolean) params[0]);
+                return null;
+              }
+            });
+            store.setInvoker(org.vaadin.addon.leaflet.shared.LeafletMapClientRpc.class, "setMaxBounds",new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                ((org.vaadin.addon.leaflet.shared.LeafletMapClientRpc) target).setMaxBounds((org.vaadin.addon.leaflet.shared.Bounds) params[0]);
+                return null;
+              }
+            });
+            store.setInvoker(org.vaadin.addon.leaflet.shared.LeafletMapClientRpc.class, "setScrollWheelZoom",new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                ((org.vaadin.addon.leaflet.shared.LeafletMapClientRpc) target).setScrollWheelZoom((java.lang.Boolean) params[0]);
+                return null;
+              }
+            });
+            store.setInvoker(org.vaadin.addon.leaflet.shared.LeafletMapClientRpc.class, "setTouchZoom",new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                ((org.vaadin.addon.leaflet.shared.LeafletMapClientRpc) target).setTouchZoom((java.lang.Boolean) params[0]);
+                return null;
+              }
+            });
+            store.setInvoker(org.vaadin.addon.leaflet.shared.LeafletMapClientRpc.class, "stopLocate",new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                ((org.vaadin.addon.leaflet.shared.LeafletMapClientRpc) target).stopLocate();
+                return null;
+              }
+            });
+            store.setInvoker(org.vaadin.addon.leaflet.shared.LeafletMapClientRpc.class, "zoomToExtent",new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                ((org.vaadin.addon.leaflet.shared.LeafletMapClientRpc) target).zoomToExtent((org.vaadin.addon.leaflet.shared.Bounds) params[0]);
+                return null;
+              }
+            });
+            store.setInvoker(org.vaadin.addon.leaflet.shared.LeafletMarkerClientRpc.class, "closePopup",new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                ((org.vaadin.addon.leaflet.shared.LeafletMarkerClientRpc) target).closePopup();
+                return null;
+              }
+            });
+            store.setInvoker(org.vaadin.addon.leaflet.shared.LeafletMarkerClientRpc.class, "closeTooltip",new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                ((org.vaadin.addon.leaflet.shared.LeafletMarkerClientRpc) target).closeTooltip();
+                return null;
+              }
+            });
+            store.setInvoker(org.vaadin.addon.leaflet.shared.LeafletMarkerClientRpc.class, "openPopup",new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                ((org.vaadin.addon.leaflet.shared.LeafletMarkerClientRpc) target).openPopup();
+                return null;
+              }
+            });
+            store.setInvoker(org.vaadin.addon.leaflet.shared.LeafletMarkerClientRpc.class, "openTooltip",new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                ((org.vaadin.addon.leaflet.shared.LeafletMarkerClientRpc) target).openTooltip();
                 return null;
               }
             });
@@ -2544,6 +2937,42 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setParamTypes(com.vaadin.shared.ui.window.WindowServerRpc.class, "click", new Type[] {new Type(com.vaadin.shared.MouseEventDetails.class), });
             store.setParamTypes(com.vaadin.shared.ui.window.WindowServerRpc.class, "windowModeChanged", new Type[] {new Type(com.vaadin.shared.ui.window.WindowMode.class), });
             store.setParamTypes(com.vaadin.shared.ui.window.WindowServerRpc.class, "windowMoved", new Type[] {new Type(java.lang.Integer.class), new Type(java.lang.Integer.class), });
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.ClickServerRpc.class, "onClick", new Type[] {new Type(org.vaadin.addon.leaflet.shared.Point.class), new Type(com.vaadin.shared.MouseEventDetails.class), });
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.ContextMenuServerRpc.class, "onContextMenu", new Type[] {new Type(org.vaadin.addon.leaflet.shared.Point.class), new Type(com.vaadin.shared.MouseEventDetails.class), });
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.DragEndServerRpc.class, "dragEnd", new Type[] {new Type(org.vaadin.addon.leaflet.shared.Point.class), });
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.ILayerClientRpc.class, "bringToBack", new Type[] {});
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.ILayerClientRpc.class, "bringToFront", new Type[] {});
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.LeafletGridLayerServerRpc.class, "onLoad", new Type[] {});
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.LeafletGridLayerServerRpc.class, "onLoading", new Type[] {});
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.LeafletMapClientRpc.class, "flyTo", new Type[] {new Type(java.lang.Double.class), new Type(java.lang.Double.class), new Type(java.lang.Double.class), });
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.LeafletMapClientRpc.class, "locate", new Type[] {new Type(java.lang.Boolean.class), new Type(java.lang.Boolean.class), new Type(java.lang.Boolean.class), });
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.LeafletMapClientRpc.class, "setBoxZoom", new Type[] {new Type(java.lang.Boolean.class), });
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.LeafletMapClientRpc.class, "setCenter", new Type[] {new Type(java.lang.Double.class), new Type(java.lang.Double.class), new Type(java.lang.Double.class), });
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.LeafletMapClientRpc.class, "setDoubleClickZoom", new Type[] {new Type(java.lang.Boolean.class), });
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.LeafletMapClientRpc.class, "setDragging", new Type[] {new Type(java.lang.Boolean.class), });
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.LeafletMapClientRpc.class, "setKeyboard", new Type[] {new Type(java.lang.Boolean.class), });
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.LeafletMapClientRpc.class, "setMaxBounds", new Type[] {new Type(org.vaadin.addon.leaflet.shared.Bounds.class), });
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.LeafletMapClientRpc.class, "setScrollWheelZoom", new Type[] {new Type(java.lang.Boolean.class), });
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.LeafletMapClientRpc.class, "setTouchZoom", new Type[] {new Type(java.lang.Boolean.class), });
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.LeafletMapClientRpc.class, "stopLocate", new Type[] {});
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.LeafletMapClientRpc.class, "zoomToExtent", new Type[] {new Type(org.vaadin.addon.leaflet.shared.Bounds.class), });
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.LeafletMapServerRpc.class, "onBaseLayerChange", new Type[] {new Type(java.lang.String.class), });
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.LeafletMapServerRpc.class, "onClick", new Type[] {new Type(org.vaadin.addon.leaflet.shared.Point.class), new Type(com.vaadin.shared.MouseEventDetails.class), });
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.LeafletMapServerRpc.class, "onContextMenu", new Type[] {new Type(org.vaadin.addon.leaflet.shared.Point.class), new Type(com.vaadin.shared.MouseEventDetails.class), });
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.LeafletMapServerRpc.class, "onLocate", new Type[] {new Type(org.vaadin.addon.leaflet.shared.Point.class), new Type(java.lang.Double.class), new Type(java.lang.Double.class), });
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.LeafletMapServerRpc.class, "onLocateError", new Type[] {new Type(java.lang.String.class), new Type(java.lang.Integer.class), });
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.LeafletMapServerRpc.class, "onMoveEnd", new Type[] {new Type(org.vaadin.addon.leaflet.shared.Bounds.class), new Type(org.vaadin.addon.leaflet.shared.Point.class), new Type(java.lang.Double.class), });
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.LeafletMapServerRpc.class, "onOverlayAdd", new Type[] {new Type(java.lang.String.class), });
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.LeafletMapServerRpc.class, "onOverlayRemove", new Type[] {new Type(java.lang.String.class), });
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.LeafletMarkerClientRpc.class, "closePopup", new Type[] {});
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.LeafletMarkerClientRpc.class, "closeTooltip", new Type[] {});
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.LeafletMarkerClientRpc.class, "openPopup", new Type[] {});
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.LeafletMarkerClientRpc.class, "openTooltip", new Type[] {});
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.LeafletTileLayerServerRpc.class, "onLoad", new Type[] {});
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.LeafletTileLayerServerRpc.class, "onLoading", new Type[] {});
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.MouseOutServerRpc.class, "onMouseOut", new Type[] {new Type(org.vaadin.addon.leaflet.shared.Point.class), });
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.MouseOverServerRpc.class, "onMouseOver", new Type[] {new Type(org.vaadin.addon.leaflet.shared.Point.class), });
+            store.setParamTypes(org.vaadin.addon.leaflet.shared.PopupServerRpc.class, "closed", new Type[] {});
             store.setProxyHandler(com.vaadin.shared.ContextClickRpc.class, new com.vaadin.client.metadata.ProxyHandler() {
               public Object createProxy(final com.vaadin.client.metadata.InvokationHandler handler) {
                 return new com.vaadin.shared.ContextClickRpc() {
@@ -2574,6 +3003,9 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
                 };
               }
             });
+            load6();
+          }
+          private void load6() {
             store.setProxyHandler(com.vaadin.shared.communication.FieldRpc.FocusServerRpc.class, new com.vaadin.client.metadata.ProxyHandler() {
               public Object createProxy(final com.vaadin.client.metadata.InvokationHandler handler) {
                 return new com.vaadin.shared.communication.FieldRpc.FocusServerRpc() {
@@ -2622,9 +3054,6 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
                 };
               }
             });
-            load5();
-          }
-          private void load5() {
             store.setProxyHandler(com.vaadin.shared.data.selection.SelectionServerRpc.class, new com.vaadin.client.metadata.ProxyHandler() {
               public Object createProxy(final com.vaadin.client.metadata.InvokationHandler handler) {
                 return new com.vaadin.shared.data.selection.SelectionServerRpc() {
@@ -3051,6 +3480,9 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
                 };
               }
             });
+            load7();
+          }
+          private void load7() {
             store.setProxyHandler(com.vaadin.shared.ui.ui.DebugWindowServerRpc.class, new com.vaadin.client.metadata.ProxyHandler() {
               public Object createProxy(final com.vaadin.client.metadata.InvokationHandler handler) {
                 return new com.vaadin.shared.ui.ui.DebugWindowServerRpc() {
@@ -3099,9 +3531,6 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
                 };
               }
             });
-            load6();
-          }
-          private void load6() {
             store.setProxyHandler(com.vaadin.shared.ui.window.WindowServerRpc.class, new com.vaadin.client.metadata.ProxyHandler() {
               public Object createProxy(final com.vaadin.client.metadata.InvokationHandler handler) {
                 return new com.vaadin.shared.ui.window.WindowServerRpc() {
@@ -3113,6 +3542,114 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
                   }
                   public void windowMoved(int p0, int p1) {
                     handler.invoke(this, com.vaadin.client.metadata.TypeData.getType(com.vaadin.shared.ui.window.WindowServerRpc.class).getMethod("windowMoved"), new Object [] {p0, p1, });
+                  }
+                };
+              }
+            });
+            store.setProxyHandler(org.vaadin.addon.leaflet.shared.ClickServerRpc.class, new com.vaadin.client.metadata.ProxyHandler() {
+              public Object createProxy(final com.vaadin.client.metadata.InvokationHandler handler) {
+                return new org.vaadin.addon.leaflet.shared.ClickServerRpc() {
+                  public void onClick(org.vaadin.addon.leaflet.shared.Point p0, com.vaadin.shared.MouseEventDetails p1) {
+                    handler.invoke(this, com.vaadin.client.metadata.TypeData.getType(org.vaadin.addon.leaflet.shared.ClickServerRpc.class).getMethod("onClick"), new Object [] {p0, p1, });
+                  }
+                };
+              }
+            });
+            store.setProxyHandler(org.vaadin.addon.leaflet.shared.ContextMenuServerRpc.class, new com.vaadin.client.metadata.ProxyHandler() {
+              public Object createProxy(final com.vaadin.client.metadata.InvokationHandler handler) {
+                return new org.vaadin.addon.leaflet.shared.ContextMenuServerRpc() {
+                  public void onContextMenu(org.vaadin.addon.leaflet.shared.Point p0, com.vaadin.shared.MouseEventDetails p1) {
+                    handler.invoke(this, com.vaadin.client.metadata.TypeData.getType(org.vaadin.addon.leaflet.shared.ContextMenuServerRpc.class).getMethod("onContextMenu"), new Object [] {p0, p1, });
+                  }
+                };
+              }
+            });
+            store.setProxyHandler(org.vaadin.addon.leaflet.shared.DragEndServerRpc.class, new com.vaadin.client.metadata.ProxyHandler() {
+              public Object createProxy(final com.vaadin.client.metadata.InvokationHandler handler) {
+                return new org.vaadin.addon.leaflet.shared.DragEndServerRpc() {
+                  public void dragEnd(org.vaadin.addon.leaflet.shared.Point p0) {
+                    handler.invoke(this, com.vaadin.client.metadata.TypeData.getType(org.vaadin.addon.leaflet.shared.DragEndServerRpc.class).getMethod("dragEnd"), new Object [] {p0, });
+                  }
+                };
+              }
+            });
+            store.setProxyHandler(org.vaadin.addon.leaflet.shared.LeafletGridLayerServerRpc.class, new com.vaadin.client.metadata.ProxyHandler() {
+              public Object createProxy(final com.vaadin.client.metadata.InvokationHandler handler) {
+                return new org.vaadin.addon.leaflet.shared.LeafletGridLayerServerRpc() {
+                  public void onLoad() {
+                    handler.invoke(this, com.vaadin.client.metadata.TypeData.getType(org.vaadin.addon.leaflet.shared.LeafletGridLayerServerRpc.class).getMethod("onLoad"), new Object [] {});
+                  }
+                  public void onLoading() {
+                    handler.invoke(this, com.vaadin.client.metadata.TypeData.getType(org.vaadin.addon.leaflet.shared.LeafletGridLayerServerRpc.class).getMethod("onLoading"), new Object [] {});
+                  }
+                };
+              }
+            });
+            store.setProxyHandler(org.vaadin.addon.leaflet.shared.LeafletMapServerRpc.class, new com.vaadin.client.metadata.ProxyHandler() {
+              public Object createProxy(final com.vaadin.client.metadata.InvokationHandler handler) {
+                return new org.vaadin.addon.leaflet.shared.LeafletMapServerRpc() {
+                  public void onBaseLayerChange(java.lang.String p0) {
+                    handler.invoke(this, com.vaadin.client.metadata.TypeData.getType(org.vaadin.addon.leaflet.shared.LeafletMapServerRpc.class).getMethod("onBaseLayerChange"), new Object [] {p0, });
+                  }
+                  public void onClick(org.vaadin.addon.leaflet.shared.Point p0, com.vaadin.shared.MouseEventDetails p1) {
+                    handler.invoke(this, com.vaadin.client.metadata.TypeData.getType(org.vaadin.addon.leaflet.shared.LeafletMapServerRpc.class).getMethod("onClick"), new Object [] {p0, p1, });
+                  }
+                  public void onContextMenu(org.vaadin.addon.leaflet.shared.Point p0, com.vaadin.shared.MouseEventDetails p1) {
+                    handler.invoke(this, com.vaadin.client.metadata.TypeData.getType(org.vaadin.addon.leaflet.shared.LeafletMapServerRpc.class).getMethod("onContextMenu"), new Object [] {p0, p1, });
+                  }
+                  public void onLocate(org.vaadin.addon.leaflet.shared.Point p0, java.lang.Double p1, java.lang.Double p2) {
+                    handler.invoke(this, com.vaadin.client.metadata.TypeData.getType(org.vaadin.addon.leaflet.shared.LeafletMapServerRpc.class).getMethod("onLocate"), new Object [] {p0, p1, p2, });
+                  }
+                  public void onLocateError(java.lang.String p0, int p1) {
+                    handler.invoke(this, com.vaadin.client.metadata.TypeData.getType(org.vaadin.addon.leaflet.shared.LeafletMapServerRpc.class).getMethod("onLocateError"), new Object [] {p0, p1, });
+                  }
+                  public void onMoveEnd(org.vaadin.addon.leaflet.shared.Bounds p0, org.vaadin.addon.leaflet.shared.Point p1, double p2) {
+                    handler.invoke(this, com.vaadin.client.metadata.TypeData.getType(org.vaadin.addon.leaflet.shared.LeafletMapServerRpc.class).getMethod("onMoveEnd"), new Object [] {p0, p1, p2, });
+                  }
+                  public void onOverlayAdd(java.lang.String p0) {
+                    handler.invoke(this, com.vaadin.client.metadata.TypeData.getType(org.vaadin.addon.leaflet.shared.LeafletMapServerRpc.class).getMethod("onOverlayAdd"), new Object [] {p0, });
+                  }
+                  public void onOverlayRemove(java.lang.String p0) {
+                    handler.invoke(this, com.vaadin.client.metadata.TypeData.getType(org.vaadin.addon.leaflet.shared.LeafletMapServerRpc.class).getMethod("onOverlayRemove"), new Object [] {p0, });
+                  }
+                };
+              }
+            });
+            store.setProxyHandler(org.vaadin.addon.leaflet.shared.LeafletTileLayerServerRpc.class, new com.vaadin.client.metadata.ProxyHandler() {
+              public Object createProxy(final com.vaadin.client.metadata.InvokationHandler handler) {
+                return new org.vaadin.addon.leaflet.shared.LeafletTileLayerServerRpc() {
+                  public void onLoad() {
+                    handler.invoke(this, com.vaadin.client.metadata.TypeData.getType(org.vaadin.addon.leaflet.shared.LeafletTileLayerServerRpc.class).getMethod("onLoad"), new Object [] {});
+                  }
+                  public void onLoading() {
+                    handler.invoke(this, com.vaadin.client.metadata.TypeData.getType(org.vaadin.addon.leaflet.shared.LeafletTileLayerServerRpc.class).getMethod("onLoading"), new Object [] {});
+                  }
+                };
+              }
+            });
+            store.setProxyHandler(org.vaadin.addon.leaflet.shared.MouseOutServerRpc.class, new com.vaadin.client.metadata.ProxyHandler() {
+              public Object createProxy(final com.vaadin.client.metadata.InvokationHandler handler) {
+                return new org.vaadin.addon.leaflet.shared.MouseOutServerRpc() {
+                  public void onMouseOut(org.vaadin.addon.leaflet.shared.Point p0) {
+                    handler.invoke(this, com.vaadin.client.metadata.TypeData.getType(org.vaadin.addon.leaflet.shared.MouseOutServerRpc.class).getMethod("onMouseOut"), new Object [] {p0, });
+                  }
+                };
+              }
+            });
+            store.setProxyHandler(org.vaadin.addon.leaflet.shared.MouseOverServerRpc.class, new com.vaadin.client.metadata.ProxyHandler() {
+              public Object createProxy(final com.vaadin.client.metadata.InvokationHandler handler) {
+                return new org.vaadin.addon.leaflet.shared.MouseOverServerRpc() {
+                  public void onMouseOver(org.vaadin.addon.leaflet.shared.Point p0) {
+                    handler.invoke(this, com.vaadin.client.metadata.TypeData.getType(org.vaadin.addon.leaflet.shared.MouseOverServerRpc.class).getMethod("onMouseOver"), new Object [] {p0, });
+                  }
+                };
+              }
+            });
+            store.setProxyHandler(org.vaadin.addon.leaflet.shared.PopupServerRpc.class, new com.vaadin.client.metadata.ProxyHandler() {
+              public Object createProxy(final com.vaadin.client.metadata.InvokationHandler handler) {
+                return new org.vaadin.addon.leaflet.shared.PopupServerRpc() {
+                  public void closed() {
+                    handler.invoke(this, com.vaadin.client.metadata.TypeData.getType(org.vaadin.addon.leaflet.shared.PopupServerRpc.class).getMethod("closed"), new Object [] {});
                   }
                 };
               }
@@ -3139,12 +3676,18 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setMethodAttribute(com.vaadin.shared.ui.ui.UIServerRpc.class, "resize", com.vaadin.client.metadata.TypeDataStore.MethodAttribute.LAST_ONLY);
             store.setMethodAttribute(com.vaadin.shared.ui.ui.UIServerRpc.class, "scroll", com.vaadin.client.metadata.TypeDataStore.MethodAttribute.DELAYED);
             store.setMethodAttribute(com.vaadin.shared.ui.ui.UIServerRpc.class, "scroll", com.vaadin.client.metadata.TypeDataStore.MethodAttribute.LAST_ONLY);
+            store.setMethodAttribute(org.vaadin.addon.leaflet.shared.LeafletMapServerRpc.class, "onLocate", com.vaadin.client.metadata.TypeDataStore.MethodAttribute.DELAYED);
+            store.setMethodAttribute(org.vaadin.addon.leaflet.shared.LeafletMapServerRpc.class, "onLocate", com.vaadin.client.metadata.TypeDataStore.MethodAttribute.LAST_ONLY);
+            store.setMethodAttribute(org.vaadin.addon.leaflet.shared.LeafletMapServerRpc.class, "onMoveEnd", com.vaadin.client.metadata.TypeDataStore.MethodAttribute.DELAYED);
+            store.setMethodAttribute(org.vaadin.addon.leaflet.shared.LeafletMapServerRpc.class, "onMoveEnd", com.vaadin.client.metadata.TypeDataStore.MethodAttribute.LAST_ONLY);
             loadJsBundle(store);
             store.setPropertyType(com.vaadin.shared.ui.upload.UploadState.class, "acceptMimeTypes", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.AbstractLeafletComponentState.class, "active", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.gridlayout.GridLayoutState.ChildComponentData.class, "alignment", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.ui.orderedlayout.AbstractOrderedLayoutState.ChildComponentData.class, "alignmentBitmask", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.ui.grid.MultiSelectionModelState.class, "allSelected", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.combobox.ComboBoxState.class, "allowNewItems", new Type(java.lang.Boolean.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletImageOverlayState.class, "alt", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.MouseEventDetails.class, "altKey", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.AbstractMediaState.class, "altText", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.embedded.EmbeddedState.class, "altText", new Type(java.lang.String.class));
@@ -3160,8 +3703,20 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setPropertyType(com.vaadin.shared.ui.window.WindowState.class, "assistiveTabStop", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.window.WindowState.class, "assistiveTabStopBottomText", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.window.WindowState.class, "assistiveTabStopTopText", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletImageOverlayState.class, "attribution", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "attributionPrefix", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletGridLayerState.class, "attributionString", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.PopupState.class, "autoClose", new Type(java.lang.Boolean.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.PopupState.class, "autoPan", new Type(java.lang.Boolean.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.PopupState.class, "autoPanPadding", new Type(org.vaadin.addon.leaflet.shared.Point.class));
             store.setPropertyType(com.vaadin.shared.ui.AbstractMediaState.class, "autoplay", new Type(java.lang.Boolean.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LayerControlInfo.class, "baseLayer", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.grid.GridState.class, "bodyRowHeight", new Type(java.lang.Double.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletGridLayerState.class, "bounds", new Type(org.vaadin.addon.leaflet.shared.Bounds.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletImageOverlayState.class, "bounds", new Type(org.vaadin.addon.leaflet.shared.Bounds.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletRectangleState.class, "bounds", new Type(org.vaadin.addon.leaflet.shared.Bounds.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "boxZoom", new Type(java.lang.Boolean.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState.class, "bubblingMouseEvents", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.grid.editor.EditorState.class, "buffered", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.MouseEventDetails.class, "button", new Type(com.vaadin.shared.MouseEventDetails.MouseButton.class));
             store.setPropertyType(com.vaadin.shared.ui.upload.UploadState.class, "buttonCaption", new Type(java.lang.String.class));
@@ -3177,6 +3732,7 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setPropertyType(com.vaadin.shared.AbstractComponentState.class, "captionAsHtml", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.grid.SectionState.RowState.class, "cellGroups", new Type("java.util.Map", new Type[] {new Type(com.vaadin.shared.ui.grid.SectionState.CellState.class), new Type("java.util.Set", new Type[] {new Type(java.lang.String.class), }), }));
             store.setPropertyType(com.vaadin.shared.ui.grid.SectionState.RowState.class, "cells", new Type("java.util.Map", new Type[] {new Type(java.lang.String.class), new Type(com.vaadin.shared.ui.grid.SectionState.CellState.class), }));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "center", new Type(org.vaadin.addon.leaflet.shared.Point.class));
             store.setPropertyType(com.vaadin.shared.ui.window.WindowState.class, "centered", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.checkbox.CheckBoxState.class, "checked", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.csslayout.CssLayoutState.class, "childCss", new Type("java.util.Map", new Type[] {new Type(com.vaadin.shared.Connector.class), new Type(java.lang.String.class), }));
@@ -3185,17 +3741,22 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setPropertyType(com.vaadin.shared.ui.customlayout.CustomLayoutState.class, "childLocations", new Type("java.util.Map", new Type[] {new Type(com.vaadin.shared.Connector.class), new Type(java.lang.String.class), }));
             store.setPropertyType(com.vaadin.shared.ui.embedded.EmbeddedState.class, "classId", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.flash.FlashState.class, "classId", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState.class, "className", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.button.ButtonState.class, "clickShortcutKeyCode", new Type(java.lang.Integer.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState.class, "clickable", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.MouseEventDetails.class, "clientX", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.MouseEventDetails.class, "clientY", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.ui.tabsheet.TabState.class, "closable", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.window.WindowState.class, "closable", new Type(java.lang.Boolean.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.PopupState.class, "closeButton", new Type(java.lang.Boolean.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.PopupState.class, "closeOnClick", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.TooltipConfigurationState.class, "closeTimeout", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.ui.embedded.EmbeddedState.class, "codebase", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.flash.FlashState.class, "codebase", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.embedded.EmbeddedState.class, "codetype", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.flash.FlashState.class, "codetype", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.gridlayout.GridLayoutState.class, "colExpand", new Type(float[].class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletLayersState.class, "collapsed", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.gridlayout.GridLayoutState.ChildComponentData.class, "column1", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.ui.gridlayout.GridLayoutState.ChildComponentData.class, "column2", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.ui.grid.editor.EditorState.class, "columnFields", new Type("java.util.Map", new Type[] {new Type(java.lang.String.class), new Type(java.lang.String.class), }));
@@ -3213,13 +3774,20 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setPropertyType(com.vaadin.shared.ui.dnd.DropTargetState.class, "criteria", new Type("java.util.List", new Type[] {new Type(com.vaadin.shared.ui.dnd.criteria.Criterion.class), }));
             store.setPropertyType(com.vaadin.shared.ui.dnd.DropTargetState.class, "criteriaMatch", new Type(com.vaadin.shared.ui.dnd.criteria.Criterion.Match.class));
             store.setPropertyType(com.vaadin.shared.ui.dnd.DropTargetState.class, "criteriaScript", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "crsName", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletWmsLayerState.class, "crsName", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.MouseEventDetails.class, "ctrlKey", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.combobox.ComboBoxState.class, "currentFilterText", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "customMapOptionsJson", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletTileLayerState.class, "customOptions", new Type("java.util.Map", new Type[] {new Type(java.lang.String.class), new Type(java.lang.String.class), }));
             store.setPropertyType(com.vaadin.shared.ui.dnd.DragSourceState.class, "data", new Type("java.util.Map", new Type[] {new Type(java.lang.String.class), new Type(java.lang.String.class), }));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.LocaleData.class, "dateFormat", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.datefield.AbstractDateFieldState.class, "dateStyles", new Type("java.util.Map", new Type[] {new Type(java.lang.String.class), new Type(java.lang.String.class), }));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.LocaleData.class, "dayNames", new Type(java.lang.String[].class));
             store.setPropertyType(com.vaadin.shared.ui.grid.SectionState.RowState.class, "defaultHeader", new Type(java.lang.Boolean.class));
+            load8();
+          }
+          private void load8() {
             store.setPropertyType(com.vaadin.shared.ui.notification.NotificationState.class, "delay", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.ui.menubar.MenuBarState.class, "delayMs", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.AbstractComponentState.class, "description", new Type(java.lang.String.class));
@@ -3231,12 +3799,18 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setPropertyType(com.vaadin.shared.ui.tabsheet.TabState.class, "descriptionContentMode", new Type(com.vaadin.shared.ui.ContentMode.class));
             store.setPropertyType(com.vaadin.shared.ui.datefield.TextualDateFieldState.class, "descriptionForAssistiveDevices", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.grid.SingleSelectionModelState.class, "deselectAllowed", new Type(java.lang.Boolean.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletTileLayerState.class, "detectRetina", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.ReconnectDialogConfigurationState.class, "dialogGracePeriod", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.ReconnectDialogConfigurationState.class, "dialogModal", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.ReconnectDialogConfigurationState.class, "dialogText", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.ReconnectDialogConfigurationState.class, "dialogTextGaveUp", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.TooltipState.class, "direction", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.button.ButtonState.class, "disableOnClick", new Type(java.lang.Boolean.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMarkerState.class, "divIcon", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "doubleClickZoom", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.window.WindowState.class, "draggable", new Type(java.lang.Boolean.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMarkerState.class, "draggable", new Type(java.lang.Boolean.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "dragging", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.dnd.DropTargetState.class, "dropEffect", new Type(com.vaadin.shared.ui.dnd.DropEffect.class));
             store.setPropertyType(com.vaadin.shared.ui.grid.GridDropTargetState.class, "dropMode", new Type(com.vaadin.shared.ui.grid.DropMode.class));
             store.setPropertyType(com.vaadin.shared.ui.grid.GridDropTargetState.class, "dropThreshold", new Type(java.lang.Integer.class));
@@ -3265,7 +3839,9 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setPropertyType(com.vaadin.shared.ui.grid.GridState.class, "footerRowHeight", new Type(java.lang.Double.class));
             store.setPropertyType(com.vaadin.shared.ui.combobox.ComboBoxState.class, "forceDataSourceUpdate", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.datefield.AbstractDateFieldState.class, "format", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletWmsLayerState.class, "format", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.grid.GridState.class, "frozenColumnCount", new Type(java.lang.Integer.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletPolylineState.class, "geometryjson", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.grid.ColumnState.class, "handleWidgetEvents", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.grid.GridState.class, "hasDescriptions", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.grid.DetailsManagerState.class, "hasDetailsGenerator", new Type(java.lang.Boolean.class));
@@ -3284,6 +3860,7 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.LocaleData.class, "hourMinuteDelimiter", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.grid.SectionState.CellState.class, "html", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.popupview.PopupViewState.class, "html", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.AbstractLeafletDivOverlayState.class, "htmlContent", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.AbstractMediaState.class, "htmlContentAllowed", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.grid.renderers.ButtonRendererState.class, "htmlContentAllowed", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.notification.NotificationState.class, "htmlContentAllowed", new Type(java.lang.Boolean.class));
@@ -3291,16 +3868,30 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setPropertyType(com.vaadin.shared.ui.optiongroup.RadioButtonGroupState.class, "htmlContentAllowed", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.button.ButtonState.class, "iconAltText", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.tabsheet.TabState.class, "iconAltText", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMarkerState.class, "iconAnchor", new Type(org.vaadin.addon.leaflet.shared.Point.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMarkerState.class, "iconPathFill", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMarkerState.class, "iconPathStroke", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMarkerState.class, "iconSize", new Type(org.vaadin.addon.leaflet.shared.Point.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMarkerState.class, "iconTextFill", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.AbstractComponentState.class, "id", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.tabsheet.TabState.class, "id", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.upload.UploadState.class, "immediateMode", new Type(java.lang.Boolean.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletScaleState.class, "imperial", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.progressindicator.ProgressBarState.class, "indeterminate", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.checkbox.CheckBoxState.class, "inputStyles", new Type("java.util.List", new Type[] {new Type(java.lang.String.class), }));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletImageOverlayState.class, "interactive", new Type(java.lang.Boolean.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.TooltipState.class, "interactive", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.grid.ColumnState.class, "internalId", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.PopupState.class, "keepInView", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.dnd.criteria.Criterion.class, "key", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.dnd.criteria.Payload.class, "key", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.tabsheet.TabState.class, "key", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "keyboard", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.checkbox.CheckBoxState.class, "labelStyles", new Type("java.util.List", new Type[] {new Type(java.lang.String.class), }));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.Point.class, "lat", new Type(java.lang.Double.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletLayersState.class, "layerContolInfo", new Type("java.util.Map", new Type[] {new Type(com.vaadin.shared.Connector.class), new Type(org.vaadin.addon.leaflet.shared.LayerControlInfo.class), }));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletWmsLayerState.class, "layerStyles", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletWmsLayerState.class, "layers", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.twincolselect.TwinColSelectState.class, "leftColumnCaption", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.datefield.AbstractDateFieldState.class, "lenient", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.class, "loadingIndicatorConfiguration", new Type(com.vaadin.shared.ui.ui.UIState.LoadingIndicatorConfigurationState.class));
@@ -3310,27 +3901,37 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setPropertyType(com.vaadin.shared.ui.splitpanel.AbstractSplitPanelState.SplitterState.class, "locked", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.loginform.LoginFormState.class, "loginButtonConnector", new Type(com.vaadin.shared.Connector.class));
             store.setPropertyType(com.vaadin.shared.ui.loginform.LoginFormState.class, "loginResource", new Type(com.vaadin.shared.communication.URLReference.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.Point.class, "lon", new Type(java.lang.Double.class));
             store.setPropertyType(com.vaadin.shared.ui.AbstractMediaState.class, "loop", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.gridlayout.GridLayoutState.class, "marginsBitmask", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.ui.orderedlayout.AbstractOrderedLayoutState.class, "marginsBitmask", new Type(java.lang.Integer.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "maxBounds", new Type(org.vaadin.addon.leaflet.shared.Bounds.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.PopupState.class, "maxHeight", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.ui.textfield.AbstractTextFieldState.class, "maxLength", new Type(java.lang.Integer.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletGridLayerState.class, "maxNativeZoom", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.ui.splitpanel.AbstractSplitPanelState.SplitterState.class, "maxPosition", new Type(java.lang.Float.class));
             store.setPropertyType(com.vaadin.shared.ui.splitpanel.AbstractSplitPanelState.SplitterState.class, "maxPositionUnit", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.slider.SliderState.class, "maxValue", new Type(java.lang.Double.class));
             store.setPropertyType(com.vaadin.shared.ui.grid.ColumnState.class, "maxWidth", new Type(java.lang.Double.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.TooltipConfigurationState.class, "maxWidth", new Type(java.lang.Integer.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.PopupState.class, "maxWidth", new Type(java.lang.Integer.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "maxZoom", new Type(java.lang.Integer.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletTileLayerState.class, "maxZoom", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.MouseEventDetails.class, "metaKey", new Type(java.lang.Boolean.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletScaleState.class, "metric", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.dnd.FileParameters.class, "mime", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.embedded.EmbeddedState.class, "mimeType", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "minLocateInterval", new Type(java.lang.Integer.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletGridLayerState.class, "minNativeZoom", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.ui.splitpanel.AbstractSplitPanelState.SplitterState.class, "minPosition", new Type(java.lang.Float.class));
             store.setPropertyType(com.vaadin.shared.ui.splitpanel.AbstractSplitPanelState.SplitterState.class, "minPositionUnit", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.slider.SliderState.class, "minValue", new Type(java.lang.Double.class));
             store.setPropertyType(com.vaadin.shared.ui.grid.ColumnState.class, "minWidth", new Type(java.lang.Double.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.PopupState.class, "minWidth", new Type(java.lang.Integer.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "minZoom", new Type(java.lang.Integer.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletTileLayerState.class, "minZoom", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.ui.grid.ColumnState.class, "minimumWidthFromContent", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.window.WindowState.class, "modal", new Type(java.lang.Boolean.class));
-            load7();
-          }
-          private void load7() {
             store.setPropertyType(com.vaadin.shared.ui.tree.TreeRendererState.class, "mode", new Type(com.vaadin.shared.ui.ContentMode.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.PushConfigurationState.class, "mode", new Type(com.vaadin.shared.communication.PushMode.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.LocaleData.class, "monthNames", new Type(java.lang.String[].class));
@@ -3338,15 +3939,34 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setPropertyType(com.vaadin.shared.ui.dnd.FileParameters.class, "name", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.link.LinkState.class, "name", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.LocaleData.class, "name", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LayerControlInfo.class, "name", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.extension.javascriptmanager.JavaScriptManagerState.class, "names", new Type("java.util.Set", new Type[] {new Type(java.lang.String.class), }));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "newCrsA", new Type(java.lang.Double.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "newCrsB", new Type(java.lang.Double.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "newCrsC", new Type(java.lang.Double.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "newCrsD", new Type(java.lang.Double.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "newCrsMaxX", new Type(java.lang.Double.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "newCrsMaxY", new Type(java.lang.Double.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "newCrsMinX", new Type(java.lang.Double.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "newCrsMinY", new Type(java.lang.Double.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "newCrsName", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "newCrsProjection", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletGridLayerState.class, "noWrap", new Type(java.lang.Boolean.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.Bounds.class, "northEastLat", new Type(java.lang.Double.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.Bounds.class, "northEastLon", new Type(java.lang.Double.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.class, "notificationConfigurations", new Type("java.util.Map", new Type[] {new Type(java.lang.String.class), new Type(com.vaadin.shared.ui.ui.UIState.NotificationTypeConfiguration.class), }));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.NotificationTypeConfiguration.class, "notificationRole", new Type(com.vaadin.shared.ui.ui.NotificationRole.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.DivOverlayState.class, "offset", new Type(org.vaadin.addon.leaflet.shared.Point.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletGridLayerState.class, "opacity", new Type(java.lang.Double.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletImageOverlayState.class, "opacity", new Type(java.lang.Double.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.TooltipState.class, "opacity", new Type(java.lang.Double.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.TooltipConfigurationState.class, "openDelay", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.ui.dnd.criteria.Criterion.class, "operator", new Type(com.vaadin.shared.ui.dnd.criteria.ComparisonOperator.class));
             store.setPropertyType(com.vaadin.shared.ui.slider.SliderState.class, "orientation", new Type(com.vaadin.shared.ui.slider.SliderOrientation.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.class, "overlayContainerLabel", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.combobox.ComboBoxState.class, "pageLength", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.class, "pageState", new Type(com.vaadin.shared.ui.ui.PageState.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.DivOverlayState.class, "pane", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.BrowserWindowOpenerState.class, "parameters", new Type("java.util.Map", new Type[] {new Type(java.lang.String.class), new Type(java.lang.String.class), }));
             store.setPropertyType(com.vaadin.shared.ui.embedded.EmbeddedState.class, "parameters", new Type("java.util.Map", new Type[] {new Type(java.lang.String.class), new Type(java.lang.String.class), }));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.PushConfigurationState.class, "parameters", new Type("java.util.Map", new Type[] {new Type(java.lang.String.class), new Type(java.lang.String.class), }));
@@ -3354,30 +3974,47 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setPropertyType(com.vaadin.shared.extension.PartInformationState.class, "partInformation", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.loginform.LoginFormState.class, "passwordFieldConnector", new Type(com.vaadin.shared.Connector.class));
             store.setPropertyType(com.vaadin.shared.ui.dnd.DragSourceState.class, "payload", new Type("java.util.Map", new Type[] {new Type(java.lang.String.class), new Type(com.vaadin.shared.ui.dnd.criteria.Payload.class), }));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.TooltipState.class, "permanent", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.combobox.ComboBoxState.class, "placeholder", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.datefield.TextualDateFieldState.class, "placeholder", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.textfield.AbstractTextFieldState.class, "placeholder", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.LocaleData.class, "pm", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.AbstractLeafletDivOverlayState.class, "point", new Type(org.vaadin.addon.leaflet.shared.Point.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletCircleState.class, "point", new Type(org.vaadin.addon.leaflet.shared.Point.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMarkerState.class, "point", new Type(org.vaadin.addon.leaflet.shared.Point.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState.class, "pointerEvents", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.class, "pollInterval", new Type(java.lang.Integer.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState.class, "popup", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMarkerState.class, "popup", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMarkerState.class, "popupAnchor", new Type(org.vaadin.addon.leaflet.shared.Point.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState.class, "popupState", new Type(org.vaadin.addon.leaflet.shared.PopupState.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMarkerState.class, "popupState", new Type(org.vaadin.addon.leaflet.shared.PopupState.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletPopupState.class, "popupState", new Type(org.vaadin.addon.leaflet.shared.PopupState.class));
             store.setPropertyType(com.vaadin.shared.ui.notification.NotificationState.class, "position", new Type(com.vaadin.shared.Position.class));
             store.setPropertyType(com.vaadin.shared.ui.splitpanel.AbstractSplitPanelState.SplitterState.class, "position", new Type(java.lang.Float.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletControlState.class, "position", new Type(org.vaadin.addon.leaflet.shared.ControlPosition.class));
             store.setPropertyType(com.vaadin.shared.ui.splitpanel.AbstractSplitPanelState.SplitterState.class, "positionReversed", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.splitpanel.AbstractSplitPanelState.SplitterState.class, "positionUnit", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.window.WindowState.class, "positionX", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.ui.window.WindowState.class, "positionY", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.NotificationTypeConfiguration.class, "postfix", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.NotificationTypeConfiguration.class, "prefix", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletAttributionState.class, "prefix", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.AbstractMediaState.class, "preload", new Type(com.vaadin.shared.ui.PreloadMode.class));
             store.setPropertyType(com.vaadin.shared.AbstractComponentState.class, "primaryStyleName", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.class, "pushConfiguration", new Type(com.vaadin.shared.ui.ui.UIState.PushConfigurationState.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.PushConfigurationState.class, "pushUrl", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.TooltipConfigurationState.class, "quickOpenDelay", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.TooltipConfigurationState.class, "quickOpenTimeout", new Type(java.lang.Integer.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletCircleState.class, "radius", new Type(java.lang.Double.class));
             store.setPropertyType(com.vaadin.shared.ui.datefield.AbstractDateFieldState.class, "rangeEnd", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.datefield.AbstractDateFieldState.class, "rangeStart", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.AbstractFieldState.class, "readOnly", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.ReconnectDialogConfigurationState.class, "reconnectAttempts", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.class, "reconnectDialogConfiguration", new Type(com.vaadin.shared.ui.ui.UIState.ReconnectDialogConfigurationState.class));
+            load9();
+          }
+          private void load9() {
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.ReconnectDialogConfigurationState.class, "reconnectInterval", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.communication.SharedState.class, "registeredEventListeners", new Type("java.util.Set", new Type[] {new Type(java.lang.String.class), }));
             store.setPropertyType(com.vaadin.shared.MouseEventDetails.class, "relativeX", new Type(java.lang.Integer.class));
@@ -3407,6 +4044,7 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setPropertyType(com.vaadin.shared.ui.panel.PanelState.class, "scrollLeft", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.ui.combobox.ComboBoxState.class, "scrollToSelectedItem", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.panel.PanelState.class, "scrollTop", new Type(java.lang.Integer.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "scrollWheelZoom", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.splitpanel.AbstractSplitPanelState.class, "secondChild", new Type(com.vaadin.shared.Connector.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.LoadingIndicatorConfigurationState.class, "secondDelay", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.ui.grid.MultiSelectionModelState.class, "selectAllCheckBoxVisible", new Type(java.lang.Boolean.class));
@@ -3426,17 +4064,21 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setPropertyType(com.vaadin.shared.ui.grid.ColumnState.class, "sortable", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.AbstractMediaState.class, "sourceTypes", new Type("java.util.List", new Type[] {new Type(java.lang.String.class), }));
             store.setPropertyType(com.vaadin.shared.ui.AbstractMediaState.class, "sources", new Type("java.util.List", new Type[] {new Type(com.vaadin.shared.communication.URLReference.class), }));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.Bounds.class, "southWestLat", new Type(java.lang.Double.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.Bounds.class, "southWestLon", new Type(java.lang.Double.class));
             store.setPropertyType(com.vaadin.shared.ui.gridlayout.GridLayoutState.class, "spacing", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.orderedlayout.AbstractOrderedLayoutState.class, "spacing", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.splitpanel.AbstractSplitPanelState.class, "splitterState", new Type(com.vaadin.shared.ui.splitpanel.AbstractSplitPanelState.SplitterState.class));
             store.setPropertyType(com.vaadin.shared.ui.embedded.EmbeddedState.class, "standby", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.flash.FlashState.class, "standby", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.progressindicator.ProgressBarState.class, "state", new Type(java.lang.Float.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.TooltipState.class, "sticky", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.grid.SectionState.CellState.class, "styleName", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.grid.SectionState.RowState.class, "styleName", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.notification.NotificationState.class, "styleName", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.tabsheet.TabState.class, "styleName", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.AbstractComponentState.class, "styles", new Type("java.util.List", new Type[] {new Type(java.lang.String.class), }));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletTileLayerState.class, "subDomains", new Type(java.lang.String[].class));
             store.setPropertyType(com.vaadin.shared.ui.combobox.ComboBoxState.class, "suggestionPopupWidth", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.tabsheet.TabsheetState.class, "tabCaptionsAsHtml", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.TabIndexState.class, "tabIndex", new Type(java.lang.Integer.class));
@@ -3459,17 +4101,29 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setPropertyType(com.vaadin.shared.ui.combobox.ComboBoxState.class, "textInputAllowed", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.class, "theme", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.LoadingIndicatorConfigurationState.class, "thirdDelay", new Type(java.lang.Integer.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletGridLayerState.class, "tileSize", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.ui.datefield.AbstractDateFieldState.class, "timeZoneJSON", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.PageState.class, "title", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMarkerState.class, "title", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletTileLayerState.class, "tms", new Type(java.lang.Boolean.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState.class, "tooltip", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMarkerState.class, "tooltip", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.class, "tooltipConfiguration", new Type(com.vaadin.shared.ui.ui.UIState.TooltipConfigurationState.class));
             store.setPropertyType(com.vaadin.shared.ui.grid.ColumnState.class, "tooltipContentMode", new Type(com.vaadin.shared.ui.ContentMode.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState.class, "tooltipState", new Type(org.vaadin.addon.leaflet.shared.TooltipState.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMarkerState.class, "tooltipState", new Type(org.vaadin.addon.leaflet.shared.TooltipState.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletTooltipState.class, "tooltipState", new Type(org.vaadin.addon.leaflet.shared.TooltipState.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "touchZoom", new Type(java.lang.Boolean.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletWmsLayerState.class, "transparent", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.LocaleData.class, "twelveHourClock", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.MouseEventDetails.class, "type", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.ui.embedded.EmbeddedState.class, "type", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.ui.grid.SectionState.CellState.class, "type", new Type(com.vaadin.shared.ui.grid.GridStaticCellType.class));
             store.setPropertyType(com.vaadin.shared.ui.dnd.DragSourceState.class, "types", new Type("java.util.List", new Type[] {new Type(java.lang.String.class), }));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "updateLayersOnLocate", new Type(com.vaadin.shared.Connector[].class));
             store.setPropertyType(com.vaadin.shared.ui.slider.SliderState.class, "updateValueOnClick", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.BrowserWindowOpenerState.class, "uriFragment", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletTileLayerState.class, "url", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.loginform.LoginFormState.class, "userNameFieldConnector", new Type(com.vaadin.shared.Connector.class));
             store.setPropertyType(com.vaadin.shared.ui.dnd.criteria.Criterion.class, "value", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.dnd.criteria.Payload.class, "value", new Type(java.lang.String.class));
@@ -3478,6 +4132,9 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setPropertyType(com.vaadin.shared.ui.textfield.AbstractTextFieldState.class, "valueChangeTimeout", new Type(java.lang.Integer.class));
             store.setPropertyType(com.vaadin.shared.ui.dnd.criteria.Criterion.class, "valueType", new Type(com.vaadin.shared.ui.dnd.criteria.Payload.ValueType.class));
             store.setPropertyType(com.vaadin.shared.ui.dnd.criteria.Payload.class, "valueType", new Type(com.vaadin.shared.ui.dnd.criteria.Payload.ValueType.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState.class, "vectorStyleJson", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletWmsLayerState.class, "version", new Type(java.lang.String.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletWmsLayerState.class, "viewparams", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.grid.SectionState.class, "visible", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.tabsheet.TabState.class, "visible", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.nativeselect.NativeSelectState.class, "visibleItemCount", new Type(java.lang.Integer.class));
@@ -3485,6 +4142,15 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setPropertyType(com.vaadin.shared.ui.grid.ColumnState.class, "width", new Type(java.lang.Double.class));
             store.setPropertyType(com.vaadin.shared.ui.window.WindowState.class, "windowMode", new Type(com.vaadin.shared.ui.window.WindowMode.class));
             store.setPropertyType(com.vaadin.shared.ui.textarea.TextAreaState.class, "wordWrap", new Type(java.lang.Boolean.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletGridLayerState.class, "zIndex", new Type(java.lang.Integer.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletImageOverlayState.class, "zIndex", new Type(java.lang.Integer.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMarkerState.class, "zIndexOffset", new Type(java.lang.Integer.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.PopupState.class, "zoomAnimation", new Type(java.lang.Boolean.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "zoomDelta", new Type(java.lang.Double.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "zoomLevel", new Type(java.lang.Double.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletTileLayerState.class, "zoomOffset", new Type(java.lang.Integer.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "zoomSnap", new Type(java.lang.Double.class));
+            store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMapState.class, "zoomToExtent", new Type(org.vaadin.addon.leaflet.shared.Bounds.class));
             store.setSerializerFactory(com.vaadin.shared.MouseEventDetails.MouseButton.class, new Invoker() {
               public Object invoke(Object target, Object[] params) {
                 return new com.vaadin.client.communication.JSONSerializer<com.vaadin.shared.MouseEventDetails.MouseButton>() {
@@ -3698,9 +4364,6 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
                 };
               }
             });
-            load8();
-          }
-          private void load8() {
             store.setSerializerFactory(com.vaadin.shared.ui.ValueChangeMode.class, new Invoker() {
               public Object invoke(Object target, Object[] params) {
                 return new com.vaadin.client.communication.JSONSerializer<com.vaadin.shared.ui.ValueChangeMode>() {
@@ -3753,6 +4416,9 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
                 };
               }
             });
+            load10();
+          }
+          private void load10() {
             store.setSerializerFactory(com.vaadin.shared.ui.dnd.DropEffect.class, new Invoker() {
               public Object invoke(Object target, Object[] params) {
                 return new com.vaadin.client.communication.JSONSerializer<com.vaadin.shared.ui.dnd.DropEffect>() {
@@ -4142,6 +4808,32 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
                 };
               }
             });
+            store.setSerializerFactory(org.vaadin.addon.leaflet.shared.ControlPosition.class, new Invoker() {
+              public Object invoke(Object target, Object[] params) {
+                return new com.vaadin.client.communication.JSONSerializer<org.vaadin.addon.leaflet.shared.ControlPosition>() {
+                  public elemental.json.JsonValue serialize(org.vaadin.addon.leaflet.shared.ControlPosition value, com.vaadin.client.ApplicationConnection connection) {
+                    org.vaadin.addon.leaflet.shared.ControlPosition castedValue = (org.vaadin.addon.leaflet.shared.ControlPosition) value;
+                    return elemental.json.Json.create(castedValue.name());
+                  }
+                  public org.vaadin.addon.leaflet.shared.ControlPosition deserialize(Type type, elemental.json.JsonValue jsonValue, com.vaadin.client.ApplicationConnection connection) {
+                    String enumIdentifier = jsonValue.asString();
+                    if ("topleft".equals(enumIdentifier)) {
+                      return org.vaadin.addon.leaflet.shared.ControlPosition.topleft;
+                    }
+                    if ("topright".equals(enumIdentifier)) {
+                      return org.vaadin.addon.leaflet.shared.ControlPosition.topright;
+                    }
+                    if ("bottomleft".equals(enumIdentifier)) {
+                      return org.vaadin.addon.leaflet.shared.ControlPosition.bottomleft;
+                    }
+                    if ("bottomright".equals(enumIdentifier)) {
+                      return org.vaadin.addon.leaflet.shared.ControlPosition.bottomright;
+                    }
+                    return null;
+                  }
+                };
+              }
+            });
             store.setSerializerFactory(com.vaadin.shared.Connector[].class, new Invoker() {
               public Object invoke(Object target, Object[] params) {
                 return new com.vaadin.client.communication.JSONSerializer<com.vaadin.shared.Connector[]>() {
@@ -4257,9 +4949,6 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setDelegateToWidget(com.vaadin.shared.ui.grid.GridState.class, "heightMode", "");
             store.setDelegateToWidget(com.vaadin.shared.ui.listselect.ListSelectState.class, "rows", "");
             store.setDelegateToWidget(com.vaadin.shared.ui.nativeselect.NativeSelectState.class, "visibleItemCount", "");
-            load9();
-          }
-          private void load9() {
             store.setDelegateToWidget(com.vaadin.shared.ui.optiongroup.CheckBoxGroupState.class, "htmlContentAllowed", "");
             store.setDelegateToWidget(com.vaadin.shared.ui.optiongroup.RadioButtonGroupState.class, "htmlContentAllowed", "");
             store.setDelegateToWidget(com.vaadin.shared.ui.passwordfield.PasswordFieldState.class, "maxLength", "");
@@ -4275,6 +4964,9 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setDelegateToWidget(com.vaadin.shared.ui.textfield.TextFieldState.class, "maxLength", "");
             store.setDelegateToWidget(com.vaadin.shared.ui.textfield.TextFieldState.class, "placeholder", "");
             store.setDelegateToWidget(com.vaadin.shared.ui.textfield.TextFieldState.class, "text", "");
+            load11();
+          }
+          private void load11() {
             store.setDelegateToWidget(com.vaadin.shared.ui.treegrid.TreeGridState.class, "columnReorderingAllowed", "");
             store.setDelegateToWidget(com.vaadin.shared.ui.treegrid.TreeGridState.class, "frozenColumnCount", "");
             store.setDelegateToWidget(com.vaadin.shared.ui.treegrid.TreeGridState.class, "heightByRows", "");
@@ -4395,15 +5087,15 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.addOnStateChangeMethod(com.vaadin.client.ui.listselect.ListSelectConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "setErrorLevel", new String[] {"errorMessage", "errorLevel", }));
             store.addOnStateChangeMethod(com.vaadin.client.ui.listselect.ListSelectConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "handleContextClickListenerChange", new String[] {"registeredEventListeners", }));
             store.addOnStateChangeMethod(com.vaadin.client.ui.listselect.ListSelectConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod("updateReadOnly", new String[] {"readOnly", }));
-            load10();
-          }
-          private void load10() {
             store.addOnStateChangeMethod(com.vaadin.client.ui.listselect.ListSelectConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod("updateTabIndex", new String[] {"tabIndex", }));
             store.addOnStateChangeMethod(com.vaadin.client.ui.loginform.LoginFormConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "setErrorLevel", new String[] {"errorMessage", "errorLevel", }));
             store.addOnStateChangeMethod(com.vaadin.client.ui.loginform.LoginFormConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "handleContextClickListenerChange", new String[] {"registeredEventListeners", }));
             store.addOnStateChangeMethod(com.vaadin.client.ui.menubar.MenuBarConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "setErrorLevel", new String[] {"errorMessage", "errorLevel", }));
             store.addOnStateChangeMethod(com.vaadin.client.ui.menubar.MenuBarConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "handleContextClickListenerChange", new String[] {"registeredEventListeners", }));
             store.addOnStateChangeMethod(com.vaadin.client.ui.menubar.MenuBarConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod("updateEnabled", new String[] {"enabled", }));
+            load12();
+          }
+          private void load12() {
             store.addOnStateChangeMethod(com.vaadin.client.ui.menubar.MenuBarConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod("updateTabIndex", new String[] {"tabIndex", }));
             store.addOnStateChangeMethod(com.vaadin.client.ui.nativebutton.NativeButtonConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "setErrorLevel", new String[] {"errorMessage", "errorLevel", }));
             store.addOnStateChangeMethod(com.vaadin.client.ui.nativebutton.NativeButtonConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "handleContextClickListenerChange", new String[] {"registeredEventListeners", }));
@@ -4475,6 +5167,36 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.addOnStateChangeMethod(com.vaadin.client.ui.video.VideoConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "handleContextClickListenerChange", new String[] {"registeredEventListeners", }));
             store.addOnStateChangeMethod(com.vaadin.client.ui.window.WindowConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "setErrorLevel", new String[] {"errorMessage", "errorLevel", }));
             store.addOnStateChangeMethod(com.vaadin.client.ui.window.WindowConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "handleContextClickListenerChange", new String[] {"registeredEventListeners", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletCircleConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "setErrorLevel", new String[] {"errorMessage", "errorLevel", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletCircleConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "handleContextClickListenerChange", new String[] {"registeredEventListeners", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletCircleMarkerConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "setErrorLevel", new String[] {"errorMessage", "errorLevel", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletCircleMarkerConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "handleContextClickListenerChange", new String[] {"registeredEventListeners", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletFeatureGroupConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "setErrorLevel", new String[] {"errorMessage", "errorLevel", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletFeatureGroupConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "handleContextClickListenerChange", new String[] {"registeredEventListeners", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletGridLayerConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "setErrorLevel", new String[] {"errorMessage", "errorLevel", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletGridLayerConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "handleContextClickListenerChange", new String[] {"registeredEventListeners", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletImageOverlayConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "setErrorLevel", new String[] {"errorMessage", "errorLevel", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletImageOverlayConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "handleContextClickListenerChange", new String[] {"registeredEventListeners", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletLayerGroupConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "setErrorLevel", new String[] {"errorMessage", "errorLevel", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletLayerGroupConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "handleContextClickListenerChange", new String[] {"registeredEventListeners", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletMapConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "setErrorLevel", new String[] {"errorMessage", "errorLevel", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletMapConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "handleContextClickListenerChange", new String[] {"registeredEventListeners", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletMarkerConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "setErrorLevel", new String[] {"errorMessage", "errorLevel", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletMarkerConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "handleContextClickListenerChange", new String[] {"registeredEventListeners", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletPolygonConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "setErrorLevel", new String[] {"errorMessage", "errorLevel", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletPolygonConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "handleContextClickListenerChange", new String[] {"registeredEventListeners", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletPolylineConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "setErrorLevel", new String[] {"errorMessage", "errorLevel", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletPolylineConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "handleContextClickListenerChange", new String[] {"registeredEventListeners", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletPopupConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "setErrorLevel", new String[] {"errorMessage", "errorLevel", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletPopupConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "handleContextClickListenerChange", new String[] {"registeredEventListeners", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletRectangleConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "setErrorLevel", new String[] {"errorMessage", "errorLevel", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletRectangleConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "handleContextClickListenerChange", new String[] {"registeredEventListeners", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletTileLayerConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "setErrorLevel", new String[] {"errorMessage", "errorLevel", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletTileLayerConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "handleContextClickListenerChange", new String[] {"registeredEventListeners", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletTooltipConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "setErrorLevel", new String[] {"errorMessage", "errorLevel", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletTooltipConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "handleContextClickListenerChange", new String[] {"registeredEventListeners", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletWmsLayerConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "setErrorLevel", new String[] {"errorMessage", "errorLevel", }));
+            store.addOnStateChangeMethod(org.vaadin.addon.leaflet.client.LeafletWmsLayerConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "handleContextClickListenerChange", new String[] {"registeredEventListeners", }));
           }
           @com.google.gwt.core.client.UnsafeNativeLong
           private native void loadNativeJs(com.vaadin.client.metadata.TypeDataStore store) /*-{
@@ -4488,6 +5210,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
               }
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.upload.UploadState::class, 'acceptMimeTypes', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.AbstractLeafletComponentState::active = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.AbstractLeafletComponentState::active;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.AbstractLeafletComponentState::class, 'active', data);
             
             var data = {
               setter: function(bean, value) {
@@ -4528,6 +5260,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
               }
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.combobox.ComboBoxState::class, 'allowNewItems', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletImageOverlayState::alt = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletImageOverlayState::alt;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletImageOverlayState::class, 'alt', data);
             
             var data = {
               setter: function(bean, value) {
@@ -4687,6 +5429,66 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.window.WindowState::class, 'assistiveTabStopTopText', data);
             
             var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletImageOverlayState::attribution = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletImageOverlayState::attribution;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletImageOverlayState::class, 'attribution', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::attributionPrefix = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::attributionPrefix;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'attributionPrefix', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletGridLayerState::attributionString = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletGridLayerState::attributionString;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletGridLayerState::class, 'attributionString', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.PopupState::autoClose = value.@java.lang.Boolean::booleanValue()();
+              },
+              getter: function(bean) {
+                return @java.lang.Boolean::valueOf(Z)(bean.@org.vaadin.addon.leaflet.shared.PopupState::autoClose);
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.PopupState::class, 'autoClose', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.PopupState::autoPan = value.@java.lang.Boolean::booleanValue()();
+              },
+              getter: function(bean) {
+                return @java.lang.Boolean::valueOf(Z)(bean.@org.vaadin.addon.leaflet.shared.PopupState::autoPan);
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.PopupState::class, 'autoPan', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.PopupState::autoPanPadding = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.PopupState::autoPanPadding;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.PopupState::class, 'autoPanPadding', data);
+            
+            var data = {
               noLayout: 1, 
               setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.AbstractMediaState::autoplay = value.@java.lang.Boolean::booleanValue()();
@@ -4699,6 +5501,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             
             var data = {
               setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LayerControlInfo::baseLayer = value.@java.lang.Boolean::booleanValue()();
+              },
+              getter: function(bean) {
+                return @java.lang.Boolean::valueOf(Z)(bean.@org.vaadin.addon.leaflet.shared.LayerControlInfo::baseLayer);
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LayerControlInfo::class, 'baseLayer', data);
+            
+            var data = {
+              setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.grid.GridState::bodyRowHeight = value.@java.lang.Double::doubleValue()();
               },
               getter: function(bean) {
@@ -4706,6 +5518,56 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
               }
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.grid.GridState::class, 'bodyRowHeight', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletGridLayerState::bounds = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletGridLayerState::bounds;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletGridLayerState::class, 'bounds', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletImageOverlayState::bounds = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletImageOverlayState::bounds;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletImageOverlayState::class, 'bounds', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletRectangleState::bounds = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletRectangleState::bounds;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletRectangleState::class, 'bounds', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::boxZoom = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::boxZoom;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'boxZoom', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState::bubblingMouseEvents = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState::bubblingMouseEvents;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState::class, 'bubblingMouseEvents', data);
             
             var data = {
               setter: function(bean, value) {
@@ -4858,6 +5720,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.grid.SectionState.RowState::class, 'cells', data);
             
             var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::center = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::center;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'center', data);
+            
+            var data = {
               noLayout: 1, 
               setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.window.WindowState::centered = value.@java.lang.Boolean::booleanValue()();
@@ -4939,6 +5811,19 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.flash.FlashState::class, 'classId', data);
             
             var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState::className = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState::className;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState::class, 'className', data);
+            
+          }-*/;
+          @com.google.gwt.core.client.UnsafeNativeLong
+          private native void loadNativeJs0(com.vaadin.client.metadata.TypeDataStore store) /*-{
+            var data = {
               noLayout: 1, 
               setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.button.ButtonState::clickShortcutKeyCode = value.@java.lang.Integer::intValue()();
@@ -4948,6 +5833,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
               }
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.button.ButtonState::class, 'clickShortcutKeyCode', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState::clickable = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState::clickable;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState::class, 'clickable', data);
             
             var data = {
               setter: function(bean, value) {
@@ -4989,6 +5884,26 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
               }
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.window.WindowState::class, 'closable', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.PopupState::closeButton = value.@java.lang.Boolean::booleanValue()();
+              },
+              getter: function(bean) {
+                return @java.lang.Boolean::valueOf(Z)(bean.@org.vaadin.addon.leaflet.shared.PopupState::closeButton);
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.PopupState::class, 'closeButton', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.PopupState::closeOnClick = value.@java.lang.Boolean::booleanValue()();
+              },
+              getter: function(bean) {
+                return @java.lang.Boolean::valueOf(Z)(bean.@org.vaadin.addon.leaflet.shared.PopupState::closeOnClick);
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.PopupState::class, 'closeOnClick', data);
             
             var data = {
               setter: function(bean, value) {
@@ -5052,6 +5967,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             
             var data = {
               setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletLayersState::collapsed = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletLayersState::collapsed;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletLayersState::class, 'collapsed', data);
+            
+            var data = {
+              setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.gridlayout.GridLayoutState.ChildComponentData::column1 = value.@java.lang.Integer::intValue()();
               },
               getter: function(bean) {
@@ -5090,9 +6015,6 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.grid.SectionState.CellState::class, 'columnId', data);
             
-          }-*/;
-          @com.google.gwt.core.client.UnsafeNativeLong
-          private native void loadNativeJs0(com.vaadin.client.metadata.TypeDataStore store) /*-{
             var data = {
               setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.grid.GridState::columnOrder = value;
@@ -5226,6 +6148,26 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             
             var data = {
               setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::crsName = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::crsName;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'crsName', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletWmsLayerState::crsName = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletWmsLayerState::crsName;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletWmsLayerState::class, 'crsName', data);
+            
+            var data = {
+              setter: function(bean, value) {
                 bean.@com.vaadin.shared.MouseEventDetails::setCtrlKey(Z)(value.@java.lang.Boolean::booleanValue()());
               },
               getter: function(bean) {
@@ -5243,6 +6185,26 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
               }
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.combobox.ComboBoxState::class, 'currentFilterText', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::customMapOptionsJson = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::customMapOptionsJson;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'customMapOptionsJson', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletTileLayerState::customOptions = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletTileLayerState::customOptions;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletTileLayerState::class, 'customOptions', data);
             
             var data = {
               setter: function(bean, value) {
@@ -5409,6 +6371,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             
             var data = {
               setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletTileLayerState::detectRetina = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletTileLayerState::detectRetina;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletTileLayerState::class, 'detectRetina', data);
+            
+            var data = {
+              setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.ui.UIState.ReconnectDialogConfigurationState::dialogGracePeriod = value.@java.lang.Integer::intValue()();
               },
               getter: function(bean) {
@@ -5448,6 +6420,19 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.ui.UIState.ReconnectDialogConfigurationState::class, 'dialogTextGaveUp', data);
             
             var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.TooltipState::direction = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.TooltipState::direction;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.TooltipState::class, 'direction', data);
+            
+          }-*/;
+          @com.google.gwt.core.client.UnsafeNativeLong
+          private native void loadNativeJs1(com.vaadin.client.metadata.TypeDataStore store) /*-{
+            var data = {
               noLayout: 1, 
               setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.button.ButtonState::disableOnClick = value.@java.lang.Boolean::booleanValue()();
@@ -5459,6 +6444,26 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.button.ButtonState::class, 'disableOnClick', data);
             
             var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::divIcon = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::divIcon;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMarkerState::class, 'divIcon', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::doubleClickZoom = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::doubleClickZoom;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'doubleClickZoom', data);
+            
+            var data = {
               noLayout: 1, 
               setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.window.WindowState::draggable = value.@java.lang.Boolean::booleanValue()();
@@ -5468,6 +6473,26 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
               }
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.window.WindowState::class, 'draggable', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::draggable = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::draggable;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMarkerState::class, 'draggable', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::dragging = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::dragging;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'dragging', data);
             
             var data = {
               setter: function(bean, value) {
@@ -5699,9 +6724,6 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.ui.UIState.LoadingIndicatorConfigurationState::class, 'firstDelay', data);
             
-          }-*/;
-          @com.google.gwt.core.client.UnsafeNativeLong
-          private native void loadNativeJs1(com.vaadin.client.metadata.TypeDataStore store) /*-{
             var data = {
               setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.customfield.CustomFieldState::focusDelegate = value;
@@ -5754,6 +6776,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             
             var data = {
               setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletWmsLayerState::format = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletWmsLayerState::format;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletWmsLayerState::class, 'format', data);
+            
+            var data = {
+              setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.grid.GridState::frozenColumnCount = value.@java.lang.Integer::intValue()();
               },
               getter: function(bean) {
@@ -5761,6 +6793,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
               }
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.grid.GridState::class, 'frozenColumnCount', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletPolylineState::geometryjson = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletPolylineState::geometryjson;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletPolylineState::class, 'geometryjson', data);
             
             var data = {
               setter: function(bean, value) {
@@ -5945,6 +6987,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             
             var data = {
               setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.AbstractLeafletDivOverlayState::htmlContent = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.AbstractLeafletDivOverlayState::htmlContent;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.AbstractLeafletDivOverlayState::class, 'htmlContent', data);
+            
+            var data = {
+              setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.AbstractMediaState::htmlContentAllowed = value.@java.lang.Boolean::booleanValue()();
               },
               getter: function(bean) {
@@ -5973,6 +7025,9 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.notification.NotificationState::class, 'htmlContentAllowed', data);
             
+          }-*/;
+          @com.google.gwt.core.client.UnsafeNativeLong
+          private native void loadNativeJs2(com.vaadin.client.metadata.TypeDataStore store) /*-{
             var data = {
               setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.optiongroup.CheckBoxGroupState::htmlContentAllowed = value.@java.lang.Boolean::booleanValue()();
@@ -6016,6 +7071,56 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             
             var data = {
               setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::iconAnchor = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::iconAnchor;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMarkerState::class, 'iconAnchor', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::iconPathFill = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::iconPathFill;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMarkerState::class, 'iconPathFill', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::iconPathStroke = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::iconPathStroke;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMarkerState::class, 'iconPathStroke', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::iconSize = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::iconSize;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMarkerState::class, 'iconSize', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::iconTextFill = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::iconTextFill;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMarkerState::class, 'iconTextFill', data);
+            
+            var data = {
+              setter: function(bean, value) {
                 bean.@com.vaadin.shared.AbstractComponentState::id = value;
               },
               getter: function(bean) {
@@ -6046,6 +7151,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             
             var data = {
               setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletScaleState::imperial = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletScaleState::imperial;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletScaleState::class, 'imperial', data);
+            
+            var data = {
+              setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.progressindicator.ProgressBarState::indeterminate = value.@java.lang.Boolean::booleanValue()();
               },
               getter: function(bean) {
@@ -6066,6 +7181,26 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             
             var data = {
               setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletImageOverlayState::interactive = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletImageOverlayState::interactive;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletImageOverlayState::class, 'interactive', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.TooltipState::interactive = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.TooltipState::interactive;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.TooltipState::class, 'interactive', data);
+            
+            var data = {
+              setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.grid.ColumnState::internalId = value;
               },
               getter: function(bean) {
@@ -6073,6 +7208,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
               }
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.grid.ColumnState::class, 'internalId', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.PopupState::keepInView = value.@java.lang.Boolean::booleanValue()();
+              },
+              getter: function(bean) {
+                return @java.lang.Boolean::valueOf(Z)(bean.@org.vaadin.addon.leaflet.shared.PopupState::keepInView);
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.PopupState::class, 'keepInView', data);
             
             var data = {
               setter: function(bean, value) {
@@ -6106,6 +7251,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             
             var data = {
               setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::keyboard = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::keyboard;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'keyboard', data);
+            
+            var data = {
+              setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.checkbox.CheckBoxState::labelStyles = value;
               },
               getter: function(bean) {
@@ -6113,6 +7268,46 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
               }
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.checkbox.CheckBoxState::class, 'labelStyles', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.Point::setLat(Ljava/lang/Double;)(value);
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.Point::getLat()();
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.Point::class, 'lat', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletLayersState::layerContolInfo = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletLayersState::layerContolInfo;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletLayersState::class, 'layerContolInfo', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletWmsLayerState::layerStyles = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletWmsLayerState::layerStyles;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletWmsLayerState::class, 'layerStyles', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletWmsLayerState::layers = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletWmsLayerState::layers;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletWmsLayerState::class, 'layers', data);
             
             var data = {
               setter: function(bean, value) {
@@ -6205,6 +7400,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.loginform.LoginFormState::class, 'loginResource', data);
             
             var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.Point::setLon(Ljava/lang/Double;)(value);
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.Point::getLon()();
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.Point::class, 'lon', data);
+            
+            var data = {
               noLayout: 1, 
               setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.AbstractMediaState::loop = value.@java.lang.Boolean::booleanValue()();
@@ -6236,6 +7441,26 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.orderedlayout.AbstractOrderedLayoutState::class, 'marginsBitmask', data);
             
             var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::maxBounds = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::maxBounds;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'maxBounds', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.PopupState::maxHeight = value.@java.lang.Integer::intValue()();
+              },
+              getter: function(bean) {
+                return @java.lang.Integer::valueOf(I)(bean.@org.vaadin.addon.leaflet.shared.PopupState::maxHeight);
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.PopupState::class, 'maxHeight', data);
+            
+            var data = {
               noLayout: 1, 
               setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.textfield.AbstractTextFieldState::maxLength = value.@java.lang.Integer::intValue()();
@@ -6245,6 +7470,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
               }
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.textfield.AbstractTextFieldState::class, 'maxLength', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletGridLayerState::maxNativeZoom = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletGridLayerState::maxNativeZoom;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletGridLayerState::class, 'maxNativeZoom', data);
             
             var data = {
               setter: function(bean, value) {
@@ -6297,9 +7532,36 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.ui.UIState.TooltipConfigurationState::class, 'maxWidth', data);
             
-          }-*/;
-          @com.google.gwt.core.client.UnsafeNativeLong
-          private native void loadNativeJs2(com.vaadin.client.metadata.TypeDataStore store) /*-{
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.PopupState::maxWidth = value.@java.lang.Integer::intValue()();
+              },
+              getter: function(bean) {
+                return @java.lang.Integer::valueOf(I)(bean.@org.vaadin.addon.leaflet.shared.PopupState::maxWidth);
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.PopupState::class, 'maxWidth', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::maxZoom = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::maxZoom;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'maxZoom', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletTileLayerState::maxZoom = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletTileLayerState::maxZoom;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletTileLayerState::class, 'maxZoom', data);
+            
             var data = {
               setter: function(bean, value) {
                 bean.@com.vaadin.shared.MouseEventDetails::setMetaKey(Z)(value.@java.lang.Boolean::booleanValue()());
@@ -6309,6 +7571,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
               }
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.MouseEventDetails::class, 'metaKey', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletScaleState::metric = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletScaleState::metric;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletScaleState::class, 'metric', data);
             
             var data = {
               setter: function(bean, value) {
@@ -6332,6 +7604,26 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             
             var data = {
               setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::minLocateInterval = value.@java.lang.Integer::intValue()();
+              },
+              getter: function(bean) {
+                return @java.lang.Integer::valueOf(I)(bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::minLocateInterval);
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'minLocateInterval', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletGridLayerState::minNativeZoom = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletGridLayerState::minNativeZoom;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletGridLayerState::class, 'minNativeZoom', data);
+            
+            var data = {
+              setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.splitpanel.AbstractSplitPanelState.SplitterState::minPosition = value.@java.lang.Float::floatValue()();
               },
               getter: function(bean) {
@@ -6340,6 +7632,9 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.splitpanel.AbstractSplitPanelState.SplitterState::class, 'minPosition', data);
             
+          }-*/;
+          @com.google.gwt.core.client.UnsafeNativeLong
+          private native void loadNativeJs3(com.vaadin.client.metadata.TypeDataStore store) /*-{
             var data = {
               setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.splitpanel.AbstractSplitPanelState.SplitterState::minPositionUnit = value;
@@ -6370,6 +7665,36 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
               }
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.grid.ColumnState::class, 'minWidth', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.PopupState::minWidth = value.@java.lang.Integer::intValue()();
+              },
+              getter: function(bean) {
+                return @java.lang.Integer::valueOf(I)(bean.@org.vaadin.addon.leaflet.shared.PopupState::minWidth);
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.PopupState::class, 'minWidth', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::minZoom = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::minZoom;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'minZoom', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletTileLayerState::minZoom = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletTileLayerState::minZoom;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletTileLayerState::class, 'minZoom', data);
             
             var data = {
               setter: function(bean, value) {
@@ -6465,6 +7790,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             
             var data = {
               setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LayerControlInfo::name = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LayerControlInfo::name;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LayerControlInfo::class, 'name', data);
+            
+            var data = {
+              setter: function(bean, value) {
                 bean.@com.vaadin.shared.extension.javascriptmanager.JavaScriptManagerState::names = value;
               },
               getter: function(bean) {
@@ -6472,6 +7807,136 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
               }
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.extension.javascriptmanager.JavaScriptManagerState::class, 'names', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::newCrsA = value.@java.lang.Double::doubleValue()();
+              },
+              getter: function(bean) {
+                return @java.lang.Double::valueOf(D)(bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::newCrsA);
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'newCrsA', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::newCrsB = value.@java.lang.Double::doubleValue()();
+              },
+              getter: function(bean) {
+                return @java.lang.Double::valueOf(D)(bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::newCrsB);
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'newCrsB', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::newCrsC = value.@java.lang.Double::doubleValue()();
+              },
+              getter: function(bean) {
+                return @java.lang.Double::valueOf(D)(bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::newCrsC);
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'newCrsC', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::newCrsD = value.@java.lang.Double::doubleValue()();
+              },
+              getter: function(bean) {
+                return @java.lang.Double::valueOf(D)(bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::newCrsD);
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'newCrsD', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::newCrsMaxX = value.@java.lang.Double::doubleValue()();
+              },
+              getter: function(bean) {
+                return @java.lang.Double::valueOf(D)(bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::newCrsMaxX);
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'newCrsMaxX', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::newCrsMaxY = value.@java.lang.Double::doubleValue()();
+              },
+              getter: function(bean) {
+                return @java.lang.Double::valueOf(D)(bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::newCrsMaxY);
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'newCrsMaxY', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::newCrsMinX = value.@java.lang.Double::doubleValue()();
+              },
+              getter: function(bean) {
+                return @java.lang.Double::valueOf(D)(bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::newCrsMinX);
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'newCrsMinX', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::newCrsMinY = value.@java.lang.Double::doubleValue()();
+              },
+              getter: function(bean) {
+                return @java.lang.Double::valueOf(D)(bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::newCrsMinY);
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'newCrsMinY', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::newCrsName = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::newCrsName;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'newCrsName', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::newCrsProjection = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::newCrsProjection;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'newCrsProjection', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletGridLayerState::noWrap = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletGridLayerState::noWrap;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletGridLayerState::class, 'noWrap', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.Bounds::setNorthEastLat(D)(value.@java.lang.Double::doubleValue()());
+              },
+              getter: function(bean) {
+                return @java.lang.Double::valueOf(D)(bean.@org.vaadin.addon.leaflet.shared.Bounds::getNorthEastLat()());
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.Bounds::class, 'northEastLat', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.Bounds::setNorthEastLon(D)(value.@java.lang.Double::doubleValue()());
+              },
+              getter: function(bean) {
+                return @java.lang.Double::valueOf(D)(bean.@org.vaadin.addon.leaflet.shared.Bounds::getNorthEastLon()());
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.Bounds::class, 'northEastLon', data);
             
             var data = {
               setter: function(bean, value) {
@@ -6492,6 +7957,46 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
               }
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.ui.UIState.NotificationTypeConfiguration::class, 'notificationRole', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.DivOverlayState::offset = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.DivOverlayState::offset;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.DivOverlayState::class, 'offset', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletGridLayerState::opacity = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletGridLayerState::opacity;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletGridLayerState::class, 'opacity', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletImageOverlayState::opacity = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletImageOverlayState::opacity;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletImageOverlayState::class, 'opacity', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.TooltipState::opacity = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.TooltipState::opacity;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.TooltipState::class, 'opacity', data);
             
             var data = {
               setter: function(bean, value) {
@@ -6552,6 +8057,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
               }
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.ui.UIState::class, 'pageState', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.DivOverlayState::pane = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.DivOverlayState::pane;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.DivOverlayState::class, 'pane', data);
             
             var data = {
               setter: function(bean, value) {
@@ -6624,6 +8139,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.dnd.DragSourceState::class, 'payload', data);
             
             var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.TooltipState::permanent = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.TooltipState::permanent;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.TooltipState::class, 'permanent', data);
+            
+            var data = {
               noLayout: 1, 
               setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.combobox.ComboBoxState::placeholder = value;
@@ -6668,6 +8193,46 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             
             var data = {
               setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.AbstractLeafletDivOverlayState::point = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.AbstractLeafletDivOverlayState::point;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.AbstractLeafletDivOverlayState::class, 'point', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletCircleState::point = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletCircleState::point;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletCircleState::class, 'point', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::point = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::point;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMarkerState::class, 'point', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState::pointerEvents = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState::pointerEvents;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState::class, 'pointerEvents', data);
+            
+            var data = {
+              setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.ui.UIState::pollInterval = value.@java.lang.Integer::intValue()();
               },
               getter: function(bean) {
@@ -6675,6 +8240,69 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
               }
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.ui.UIState::class, 'pollInterval', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState::popup = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState::popup;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState::class, 'popup', data);
+            
+          }-*/;
+          @com.google.gwt.core.client.UnsafeNativeLong
+          private native void loadNativeJs4(com.vaadin.client.metadata.TypeDataStore store) /*-{
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::popup = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::popup;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMarkerState::class, 'popup', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::popupAnchor = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::popupAnchor;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMarkerState::class, 'popupAnchor', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState::popupState = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState::popupState;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState::class, 'popupState', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::popupState = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::popupState;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMarkerState::class, 'popupState', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletPopupState::popupState = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletPopupState::popupState;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletPopupState::class, 'popupState', data);
             
             var data = {
               setter: function(bean, value) {
@@ -6695,6 +8323,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
               }
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.splitpanel.AbstractSplitPanelState.SplitterState::class, 'position', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletControlState::position = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletControlState::position;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletControlState::class, 'position', data);
             
             var data = {
               setter: function(bean, value) {
@@ -6759,6 +8397,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.ui.UIState.NotificationTypeConfiguration::class, 'prefix', data);
             
             var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletAttributionState::prefix = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletAttributionState::prefix;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletAttributionState::class, 'prefix', data);
+            
+            var data = {
               noLayout: 1, 
               setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.AbstractMediaState::preload = value;
@@ -6818,6 +8466,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
               }
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.ui.UIState.TooltipConfigurationState::class, 'quickOpenTimeout', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletCircleState::radius = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletCircleState::radius;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletCircleState::class, 'radius', data);
             
             var data = {
               noLayout: 1, 
@@ -6902,9 +8560,6 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.MouseEventDetails::class, 'relativeX', data);
             
-          }-*/;
-          @com.google.gwt.core.client.UnsafeNativeLong
-          private native void loadNativeJs3(com.vaadin.client.metadata.TypeDataStore store) /*-{
             var data = {
               setter: function(bean, value) {
                 bean.@com.vaadin.shared.MouseEventDetails::setRelativeY(I)(value.@java.lang.Integer::intValue()());
@@ -7173,6 +8828,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             
             var data = {
               setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::scrollWheelZoom = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::scrollWheelZoom;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'scrollWheelZoom', data);
+            
+            var data = {
+              setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.splitpanel.AbstractSplitPanelState::secondChild = value;
               },
               getter: function(bean) {
@@ -7191,6 +8856,9 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.ui.UIState.LoadingIndicatorConfigurationState::class, 'secondDelay', data);
             
+          }-*/;
+          @com.google.gwt.core.client.UnsafeNativeLong
+          private native void loadNativeJs5(com.vaadin.client.metadata.TypeDataStore store) /*-{
             var data = {
               setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.grid.MultiSelectionModelState::selectAllCheckBoxVisible = value.@java.lang.Boolean::booleanValue()();
@@ -7363,6 +9031,26 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             
             var data = {
               setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.Bounds::setSouthWestLat(D)(value.@java.lang.Double::doubleValue()());
+              },
+              getter: function(bean) {
+                return @java.lang.Double::valueOf(D)(bean.@org.vaadin.addon.leaflet.shared.Bounds::getSouthWestLat()());
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.Bounds::class, 'southWestLat', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.Bounds::setSouthWestLon(D)(value.@java.lang.Double::doubleValue()());
+              },
+              getter: function(bean) {
+                return @java.lang.Double::valueOf(D)(bean.@org.vaadin.addon.leaflet.shared.Bounds::getSouthWestLon()());
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.Bounds::class, 'southWestLon', data);
+            
+            var data = {
+              setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.gridlayout.GridLayoutState::spacing = value.@java.lang.Boolean::booleanValue()();
               },
               getter: function(bean) {
@@ -7424,6 +9112,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             
             var data = {
               setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.TooltipState::sticky = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.TooltipState::sticky;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.TooltipState::class, 'sticky', data);
+            
+            var data = {
+              setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.grid.SectionState.CellState::styleName = value;
               },
               getter: function(bean) {
@@ -7474,6 +9172,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             
             var data = {
               setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletTileLayerState::subDomains = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletTileLayerState::subDomains;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletTileLayerState::class, 'subDomains', data);
+            
+            var data = {
+              setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.combobox.ComboBoxState::suggestionPopupWidth = value;
               },
               getter: function(bean) {
@@ -7514,9 +9222,6 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.panel.PanelState::class, 'tabIndex', data);
             
-          }-*/;
-          @com.google.gwt.core.client.UnsafeNativeLong
-          private native void loadNativeJs4(com.vaadin.client.metadata.TypeDataStore store) /*-{
             var data = {
               noLayout: 1, 
               setter: function(bean, value) {
@@ -7702,6 +9407,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             
             var data = {
               setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletGridLayerState::tileSize = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletGridLayerState::tileSize;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletGridLayerState::class, 'tileSize', data);
+            
+            var data = {
+              setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.datefield.AbstractDateFieldState::timeZoneJSON = value;
               },
               getter: function(bean) {
@@ -7722,6 +9437,49 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             
             var data = {
               setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::title = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::title;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMarkerState::class, 'title', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletTileLayerState::tms = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletTileLayerState::tms;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletTileLayerState::class, 'tms', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState::tooltip = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState::tooltip;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState::class, 'tooltip', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::tooltip = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::tooltip;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMarkerState::class, 'tooltip', data);
+            
+          }-*/;
+          @com.google.gwt.core.client.UnsafeNativeLong
+          private native void loadNativeJs6(com.vaadin.client.metadata.TypeDataStore store) /*-{
+            var data = {
+              setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.ui.UIState::tooltipConfiguration = value;
               },
               getter: function(bean) {
@@ -7739,6 +9497,56 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
               }
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.grid.ColumnState::class, 'tooltipContentMode', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState::tooltipState = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState::tooltipState;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState::class, 'tooltipState', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::tooltipState = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::tooltipState;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMarkerState::class, 'tooltipState', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletTooltipState::tooltipState = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletTooltipState::tooltipState;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletTooltipState::class, 'tooltipState', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::touchZoom = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::touchZoom;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'touchZoom', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletWmsLayerState::transparent = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletWmsLayerState::transparent;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletWmsLayerState::class, 'transparent', data);
             
             var data = {
               setter: function(bean, value) {
@@ -7791,6 +9599,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.dnd.DragSourceState::class, 'types', data);
             
             var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::updateLayersOnLocate = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::updateLayersOnLocate;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'updateLayersOnLocate', data);
+            
+            var data = {
               noLayout: 1, 
               setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.slider.SliderState::updateValueOnClick = value.@java.lang.Boolean::booleanValue()();
@@ -7810,6 +9628,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
               }
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.BrowserWindowOpenerState::class, 'uriFragment', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletTileLayerState::url = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletTileLayerState::url;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletTileLayerState::class, 'url', data);
             
             var data = {
               setter: function(bean, value) {
@@ -7896,6 +9724,36 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             
             var data = {
               setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState::vectorStyleJson = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState::vectorStyleJson;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.AbstractLeafletVectorState::class, 'vectorStyleJson', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletWmsLayerState::version = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletWmsLayerState::version;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletWmsLayerState::class, 'version', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletWmsLayerState::viewparams = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletWmsLayerState::viewparams;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletWmsLayerState::class, 'viewparams', data);
+            
+            var data = {
+              setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.grid.SectionState::visible = value.@java.lang.Boolean::booleanValue()();
               },
               getter: function(bean) {
@@ -7965,6 +9823,96 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.textarea.TextAreaState::class, 'wordWrap', data);
             
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletGridLayerState::zIndex = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletGridLayerState::zIndex;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletGridLayerState::class, 'zIndex', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletImageOverlayState::zIndex = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletImageOverlayState::zIndex;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletImageOverlayState::class, 'zIndex', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::zIndexOffset = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::zIndexOffset;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMarkerState::class, 'zIndexOffset', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.PopupState::zoomAnimation = value.@java.lang.Boolean::booleanValue()();
+              },
+              getter: function(bean) {
+                return @java.lang.Boolean::valueOf(Z)(bean.@org.vaadin.addon.leaflet.shared.PopupState::zoomAnimation);
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.PopupState::class, 'zoomAnimation', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::zoomDelta = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::zoomDelta;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'zoomDelta', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::zoomLevel = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::zoomLevel;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'zoomLevel', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletTileLayerState::zoomOffset = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletTileLayerState::zoomOffset;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletTileLayerState::class, 'zoomOffset', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::zoomSnap = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::zoomSnap;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'zoomSnap', data);
+            
+            var data = {
+              setter: function(bean, value) {
+                bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::zoomToExtent = value;
+              },
+              getter: function(bean) {
+                return bean.@org.vaadin.addon.leaflet.shared.LeafletMapState::zoomToExtent;
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMapState::class, 'zoomToExtent', data);
+            
           }-*/;
           private void loadJsBundle(com.vaadin.client.metadata.TypeDataStore store) {
             loadNativeJs(store);
@@ -7973,6 +9921,8 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             loadNativeJs2(store);
             loadNativeJs3(store);
             loadNativeJs4(store);
+            loadNativeJs5(store);
+            loadNativeJs6(store);
           }
           public void onFailure(Throwable reason) {
             com.vaadin.client.metadata.ConnectorBundleLoader.get().setLoadFailure(getName(), reason);
