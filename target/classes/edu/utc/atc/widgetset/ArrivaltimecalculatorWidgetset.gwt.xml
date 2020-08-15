@@ -26,4 +26,6 @@
 
 
     
+
+    <inherits name="org.vaadin.addon.leaflet.Widgetset" />
 </module>
