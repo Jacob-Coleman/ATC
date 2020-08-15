@@ -1,7 +1,7 @@
-myapplication
+Arrival Time Calculator
 ==============
 
-Template for a simple Vaadin application that only requires a Servlet 3.0 container to run.
+A web gui to use the TauP seismic calculator using Vaadin application that only requires a Servlet 3.0 container to run.
 
 
 Workflow
