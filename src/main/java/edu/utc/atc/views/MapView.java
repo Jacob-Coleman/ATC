@@ -6,9 +6,13 @@ package edu.utc.atc.views;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.lang3.StringUtils;
 import org.vaadin.addon.leaflet.LMap;
+import org.vaadin.addon.leaflet.LMarker;
 import org.vaadin.addon.leaflet.LOpenStreetMapLayer;
 import org.vaadin.addon.leaflet.LTileLayer;
+import org.vaadin.addon.leaflet.LeafletClickEvent;
+import org.vaadin.addon.leaflet.LeafletClickListener;
 
 import com.vaadin.server.Page;
 import com.vaadin.tapio.googlemaps.GoogleMap;
@@ -24,11 +28,12 @@ import edu.utc.atc.components.MapComponent;
 
 public class MapView extends MapComponent {
 	
-	GoogleMapMarker stationMarker;
-	GoogleMap googleMap;
+	//GoogleMapMarker stationMarker;
+	LMap leafletMap;
+	LMarker stationMarker;
 	Double stationLat;
 	Double stationLon;
-	List<GoogleMapMarker> markers;
+	List<LMarker> markers;
 
 	/**
 	 * 
@@ -37,7 +42,7 @@ public class MapView extends MapComponent {
 	
 	// Generic empty map for initialization or no data to show. 
 	public MapView( ) {
-		LMap leafletMap = new LMap();
+		leafletMap = new LMap();
 		LTileLayer osmTiles = new LOpenStreetMapLayer();
 		leafletMap.addBaseLayer(osmTiles, "OSM");
 		
@@ -57,8 +62,13 @@ public class MapView extends MapComponent {
 	//Creates a google map with points for earthquakes.
 	public MapView(USGSConnect ce, double stationLat, double stationLon,double radius ) {
 		int zoomLevel = 0;
-		googleMap = new GoogleMap("apiKey", null, "english");
-		googleMap.setSizeFull();
+		leafletMap = new LMap();
+		LTileLayer osmTiles = new LOpenStreetMapLayer();
+		leafletMap.addBaseLayer(osmTiles, "OSM");
+		
+		leafletMap.setCenter(39.8282, -98.5795);
+		leafletMap.setZoomLevel(15);
+		leafletMap.setSizeFull();
 		
 		addStation(stationLat, stationLon);
 		addQuakes(ce);
@@ -75,31 +85,44 @@ public class MapView extends MapComponent {
 		else if(radius <= 180)
 			zoomLevel = 1;
 		
-		googleMap.setZoom(zoomLevel);
+		leafletMap.setZoomLevel(zoomLevel);
 		
 		
-		mainLayout.addComponent(googleMap);
+		mainLayout.addComponent(leafletMap);
 	}
 	//Adds the coordinates for the seismic station.
 	public void addStation(double stationLat, double stationLon) {
-		System.out.println(googleMap);
-		googleMap.setCenter(new LatLon( stationLat, stationLon));
+		System.out.println(leafletMap);
+		leafletMap.setCenter(stationLat, stationLon);
 		this.stationLat = stationLat;
 		this.stationLon = stationLon;
 		
-		stationMarker = new GoogleMapMarker ("Seismic Station", new LatLon(
-		        stationLat, stationLon), false, null);
-		stationMarker.setIconUrl("http://labs.google.com/ridefinder/images/mm_20_blue.png");
-		
-		stationMarker.setId(-1);
-		
-		googleMap.addMarker(stationMarker);
+		//StationMarker
+		stationMarker = new LMarker (stationLat, stationLon);
+		stationMarker.setIcon("S");
+		stationMarker.setIconPathFill("#239657");
+		stationMarker.setCaption("Station");
+		stationMarker.addClickListener( new LeafletClickListener() {
+
+			@Override
+			public void onClick(LeafletClickEvent event) {
+				// TODO Auto-generated method stub
+				Notification stationMessage = new Notification ("Seismic Station",Notification.Type.TRAY_NOTIFICATION);
+				stationMessage.setDescription("Coordinates (" + stationLat + ","+ stationLon +")");
+							
+				stationMessage.setDelayMsec(10000);
+				stationMessage.show(Page.getCurrent());
+			}
+			
+		});
+		leafletMap.addComponent(stationMarker);
 		
 	}
 	//Adds each point for an earthquake with relevant data to be displayed when selected
 	public void addQuakes(USGSConnect currentEarthquakes){
 		for(int i = 0; i < currentEarthquakes.getQuakes().size(); i ++)
 		{
+			final int temp = i;
 				currentEarthquakes.getQuakes().get(i).getTitle();
 				currentEarthquakes.getQuakes().get(i).getTime();
 				currentEarthquakes.getQuakes().get(i).getLatitude();
@@ -108,73 +131,48 @@ public class MapView extends MapComponent {
 				currentEarthquakes.getQuakes().get(i).getMagnitude();
 				currentEarthquakes.getQuakes().get(i).getUrlLink();
 				
-				GoogleMapMarker currentMarker = new GoogleMapMarker (currentEarthquakes.getQuakes().get(i).getTitle(), new LatLon(
-						currentEarthquakes.getQuakes().get(i).getLatitude(), currentEarthquakes.getQuakes().get(i).getLongitude()), false, null);
-				
+				LMarker currentMarker = new LMarker (currentEarthquakes.getQuakes().get(i).getLatitude(), currentEarthquakes.getQuakes().get(i).getLongitude());
+				currentMarker.addClickListener(new LeafletClickListener() {
+
+					@Override
+					public void onClick(LeafletClickEvent event) {
+						// TODO Auto-generated method stub
+						((ATCServlet)UI.getCurrent()).setLatitude(currentEarthquakes.getQuakes().get(temp).getLatitude());
+						
+						((ATCServlet)UI.getCurrent()).setLongitude(currentEarthquakes.getQuakes().get(temp).getLongitude());
+						
+						((ATCServlet)UI.getCurrent()).setDepth(currentEarthquakes.getQuakes().get(temp).getDepth());
+						((ATCServlet)UI.getCurrent()).setDate(currentEarthquakes.getQuakes().get(temp).getTime());
+						
+						calculateDistance(currentEarthquakes.getQuakes().get(temp).getLatitude(),
+								          currentEarthquakes.getQuakes().get(temp).getLongitude(),
+										  stationLat,
+										  stationLon);
+						Notification message = new Notification ("Selected \n"
+																,Notification.Type.TRAY_NOTIFICATION);
+						message.setDescription( currentEarthquakes.getQuakes().get(temp).getTitle()
+																+"<br> "+currentEarthquakes.getQuakes().get(temp).getTime()
+																+"<br> Coordinates ("+currentEarthquakes.getQuakes().get(temp).getLatitude()
+																+" ,"+currentEarthquakes.getQuakes().get(temp).getLongitude()
+																+")<br> Magnitude "+currentEarthquakes.getQuakes().get(temp).getMagnitude()
+																+"<br> Depth "+currentEarthquakes.getQuakes().get(temp).getDepth()
+																+ "<br> <a href="+currentEarthquakes.getQuakes().get(temp).getUrlString()+" target="+"_blank"+">Details</a>"
+																);
+						message.setHtmlContentAllowed(true);
+						message.setDelayMsec(10000);
+						message.show(Page.getCurrent());
+						
+					}});
 				currentMarker.setCaption(currentEarthquakes.getQuakes().get(i).getTitle());
+				currentMarker.setIcon(StringUtils.substringBefore(currentEarthquakes.getQuakes().get(i).getMagnitude(),"."));
 				
-				currentMarker.setId(i);
 				
-				markers = new ArrayList<GoogleMapMarker>();
+				markers = new ArrayList<LMarker>();
 				markers.add(currentMarker);
-				googleMap.addMarker(currentMarker);
-				
-			
+				leafletMap.addComponent(currentMarker);
 
 		}
-		googleMap.addMarkerClickListener(new MarkerClickListener() {
-			
-            /**
-			 * 
-			 */
-			private static final long serialVersionUID = 2625401361527147267L;
-
-			@Override
-            public void markerClicked(GoogleMapMarker clickedMarker) {
-				System.out.println("marker clicked");
-			
-				if(clickedMarker.getId() != stationMarker.getId()){
-            	
-	            	int selectedEqrthQuakesIndex =  (int) clickedMarker.getId();
-	            	
-	            	((ATCServlet)UI.getCurrent()).setLatitude(currentEarthquakes.getQuakes().get(selectedEqrthQuakesIndex).getLatitude());
-					
-					((ATCServlet)UI.getCurrent()).setLongitude(currentEarthquakes.getQuakes().get(selectedEqrthQuakesIndex).getLongitude());
-					
-					((ATCServlet)UI.getCurrent()).setDepth(currentEarthquakes.getQuakes().get(selectedEqrthQuakesIndex).getDepth());
-					((ATCServlet)UI.getCurrent()).setDate(currentEarthquakes.getQuakes().get(selectedEqrthQuakesIndex).getTime());
-					
-					calculateDistance(currentEarthquakes.getQuakes().get(selectedEqrthQuakesIndex).getLatitude(),
-							          currentEarthquakes.getQuakes().get(selectedEqrthQuakesIndex).getLongitude(),
-									  stationLat,
-									  stationLon);
-					Notification message = new Notification ("Selected \n"
-															,Notification.Type.TRAY_NOTIFICATION);
-					message.setDescription( currentEarthquakes.getQuakes().get(selectedEqrthQuakesIndex).getTitle()
-															+"<br> "+currentEarthquakes.getQuakes().get(selectedEqrthQuakesIndex).getTime()
-															+"<br> Coordinates ("+currentEarthquakes.getQuakes().get(selectedEqrthQuakesIndex).getLatitude()
-															+" ,"+currentEarthquakes.getQuakes().get(selectedEqrthQuakesIndex).getLongitude()
-															+")<br> Magnitude "+currentEarthquakes.getQuakes().get(selectedEqrthQuakesIndex).getMagnitude()
-															+"<br> Depth "+currentEarthquakes.getQuakes().get(selectedEqrthQuakesIndex).getDepth()
-															+ "<br> <a href="+currentEarthquakes.getQuakes().get(selectedEqrthQuakesIndex).getUrlString()+" target="+"_blank"+">Details</a>"
-															);
-					message.setHtmlContentAllowed(true);
-					message.setDelayMsec(10000);
-					message.show(Page.getCurrent());
-				
-				
-				}else if(clickedMarker.getId() == stationMarker.getId())
-				{
-					Notification stationMessage = new Notification ("Seismic Station",Notification.Type.TRAY_NOTIFICATION);
-					stationMessage.setDescription("Coordinates (" + stationLat + ","+ stationLon +")");
-								
-					stationMessage.setDelayMsec(10000);
-					stationMessage.show(Page.getCurrent());
-					
-				}
-				
-            }
-        });
+		
 	}
 
 	//calculates the distance between the selected earthquake and the seismic station that is selected
@@ -208,12 +206,11 @@ public class MapView extends MapComponent {
 	}
 	public void removeAllMarkers(){
 		
-		googleMap.clearMarkers();
-		googleMap.markAsDirty();
+		leafletMap.removeAllComponents();
 				
 	}
-	public GoogleMap getMap(){
-		return googleMap;
+	public LMap getMap(){
+		return leafletMap;
 	}
 
 }
