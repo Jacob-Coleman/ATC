@@ -2990,6 +2990,12 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
                 return null;
               }-*/;
             });
+            store.setInvoker(com.vaadin.client.ui.ui.UIConnector.class, "onThoroughSizeChckChange",new JsniInvoker() {
+              protected native Object jsniInvoke(Object target, com.vaadin.client.JsArrayObject<Object> params) /*-{ 
+                target.@com.vaadin.client.ui.ui.UIConnector::onThoroughSizeChckChange(*)();
+                return null;
+              }-*/;
+            });
             store.setInvoker(com.vaadin.client.ui.upload.UploadConnector.class, "updateSubmitButton",new JsniInvoker() {
               protected native Object jsniInvoke(Object target, com.vaadin.client.JsArrayObject<Object> params) /*-{ 
                 target.@com.vaadin.client.ui.upload.UploadConnector::updateSubmitButton(*)();
@@ -3074,15 +3080,15 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
                 return null;
               }
             });
+            load6();
+          }
+          private void load6() {
             store.setInvoker(com.vaadin.shared.data.DataProviderRpc.class, "insertRowData",new Invoker() {
               public Object invoke(Object target, Object[] params) {
                 ((com.vaadin.shared.data.DataProviderRpc) target).insertRowData((java.lang.Integer) params[0], (java.lang.Integer) params[1]);
                 return null;
               }
             });
-            load6();
-          }
-          private void load6() {
             store.setInvoker(com.vaadin.shared.data.DataProviderRpc.class, "removeRowData",new Invoker() {
               public Object invoke(Object target, Object[] params) {
                 ((com.vaadin.shared.data.DataProviderRpc) target).removeRowData((java.lang.Integer) params[0], (java.lang.Integer) params[1]);
@@ -3587,10 +3593,10 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setParamTypes(com.vaadin.shared.ui.datefield.AbstractDateFieldServerRpc.class, "focus", new Type[] {});
             store.setParamTypes(com.vaadin.shared.ui.datefield.AbstractDateFieldServerRpc.class, "update", new Type[] {new Type(java.lang.String.class), new Type("java.util.Map", new Type[] {new Type(java.lang.String.class), new Type(java.lang.Integer.class), }), });
             store.setParamTypes(com.vaadin.shared.ui.datefield.AbstractDateFieldServerRpc.class, "updateValueWithDelay", new Type[] {new Type(java.lang.String.class), new Type("java.util.Map", new Type[] {new Type(java.lang.String.class), new Type(java.lang.Integer.class), }), });
-            store.setParamTypes(com.vaadin.shared.ui.dnd.DragSourceRpc.class, "dragEnd", new Type[] {new Type(com.vaadin.shared.ui.dnd.DropEffect.class), });
             load7();
           }
           private void load7() {
+            store.setParamTypes(com.vaadin.shared.ui.dnd.DragSourceRpc.class, "dragEnd", new Type[] {new Type(com.vaadin.shared.ui.dnd.DropEffect.class), });
             store.setParamTypes(com.vaadin.shared.ui.dnd.DragSourceRpc.class, "dragStart", new Type[] {});
             store.setParamTypes(com.vaadin.shared.ui.dnd.DropTargetRpc.class, "drop", new Type[] {new Type("java.util.List", new Type[] {new Type(java.lang.String.class), }), new Type("java.util.Map", new Type[] {new Type(java.lang.String.class), new Type(java.lang.String.class), }), new Type(java.lang.String.class), new Type(com.vaadin.shared.MouseEventDetails.class), });
             store.setParamTypes(com.vaadin.shared.ui.dnd.FileDropTargetClientRpc.class, "sendUploadUrl", new Type[] {new Type("java.util.Map", new Type[] {new Type(java.lang.String.class), new Type(java.lang.String.class), }), });
@@ -5167,6 +5173,7 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.setPropertyType(com.vaadin.shared.ui.combobox.ComboBoxState.class, "textInputAllowed", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.class, "theme", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.UIState.LoadingIndicatorConfigurationState.class, "thirdDelay", new Type(java.lang.Integer.class));
+            store.setPropertyType(com.vaadin.shared.ui.ui.UIState.class, "thoroughSizeCheck", new Type(java.lang.Boolean.class));
             store.setPropertyType(com.vaadin.shared.ui.datefield.AbstractDateFieldState.class, "timeZoneJSON", new Type(java.lang.String.class));
             store.setPropertyType(com.vaadin.shared.ui.ui.PageState.class, "title", new Type(java.lang.String.class));
             store.setPropertyType(org.vaadin.addon.leaflet.shared.LeafletMarkerState.class, "title", new Type(java.lang.String.class));
@@ -6459,6 +6466,7 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             store.addOnStateChangeMethod(com.vaadin.client.ui.ui.UIConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "setErrorLevel", new String[] {"errorMessage", "errorLevel", }));
             store.addOnStateChangeMethod(com.vaadin.client.ui.ui.UIConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "handleContextClickListenerChange", new String[] {"registeredEventListeners", }));
             store.addOnStateChangeMethod(com.vaadin.client.ui.ui.UIConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod("onThemeChange", new String[] {"theme", }));
+            store.addOnStateChangeMethod(com.vaadin.client.ui.ui.UIConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod("onThoroughSizeChckChange", new String[] {"thoroughSizeCheck", }));
             store.addOnStateChangeMethod(com.vaadin.client.ui.upload.UploadConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "setErrorLevel", new String[] {"errorMessage", "errorLevel", }));
             store.addOnStateChangeMethod(com.vaadin.client.ui.upload.UploadConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod("updateSubmitButton", new String[] {"buttonCaption", "buttonStyleName", "buttonCaptionAsHtml", }));
             store.addOnStateChangeMethod(com.vaadin.client.ui.upload.UploadConnector.class, new com.vaadin.client.metadata.OnStateChangeMethod(com.vaadin.client.ui.AbstractComponentConnector.class, "handleContextClickListenerChange", new String[] {"registeredEventListeners", }));
@@ -11547,6 +11555,16 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             
             var data = {
               setter: function(bean, value) {
+                bean.@com.vaadin.shared.ui.ui.UIState::thoroughSizeCheck = value.@java.lang.Boolean::booleanValue()();
+              },
+              getter: function(bean) {
+                return @java.lang.Boolean::valueOf(Z)(bean.@com.vaadin.shared.ui.ui.UIState::thoroughSizeCheck);
+              }
+            };
+            store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@com.vaadin.shared.ui.ui.UIState::class, 'thoroughSizeCheck', data);
+            
+            var data = {
+              setter: function(bean, value) {
                 bean.@com.vaadin.shared.ui.datefield.AbstractDateFieldState::timeZoneJSON = value;
               },
               getter: function(bean) {
@@ -12042,6 +12060,9 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletImageOverlayState::class, 'zIndex', data);
             
+          }-*/;
+          @com.google.gwt.core.client.UnsafeNativeLong
+          private native void loadNativeJs8(com.vaadin.client.metadata.TypeDataStore store) /*-{
             var data = {
               setter: function(bean, value) {
                 bean.@org.vaadin.addon.leaflet.shared.LeafletMarkerState::zIndexOffset = value;
@@ -12052,9 +12073,6 @@ public class ConnectorBundleLoaderImpl extends com.vaadin.client.metadata.Connec
             };
             store.@com.vaadin.client.metadata.TypeDataStore::setPropertyData(Ljava/lang/Class;Ljava/lang/String;Lcom/google/gwt/core/client/JavaScriptObject;)(@org.vaadin.addon.leaflet.shared.LeafletMarkerState::class, 'zIndexOffset', data);
             
-          }-*/;
-          @com.google.gwt.core.client.UnsafeNativeLong
-          private native void loadNativeJs8(com.vaadin.client.metadata.TypeDataStore store) /*-{
             var data = {
               setter: function(bean, value) {
                 bean.@org.vaadin.addon.leaflet.shared.PopupState::zoomAnimation = value.@java.lang.Boolean::booleanValue()();
