@@ -21,7 +21,7 @@
 		<seisFile.version>1.8.4</seisFile.version>
 		<jython.version>2.5.0</jython.version>
 		<javax.servlet-api.version>3.1.0</javax.servlet-api.version>
-		<vaadin.version>8.13.1</vaadin.version>
+		<vaadin.version>8.14.1</vaadin.version>
 		<jetty.plugin.version>9.3.9.v20160517</jetty.plugin.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>11</maven.compiler.source>
